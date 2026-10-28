@@ -1,0 +1,3765 @@
+{
+  "originalPairs": 1100,
+  "products": 518,
+  "mergedGroups": [
+    {
+      "id": "product-d6b07d6ba49ca307",
+      "name": "[운영 안내]",
+      "category": "피자",
+      "aliases": [
+        "[운영 안내]"
+      ],
+      "originalCategories": [
+        "Lorenzo's Pizza",
+        "피자"
+      ]
+    },
+    {
+      "id": "product-d5e3650e975e8a97",
+      "name": "Cup ( 두 가지 맛 )",
+      "category": "젤라또",
+      "aliases": [
+        "Cup ( 두 가지 맛 )"
+      ],
+      "originalCategories": [
+        "Gelato",
+        "젤라또"
+      ]
+    },
+    {
+      "id": "product-fc83026ea71e1ad8",
+      "name": "T.H.M. 포카치아 샌드위치",
+      "category": "디저트",
+      "aliases": [
+        "T.H.M. 포카치아 샌드위치",
+        "T.H.M. 포카치아 샌드위치 T.H.M. Focaccia Sandwic"
+      ],
+      "originalCategories": [
+        "Dessert & Deli",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-8f6bd97bfc762cb7",
+      "name": "고르곤졸라 (9인치)",
+      "category": "피자",
+      "aliases": [
+        "고르곤졸라 (9인치)",
+        "고르곤졸라 GORGONZOLA (9인치)"
+      ],
+      "originalCategories": [
+        "Lorenzo's Pizza",
+        "배달앱",
+        "피자"
+      ]
+    },
+    {
+      "id": "product-a1bb12fcdeb69e74",
+      "name": "과일 타르트",
+      "category": "디저트",
+      "aliases": [
+        "과일 타르트",
+        "과일 타르트 Fruit Tart"
+      ],
+      "originalCategories": [
+        "Dessert"
+      ]
+    },
+    {
+      "id": "product-b4adf88e722e31e9",
+      "name": "과테말라",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "과테말라 GUATEMALA",
+        "과테말라　GUATEMALA"
+      ],
+      "originalCategories": [
+        "Coffee Beans",
+        "SpecialtyCoffee",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-841e7f7d8544c9da",
+      "name": "과테말라 원두",
+      "category": "배달앱",
+      "aliases": [
+        "과테말라 원두",
+        "과테말라 원두 GUATEMALA",
+        "과테말라 원두 GUATEMALA "
+      ],
+      "originalCategories": [
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-0a7fb4fd73a7f0d7",
+      "name": "그로서리 그랑도르 고다 미니 치즈 (1pcs)",
+      "category": "치즈 & 스낵",
+      "aliases": [
+        "그로서리 4_ 그랑도르 고다 미니 치즈 (1pcs)"
+      ],
+      "originalCategories": [
+        "Cheese & Snack",
+        "치즈 & 스낵"
+      ]
+    },
+    {
+      "id": "product-e0c7866fc836a788",
+      "name": "그로서리 락티마 크리미 치즈",
+      "category": "치즈 & 스낵",
+      "aliases": [
+        "그로서리 7 _ 락티마 크리미 치즈"
+      ],
+      "originalCategories": [
+        "Cheese & Snack",
+        "Grocery"
+      ]
+    },
+    {
+      "id": "product-64a7c5e9ff15b48a",
+      "name": "그로서리 미니 스포르나티니 로즈마리",
+      "category": "치즈 & 스낵",
+      "aliases": [
+        "그로서리 12 _ 미니 스포르나티니 로즈마리",
+        "그로서리 13 _ 미니 스포르나티니 로즈마리"
+      ],
+      "originalCategories": [
+        "Cheese & Snack",
+        "Grocery"
+      ]
+    },
+    {
+      "id": "product-f22207ccf79dd14b",
+      "name": "그로서리 미니 스포르나티니 올리브오일",
+      "category": "치즈 & 스낵",
+      "aliases": [
+        "그로서리 13 _ 미니 스포르나티니 올리브오일",
+        "그로서리 14 _ 미니 스포르나티니 올리브오일",
+        "그로서리 ⑬ 미니 스포르나티니 올리브오일"
+      ],
+      "originalCategories": [
+        "Cheese & Snack",
+        "Grocery"
+      ]
+    },
+    {
+      "id": "product-a5133ccf34083723",
+      "name": "그로서리 베르기어 포션치즈 (1pcs)",
+      "category": "치즈 & 스낵",
+      "aliases": [
+        "그로서리 6 _ 베르기어 포션치즈 (1pcs)"
+      ],
+      "originalCategories": [
+        "Cheese & Snack",
+        "치즈 & 스낵"
+      ]
+    },
+    {
+      "id": "product-be255ff9aa20d56e",
+      "name": "그로서리 블랙 트러플 포테이토칩",
+      "category": "치즈 & 스낵",
+      "aliases": [
+        "그로서리 10 _ 블랙 트러플 포테이토칩"
+      ],
+      "originalCategories": [
+        "Cheese & Snack",
+        "치즈 & 스낵"
+      ]
+    },
+    {
+      "id": "product-23cdec98eed0e383",
+      "name": "그로서리 아페리프레 코트 다쥐르",
+      "category": "치즈 & 스낵",
+      "aliases": [
+        "그로서리 5 _ 아페리프레 코트 다쥐르"
+      ],
+      "originalCategories": [
+        "Cheese & Snack",
+        "Grocery"
+      ]
+    },
+    {
+      "id": "product-5f250ff9f39e922b",
+      "name": "그로서리 에스푸나 살치촌 엑스트라",
+      "category": "치즈 & 스낵",
+      "aliases": [
+        "그로서리 9 _ 에스푸나 살치촌 엑스트라"
+      ],
+      "originalCategories": [
+        "Cheese & Snack",
+        "Grocery"
+      ]
+    },
+    {
+      "id": "product-912545b521818eb7",
+      "name": "그로서리 엠보그 치즈 트라이앵글",
+      "category": "치즈 & 스낵",
+      "aliases": [
+        "그로서리 6 _ 엠보그 치즈 트라이앵글",
+        "그로서리 7 _ 엠보그 치즈 트라이앵글"
+      ],
+      "originalCategories": [
+        "Cheese & Snack",
+        "Grocery"
+      ]
+    },
+    {
+      "id": "product-c12beb8d439fd15f",
+      "name": "그로서리 오가닉 트러플 하트 초콜릿 (5ea)",
+      "category": "치즈 & 스낵",
+      "aliases": [
+        "그로서리 19 _ 오가닉 트러플 하트 초콜릿 (5ea)"
+      ],
+      "originalCategories": [
+        "Cheese & Snack",
+        "치즈 & 스낵"
+      ]
+    },
+    {
+      "id": "product-bb5d5143318a6881",
+      "name": "그로서리 치즈 팝 고다",
+      "category": "치즈 & 스낵",
+      "aliases": [
+        "그로서리 3 _ 치즈 팝 고다"
+      ],
+      "originalCategories": [
+        "Cheese & Snack",
+        "Grocery"
+      ]
+    },
+    {
+      "id": "product-1d84e8075a4b4094",
+      "name": "그로서리 칼라마타 올리브 마리네이티드",
+      "category": "치즈 & 스낵",
+      "aliases": [
+        "그로서리 10 _ 칼라마타 올리브 마리네이티드"
+      ],
+      "originalCategories": [
+        "Cheese & Snack",
+        "Grocery"
+      ]
+    },
+    {
+      "id": "product-a5bd6818f22174e6",
+      "name": "그로서리 퀼리 브레드스틱 오리지날",
+      "category": "치즈 & 스낵",
+      "aliases": [
+        "그로서리 12 _ 퀼리 브레드스틱 오리지날"
+      ],
+      "originalCategories": [
+        "Cheese & Snack",
+        "치즈 & 스낵"
+      ]
+    },
+    {
+      "id": "product-9ec9fdd86cd96d4f",
+      "name": "그로서리 포션 치즈 (1pcs)",
+      "category": "치즈 & 스낵",
+      "aliases": [
+        "그로서리 2 _ 포션 치즈 (1pcs)"
+      ],
+      "originalCategories": [
+        "Cheese & Snack",
+        "Grocery"
+      ]
+    },
+    {
+      "id": "product-3d3e6482acb49a27",
+      "name": "그로서리 프리코 미니 치즈스틱 (1pcs)",
+      "category": "치즈 & 스낵",
+      "aliases": [
+        "그로서리 5 _ 프리코 미니 치즈스틱 (1pcs)"
+      ],
+      "originalCategories": [
+        "Cheese & Snack",
+        "치즈 & 스낵"
+      ]
+    },
+    {
+      "id": "product-7c8b448f5bad4414",
+      "name": "그로서리 프링글스 오리지널",
+      "category": "치즈 & 스낵",
+      "aliases": [
+        "그로서리 _ 프링글스 오리지널"
+      ],
+      "originalCategories": [
+        "Cheese & Snack",
+        "치즈 & 스낵"
+      ]
+    },
+    {
+      "id": "product-3a1dbabc5da4c095",
+      "name": "그로서리 화이트 트러플 포테이토칩",
+      "category": "치즈 & 스낵",
+      "aliases": [
+        "그로서리 11 _ 화이트 트러플 포테이토칩"
+      ],
+      "originalCategories": [
+        "Cheese & Snack",
+        "치즈 & 스낵"
+      ]
+    },
+    {
+      "id": "product-67ae6be6748ab3a9",
+      "name": "그리너리 말차 아이스크림",
+      "category": "아이스크림",
+      "aliases": [
+        "그리너리 말차 아이스크림 Greenery Matcha"
+      ],
+      "originalCategories": [
+        "Ice Cream",
+        "아이스크림"
+      ]
+    },
+    {
+      "id": "product-56ecf18965418300",
+      "name": "그리너리 말차 케이크",
+      "category": "디저트",
+      "aliases": [
+        "그리너리 말차 케이크",
+        "그리너리 말차 케이크 Greenery Matcha Cake"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-ec83b785a90f7169",
+      "name": "글라스 와인 (화이트)",
+      "category": "와인",
+      "aliases": [
+        "글라스 와인 (화이트)"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-8d80498afd6e5297",
+      "name": "논나 베리 타르트",
+      "category": "디저트",
+      "aliases": [
+        "논나 베리 타르트",
+        "논나 베리 타르트 Nonna’s Berry Tart"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-8693525de3b6cb57",
+      "name": "단호박 스프",
+      "category": "피자",
+      "aliases": [
+        "단호박 스프 Pumpkin Oat Soup"
+      ],
+      "originalCategories": [
+        "Dessert & Deli",
+        "Lorenzo's Pizza"
+      ]
+    },
+    {
+      "id": "product-c592bfd49d468bc9",
+      "name": "대파 감자 스프",
+      "category": "피자",
+      "aliases": [
+        "대파 감자 스프 Leek & Potato Oat Soup"
+      ],
+      "originalCategories": [
+        "Dessert & Deli",
+        "Lorenzo's Pizza"
+      ]
+    },
+    {
+      "id": "product-ad725fc3f54a4e5a",
+      "name": "더블 스트로베리 스퀘어 크루아상",
+      "category": "빵",
+      "aliases": [
+        "[ 마감 특가 23% 할인 ] 더블 스트로베리 스퀘어 크루아상",
+        "더블 스트로베리 스퀘어 크루아상",
+        "더블 스트로베리 스퀘어 크루아상 Double Strawberry Squa"
+      ],
+      "originalCategories": [
+        "Bakery",
+        "배달앱",
+        "빵"
+      ]
+    },
+    {
+      "id": "product-6e6da8737fc228d0",
+      "name": "더블 스트로베리 크루아상",
+      "category": "빵",
+      "aliases": [
+        "더블 스트로베리 크루아상",
+        "더블 스트로베리 크루아상 Double Strawberry"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "빵"
+      ]
+    },
+    {
+      "id": "product-93e67bde536b5a64",
+      "name": "돌체 애프리콧 타르트",
+      "category": "디저트",
+      "aliases": [
+        "돌체 애프리콧 타르트",
+        "돌체 애프리콧 타르트 Dolce Apricot Tart"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-3d86b2866945dd2e",
+      "name": "두바이 크루아상",
+      "category": "빵",
+      "aliases": [
+        "두바이 크루아상",
+        "두바이 크루아상 Dubai Chocolate Croissant"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "빵"
+      ]
+    },
+    {
+      "id": "product-19c3421fd855176b",
+      "name": "드립백",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "드립백 Drip Bag Coffee"
+      ],
+      "originalCategories": [
+        "SpecialtyCoffee",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-8e8964075c066322",
+      "name": "딸기",
+      "category": "젤라또",
+      "aliases": [
+        "딸기 Strawberry"
+      ],
+      "originalCategories": [
+        "Ice Cream",
+        "IceCream",
+        "젤라또"
+      ]
+    },
+    {
+      "id": "product-94e41a24db2a40cc",
+      "name": "딸기라떼",
+      "category": "논커피",
+      "aliases": [
+        "딸기라떼 ICE",
+        "딸기라떼 Strawberry Latte",
+        "딸기라떼 Strawberry Latte ",
+        "딸기라떼 Strawberry Latte (ICED ONLY)",
+        "딸기라떼 Strawberry Latte (Only Ice)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "논커피",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-a0ac86b1e60602f3",
+      "name": "딸기레몬에이드",
+      "category": "논커피",
+      "aliases": [
+        "딸기 레몬에이드 Strawberry Lemonade",
+        "딸기 레몬에이드 Strawberry Lemonade (ICED ONLY)",
+        "딸기레몬에이드 Strawberry Lemonade",
+        "딸기레몬에이드 Strawberry Lemonade (ICED ONLY)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "논커피",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-fdf378b3c389e424",
+      "name": "딸기 무스 초코 케이크",
+      "category": "디저트",
+      "aliases": [
+        "딸기 무스 초코 케이크 Strawberry Mousse",
+        "딸기 무스 초코 케이크 Strawberry Mousse Cake"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-a00be2e6f476eceb",
+      "name": "딸기 바스크 치즈 케이크",
+      "category": "디저트",
+      "aliases": [
+        "딸기 바스크 치즈 케이크 Strawberry Basqu",
+        "딸기 바스크 치즈 케이크 Strawberry Basque Cheeseca",
+        "딸기 바스크 치즈 케이크 Strawberry Basque Cheesecake"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-b77d5c5a7a11d453",
+      "name": "딸기 초코 라떼",
+      "category": "논커피",
+      "aliases": [
+        "딸기 초코 라떼 Strawberry Chocolate (ICED ONLY)",
+        "딸기 초코 라떼 Strawberry Chocolate Latte (ICE",
+        "딸기 초코 라떼 Strawberry Chocolate Latte (ICED ONLY)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-1507753e8f757f91",
+      "name": "딸기 크림 라떼",
+      "category": "논커피",
+      "aliases": [
+        "딸기 크림 라떼 Strawberry Cream Latt (ICED ONLY)",
+        "딸기 크림 라떼 Strawberry Cream Latte (ICED ON",
+        "딸기 크림 라떼 Strawberry Cream Latte (ICED ONLY)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-e827b386437e6b2d",
+      "name": "땅콩버터 휘낭시에",
+      "category": "빵",
+      "aliases": [
+        "땅콩버터 휘낭시에",
+        "땅콩버터 휘낭시에 Peanut Butter Financier"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "빵"
+      ]
+    },
+    {
+      "id": "product-67784e911076dc9f",
+      "name": "라지 박스 4가지 맛 (900g)",
+      "category": "젤라또",
+      "aliases": [
+        "라지 박스 4가지 맛 (900g)",
+        "라지박스 젤라또 4가지맛 (900g)"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "젤라또"
+      ]
+    },
+    {
+      "id": "product-09b306aa0280622b",
+      "name": "락토프리 프리미엄 소이",
+      "category": "논커피",
+      "aliases": [
+        "락토프리 프리미엄 소이 Soy Milk"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "논커피"
+      ]
+    },
+    {
+      "id": "product-89c2c20612a2900b",
+      "name": "락토프리 프리미엄 아몬드",
+      "category": "논커피",
+      "aliases": [
+        "락토프리 프리미엄 아몬드 Almond Milk"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "논커피"
+      ]
+    },
+    {
+      "id": "product-3ee0b3e897013511",
+      "name": "락토프리 프리미엄 오트밀",
+      "category": "논커피",
+      "aliases": [
+        "락토프리 프리미엄 오트밀 Oat Milk"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "논커피"
+      ]
+    },
+    {
+      "id": "product-76cc6233c0c4b7b2",
+      "name": "러스틱 애플 케이크",
+      "category": "디저트",
+      "aliases": [
+        "러스틱 애플 케이크",
+        "러스틱 애플 케이크 Rustic Apple Cake"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "Dessert & Deli",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-22ed3343b71dd7dc",
+      "name": "레드 도멘 오뜨 브랑드 메를로",
+      "category": "와인",
+      "aliases": [
+        "레드 2 _ 도멘 오뜨 브랑드 메를로"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-0eb3a19b59f6a514",
+      "name": "레드락 생맥주 (500ml)",
+      "category": "피자",
+      "aliases": [
+        "레드락 생맥주 500ml"
+      ],
+      "originalCategories": [
+        "Lorenzo's Pizza",
+        "피자"
+      ]
+    },
+    {
+      "id": "product-7adaed2e13841022",
+      "name": "레드 로손스 리트리트 시라즈",
+      "category": "주류",
+      "aliases": [
+        "레드 2 _ 로손스 리트리트 시라즈",
+        "레드 3 _ 로손스 리트리트 시라즈",
+        "레드 ② 로손스 리트리트 시라즈"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-40959b2e3e6e5719",
+      "name": "레드 마이펫 템프라니요",
+      "category": "와인",
+      "aliases": [
+        "레드 3 _ 마이펫 템프라니요"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-04912ed739db7097",
+      "name": "레드 브래드앤버터 피노누아",
+      "category": "와인",
+      "aliases": [
+        "레드 1 _ 브래드앤버터 피노누아"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-7b02db527f82e080",
+      "name": "레드 스우와프",
+      "category": "주류",
+      "aliases": [
+        "레드 1 _ 스우와프",
+        "레드 ③ 스우와프"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-65992392fec293e5",
+      "name": "레드 옐로우테일 쉬라즈",
+      "category": "와인",
+      "aliases": [
+        "레드 3_ 옐로우테일 쉬라즈",
+        "레드 4_ 옐로우테일 쉬라즈"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-41c2742501d6acd3",
+      "name": "레몬 머랭 클래식 크루아상",
+      "category": "빵",
+      "aliases": [
+        "[ 마감 특가 27% 할인 ] 레몬 머랭 클래식 크루아상",
+        "레몬 머랭 클래식 크루아상 Lemon Meringue",
+        "레몬 머랭 클래식 크루아상 Lemon Meringue Classic",
+        "레몬 머랭 클래식 크루아상 Lemon Meringue Classic Croissant"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "빵"
+      ]
+    },
+    {
+      "id": "product-86ade8940419fd07",
+      "name": "로제 마이펫 모나스트렐 로제",
+      "category": "와인",
+      "aliases": [
+        "로제 2 _ 마이펫 모나스트렐 로제",
+        "로제 3 _ 마이펫 모나스트렐 로제"
+      ],
+      "originalCategories": [
+        "Wine",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-01464dd3c98e6c2c",
+      "name": "로제 생트 빅투와",
+      "category": "와인",
+      "aliases": [
+        "로제 2 _ 생트 빅투와"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-e0b7d7d34978d6df",
+      "name": "로제 폴 드 코스트 로제",
+      "category": "와인",
+      "aliases": [
+        "로제 1 _ 폴 드 코스트 로제",
+        "로제 ① 폴 드 코스트 로제"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-1e61e6722d231c60",
+      "name": "로투스 아이스크림",
+      "category": "아이스크림",
+      "aliases": [
+        "로투스 아이스크림 Lotus Ice Cream"
+      ],
+      "originalCategories": [
+        "Ice Cream",
+        "아이스크림"
+      ]
+    },
+    {
+      "id": "product-4572c3dbdc3fba7f",
+      "name": "마르게리타 (9인치)",
+      "category": "피자",
+      "aliases": [
+        "마르게리타 (9인치)",
+        "마르게리타 MARGHERITA (9인치)"
+      ],
+      "originalCategories": [
+        "Lorenzo's Pizza",
+        "배달앱",
+        "피자"
+      ]
+    },
+    {
+      "id": "product-9baee0e604011f9f",
+      "name": "마쉬멜로 솔트 핫초코",
+      "category": "논커피",
+      "aliases": [
+        "마쉬멜로 솔트 핫초코",
+        "마쉬멜로 솔트 핫초코 Marshmallow Salt Hot Chocola",
+        "마시멜로 솔트 핫초코",
+        "마시멜로 솔트 핫초코 Marshmallow Salt Hot Chocolate (HOT ONLY)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "논커피",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-254a69cc9b0b93e5",
+      "name": "말차",
+      "category": "젤라또",
+      "aliases": [
+        "말차 Matcha"
+      ],
+      "originalCategories": [
+        "Ice Cream",
+        "젤라또"
+      ]
+    },
+    {
+      "id": "product-1dab65881410bada",
+      "name": "말차 딸기 라떼",
+      "category": "논커피",
+      "aliases": [
+        "말차 딸기 라떼 Matcha Strawberry Lat (ICED ONLY)",
+        "말차 딸기 라떼 Matcha Strawberry Latte (ICED O",
+        "말차 딸기 라떼 Matcha Strawberry Latte (ICED ONLY)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "논커피",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-e983a4d22f9fa424",
+      "name": "말차 블랙 케이크",
+      "category": "케이크",
+      "aliases": [
+        "[20% 할인] 말차 블랙 케이크",
+        "말차 블랙 케이크",
+        "말차 블랙 케이크 Matcha Black Cake"
+      ],
+      "originalCategories": [
+        "Cake",
+        "Dessert",
+        "배달앱",
+        "케이크"
+      ]
+    },
+    {
+      "id": "product-c0b32547d673ce2d",
+      "name": "말차 우베 라떼",
+      "category": "논커피",
+      "aliases": [
+        "말차 우베 라떼 Matcha Ube Latte (ICED ONLY)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "논커피",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-c8d502ebd451ef1f",
+      "name": "말차 초코 휘낭시에",
+      "category": "빵",
+      "aliases": [
+        "말차 초코 휘낭시에",
+        "말차 초코 휘낭시에 Matcha Chocolate Financier"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "빵"
+      ]
+    },
+    {
+      "id": "product-962e452709a9d0d3",
+      "name": "말차크림 크루아상",
+      "category": "빵",
+      "aliases": [
+        "말차크림 크루아상",
+        "말차크림 크루아상 Matcha Cream Croissant"
+      ],
+      "originalCategories": [
+        "빵"
+      ]
+    },
+    {
+      "id": "product-1d98755b1723f4fe",
+      "name": "망고",
+      "category": "젤라또",
+      "aliases": [
+        "망고 Mango"
+      ],
+      "originalCategories": [
+        "Ice Cream",
+        "젤라또"
+      ]
+    },
+    {
+      "id": "product-c4bfe52b03eddbc2",
+      "name": "맥주 고스트",
+      "category": "주류",
+      "aliases": [
+        "맥주 3 _ 고스트",
+        "수제맥주) 고스트"
+      ],
+      "originalCategories": [
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-166f339d81f46d2a",
+      "name": "맥주 그데이메잇트",
+      "category": "주류",
+      "aliases": [
+        "맥주 5 _ 그데이메잇트",
+        "수제맥주) 그데이메잇트"
+      ],
+      "originalCategories": [
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-cde7cc7131201540",
+      "name": "맥주 기린 (330ml)",
+      "category": "맥주",
+      "aliases": [
+        "맥주14 _ 기린 330ml"
+      ],
+      "originalCategories": [
+        "Beer",
+        "맥주"
+      ]
+    },
+    {
+      "id": "product-1367f260b9ae6b2d",
+      "name": "맥주 맥파이 여름회동",
+      "category": "주류",
+      "aliases": [
+        "맥주 9 _ 맥파이 여름회동",
+        "수제맥주) 맥파이 여름회동"
+      ],
+      "originalCategories": [
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-55cb5606d0abda72",
+      "name": "맥주 베리핑크",
+      "category": "주류",
+      "aliases": [
+        "맥주 6 _ 베리핑크",
+        "수제맥주 ) 베리핑크"
+      ],
+      "originalCategories": [
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-34dc67833d8d6a7f",
+      "name": "맥주 블루문 (330ml)",
+      "category": "맥주",
+      "aliases": [
+        "맥주 16 _ 블루문 330ml"
+      ],
+      "originalCategories": [
+        "Beer",
+        "맥주"
+      ]
+    },
+    {
+      "id": "product-602a6855dce3601b",
+      "name": "맥주 삿포로 (330ml)",
+      "category": "맥주",
+      "aliases": [
+        "맥주15 _ 삿포로 330ml"
+      ],
+      "originalCategories": [
+        "Beer",
+        "맥주"
+      ]
+    },
+    {
+      "id": "product-aa01ed11e623621d",
+      "name": "맥주 스텔라 (330ml)",
+      "category": "맥주",
+      "aliases": [
+        "맥주 13 _ 스텔라 330ml"
+      ],
+      "originalCategories": [
+        "Beer",
+        "맥주"
+      ]
+    },
+    {
+      "id": "product-16832fd149af00dd",
+      "name": "맥주 아유넛츠",
+      "category": "맥주",
+      "aliases": [
+        "맥주 1 _ 아유넛츠",
+        "수제맥주) 아유넛츠"
+      ],
+      "originalCategories": [
+        "Beer",
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-f049953e0e549e29",
+      "name": "맥주 오트크림",
+      "category": "맥주",
+      "aliases": [
+        "맥주 4 _ 오트크림",
+        "수제맥주) 오트크림"
+      ],
+      "originalCategories": [
+        "Beer",
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-6c4f49955631d633",
+      "name": "맥주 쥬신더",
+      "category": "주류",
+      "aliases": [
+        "맥주 7 _ 쥬신더",
+        "수제맥주) 쥬신더"
+      ],
+      "originalCategories": [
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-c882d44709a09f45",
+      "name": "맥주 쳐브로",
+      "category": "맥주",
+      "aliases": [
+        "맥주 2 _ 쳐브로",
+        "수제맥주) 쳐브로"
+      ],
+      "originalCategories": [
+        "Beer",
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-e51c95f5a2159f02",
+      "name": "맥주 칼스버그 (330ml)",
+      "category": "맥주",
+      "aliases": [
+        "맥주 12 _ 칼스버그 330ml"
+      ],
+      "originalCategories": [
+        "Beer",
+        "맥주"
+      ]
+    },
+    {
+      "id": "product-1560f759388fc159",
+      "name": "맥주 피마원 하이볼",
+      "category": "맥주",
+      "aliases": [
+        "맥주 10 _ 피마원 하이볼"
+      ],
+      "originalCategories": [
+        "Beer",
+        "Wine & Beer",
+        "맥주"
+      ]
+    },
+    {
+      "id": "product-7c372fce07843e64",
+      "name": "맥주 힙스터 라거",
+      "category": "주류",
+      "aliases": [
+        "맥주 8 _ 힙스터 라거",
+        "수제맥주) 힙스터 라거"
+      ],
+      "originalCategories": [
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-4412e9e82ed48f39",
+      "name": "멜팅 초콜릿 아이스크림",
+      "category": "아이스크림",
+      "aliases": [
+        "멜팅 초콜릿 아이스크림 Melting Chocolate"
+      ],
+      "originalCategories": [
+        "Ice Cream",
+        "아이스크림"
+      ]
+    },
+    {
+      "id": "product-6c2783da687224a1",
+      "name": "몽블랑 디 까사",
+      "category": "디저트",
+      "aliases": [
+        "몽블랑 디 까사",
+        "몽블랑 디 까사 Mont Blanc di Casa"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "Dessert & Deli",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-17f051128b01355e",
+      "name": "몽블랑 보늬밤 케이크",
+      "category": "디저트",
+      "aliases": [
+        "몽블랑 보늬밤 케이크",
+        "몽블랑 보늬밤 케이크 ",
+        "몽블랑 보늬밤 케이크 Chestnut Cake"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-d1b5195dc7815bd3",
+      "name": "무화과 휘낭시에",
+      "category": "빵",
+      "aliases": [
+        "무화과 휘낭시에",
+        "무화과 휘낭시에 Fig Financier"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "빵"
+      ]
+    },
+    {
+      "id": "product-3abf569e5d4aad80",
+      "name": "미디엄 박스 3가지 맛 (650g)",
+      "category": "젤라또",
+      "aliases": [
+        "미디엄 박스 3가지 맛 (650g)",
+        "미디엄박스 젤라또 3가지맛 (650g)"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "젤라또"
+      ]
+    },
+    {
+      "id": "product-6f869c8acd043a90",
+      "name": "밀크티",
+      "category": "논커피",
+      "aliases": [
+        "밀크티(ICED ONLY) Milk Tea",
+        "밀크티(Only Ice) Milk Tea"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "논커피"
+      ]
+    },
+    {
+      "id": "product-920b066ffc241462",
+      "name": "바나나 푸딩",
+      "category": "케이크",
+      "aliases": [
+        "바나나 푸딩 Banana Pudding"
+      ],
+      "originalCategories": [
+        "Cake",
+        "Dessert",
+        "케이크"
+      ]
+    },
+    {
+      "id": "product-6e62984bf1497731",
+      "name": "바닐라라떼",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "바닐라 라떼 Vanilla Latte",
+        "바닐라라떼 Vanilla Latte",
+        "수제 바닐라 라떼",
+        "수제 바닐라 라떼 Vanilla Latte",
+        "수제 바닐라 라떼 Vanilla Latte ",
+        "수제 바닐라 라떼 Vanilla Latte (HOT)",
+        "수제 바닐라 라떼 Vanilla Latte (ICE)",
+        "수제 바닐라 라떼 Vanilla Latte (ICED)",
+        "수제바닐라라떼 Vanilla Latte"
+      ],
+      "originalCategories": [
+        "SPECIALTYCOFFEE",
+        "SpecialtyCoffee",
+        "배달앱",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-1bac05c5ee0f23f4",
+      "name": "뱅쇼",
+      "category": "논커피",
+      "aliases": [
+        "뱅쇼 Vin Chaud (HOT ONLY)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-da2eb1cc5947d545",
+      "name": "버터떡 (3pcs)",
+      "category": "디저트",
+      "aliases": [
+        "버터떡 (3PCS)",
+        "버터떡 (3PCS) Butter Tteok"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-20d401ca4063a3d8",
+      "name": "베리베리 바스크 치즈 케이크",
+      "category": "디저트",
+      "aliases": [
+        "베리 베리 바스크 치즈 케이크",
+        "베리베리 바스크 치즈 케이크 Very Berry Basque Cheese"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "Dessert & Deli",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-34c27c71626721e6",
+      "name": "베이컨스크램블 에그 파누쪼",
+      "category": "피자",
+      "aliases": [
+        "베이컨 스크램블 에그 파누쪼",
+        "베이컨스크램블 에그 파누쪼 Bacon Scramble Egg Panuoz",
+        "베이컨스크램블 에그 파누쪼 Bacon Scramble Egg Panuozzo"
+      ],
+      "originalCategories": [
+        "Dessert & Deli",
+        "Lorenzo's Pizza",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-1e6c8dabd19979de",
+      "name": "보늬밤 티라미수 케이크",
+      "category": "디저트",
+      "aliases": [
+        "보늬밤 티라미수 케이크",
+        "보늬밤 티라미수 케이크 Chestnut Tiramisu"
+      ],
+      "originalCategories": [
+        "Dessert"
+      ]
+    },
+    {
+      "id": "product-f41aa3317eba3083",
+      "name": "복숭아 생크림 케이크",
+      "category": "케이크",
+      "aliases": [
+        "복숭아 생크림 케이크",
+        "복숭아 생크림 케이크 Peach Cream Cake"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "케이크"
+      ]
+    },
+    {
+      "id": "product-433d3e7826551cf5",
+      "name": "봄딸기 생크림 케이크",
+      "category": "케이크",
+      "aliases": [
+        "[20% 할인] 봄딸기 생크림 케이크",
+        "봄딸기 생크림 케이크",
+        "봄딸기 생크림 케이크 Spring Strawberry Cream Cake"
+      ],
+      "originalCategories": [
+        "Cake",
+        "Dessert",
+        "배달앱",
+        "케이크"
+      ]
+    },
+    {
+      "id": "product-01b73d40d385b64d",
+      "name": "브라질",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "브라질 BRAZIL",
+        "브라질BRAZIL"
+      ],
+      "originalCategories": [
+        "Coffee Beans",
+        "SpecialtyCoffee"
+      ]
+    },
+    {
+      "id": "product-49ceef40d8878d7e",
+      "name": "브라질 원두",
+      "category": "배달앱",
+      "aliases": [
+        "브라질 원두",
+        "브라질 원두 BRAZIL"
+      ],
+      "originalCategories": [
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-252c068a52c58b27",
+      "name": "브루잉 과테말라",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "브루잉 과테말라",
+        "브루잉 과테말라 Brewed Guatemala",
+        "브루잉 과테말라 Brewed Guatemala (HOT)",
+        "브루잉 과테말라 Brewed Guatemala (ICED)"
+      ],
+      "originalCategories": [
+        "SPECIALTYCOFFEE",
+        "SpecialtyCoffee",
+        "배달앱",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-4fe36b677cd06f56",
+      "name": "브루잉 브라질",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "브루잉 브라질",
+        "브루잉 브라질 Brewed Brazil",
+        "브루잉 브라질 Brewed Brazil (HOT)",
+        "브루잉 브라질 Brewed Brazil (ICED)"
+      ],
+      "originalCategories": [
+        "SPECIALTYCOFFEE",
+        "SpecialtyCoffee",
+        "배달앱",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-bf58a4afac36d483",
+      "name": "브루잉 에티오피아",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "브루잉 에티오피아",
+        "브루잉 에티오피아 Brewed Ethiopia",
+        "브루잉 에티오피아 Brewed Ethiopia (HOT)",
+        "브루잉 에티오피아 Brewed Ethiopia (ICED)"
+      ],
+      "originalCategories": [
+        "SPECIALTYCOFFEE",
+        "SpecialtyCoffee",
+        "배달앱",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-bb569178308c8d2a",
+      "name": "브루잉 케냐",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "브루잉 케냐",
+        "브루잉 케냐 Brewed Kenya",
+        "브루잉 케냐 Brewed Kenya (ICED)"
+      ],
+      "originalCategories": [
+        "SPECIALTYCOFFEE",
+        "SpecialtyCoffee",
+        "배달앱",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-ca80021da8ed3ea7",
+      "name": "브루잉 코스타리카",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "브루잉 코스타리카",
+        "브루잉 코스타리카 Brewed Costarica",
+        "브루잉 코스타리카 Brewed Costarica (ICED)"
+      ],
+      "originalCategories": [
+        "SPECIALTYCOFFEE",
+        "SpecialtyCoffee",
+        "배달앱",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-3639d16eadf86e0f",
+      "name": "브루잉 콜롬비아 디카페인",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "브루잉 콜롬비아 디카페인 Brewed Colombia Decaf"
+      ],
+      "originalCategories": [
+        "SpecialtyCoffee",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-063dee794d88cd05",
+      "name": "블루베리 요거트 파이",
+      "category": "케이크",
+      "aliases": [
+        "블루베리 요거트 파이",
+        "블루베리 요거트 파이 Blueberry Yogurt Pie"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "배달앱",
+        "케이크"
+      ]
+    },
+    {
+      "id": "product-9700895445003782",
+      "name": "블루베리 파이",
+      "category": "케이크",
+      "aliases": [
+        "블루베리 파이",
+        "블루베리 파이 Blueberry Pie"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "케이크"
+      ]
+    },
+    {
+      "id": "product-25b9f2cb444d69c8",
+      "name": "블루피노 스파클링 애플주스",
+      "category": "논커피",
+      "aliases": [
+        "블루피노 스파클링 애플주스"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "논커피"
+      ]
+    },
+    {
+      "id": "product-1a69a8f328219b8f",
+      "name": "빨미까레",
+      "category": "배달앱",
+      "aliases": [
+        "빨미까레",
+        "빨미까레 "
+      ],
+      "originalCategories": [
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-4cb68840261782c1",
+      "name": "빨미까레(3가지맛)",
+      "category": "디저트",
+      "aliases": [
+        "빨미까레 (3가지맛) ",
+        "빨미까레(3가지맛) Palmier carre"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-cdd4c1aeda71b0cd",
+      "name": "사과 & 망고 주스",
+      "category": "논커피",
+      "aliases": [
+        "사과 & 망고 주스 apple & mango juice"
+      ],
+      "originalCategories": [
+        "IceCream &Drink",
+        "Non Coffee"
+      ]
+    },
+    {
+      "id": "product-4f31e55f4a00ca91",
+      "name": "사과 & 블루베리 주스",
+      "category": "논커피",
+      "aliases": [
+        "사과 & 블루베리 주스 apple &blueberry juice"
+      ],
+      "originalCategories": [
+        "IceCream &Drink",
+        "Non Coffee"
+      ]
+    },
+    {
+      "id": "product-44f164037fe76cd8",
+      "name": "생강차",
+      "category": "논커피",
+      "aliases": [
+        "생강차 Ginger Tea (HOT ONLY)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-e65a254cf4603310",
+      "name": "생과일레몬에이드",
+      "category": "논커피",
+      "aliases": [
+        "생과일레몬 에이드",
+        "생과일레몬에이드 Homemade Lemonade",
+        "생과일레몬에이드 Lemon Ade",
+        "생과일레몬에이드 Lemon Ade ",
+        "생과일레몬에이드 Lemon Ade (ICED ONLY)",
+        "생과일레몬에이드 Lemon Ade (Only Ice)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "논커피",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-316828c1e65db2ae",
+      "name": "서리태 흑임자",
+      "category": "논커피",
+      "aliases": [
+        "서리태 흑임자 Black Soybean & Sesame (ICED ONL",
+        "서리태 흑임자 Black Soybean & Sesame (ICED ONLY)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-d41fa9891419836b",
+      "name": "소금빵",
+      "category": "디저트",
+      "aliases": [
+        "소금빵",
+        "소금빵 ",
+        "소금빵 Salt Bread",
+        "소금빵 Salted bread"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-62321a8a11c42d1c",
+      "name": "소시지 & 시금치 (9인치)",
+      "category": "피자",
+      "aliases": [
+        "소시지 & 시금치 (9인치)",
+        "소시지 & 시금치 SALSICCIA E SPINACI (9인치)"
+      ],
+      "originalCategories": [
+        "Lorenzo's Pizza",
+        "배달앱",
+        "피자"
+      ]
+    },
+    {
+      "id": "product-15768665682f955c",
+      "name": "수박 주스",
+      "category": "논커피",
+      "aliases": [
+        "수박 주스 Watermelon Juice"
+      ],
+      "originalCategories": [
+        "논커피",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-186d7073b991f57d",
+      "name": "수제 말차 휘낭시에",
+      "category": "케이크",
+      "aliases": [
+        "수제 말차 휘낭시에 Lorenzo's Matcha Financier"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "Dessert & Deli",
+        "케이크"
+      ]
+    },
+    {
+      "id": "product-a18534d135392e3d",
+      "name": "수제 바나나 라즈베리 케이크",
+      "category": "디저트",
+      "aliases": [
+        "수제 바나나 라즈베리 케이크",
+        "수제 바나나 라즈베리 케이크 Banana Raspberry Cake"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-e83f74a1291fbe2b",
+      "name": "수제 바스크치즈 케이크",
+      "category": "디저트",
+      "aliases": [
+        "수제 바스크치즈 케이크 BASQUE CHEESECAKE",
+        "수제 바스크치즈 케이크 Basque Cheese Cake"
+      ],
+      "originalCategories": [
+        "Dessert"
+      ]
+    },
+    {
+      "id": "product-af108efdaeccb918",
+      "name": "수제 브라우니",
+      "category": "디저트",
+      "aliases": [
+        "수제 브라우니 Lorenzo's Brownie"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "Dessert & Deli"
+      ]
+    },
+    {
+      "id": "product-99b1bbb8b8e02aa5",
+      "name": "수제 사과케이크",
+      "category": "디저트",
+      "aliases": [
+        "수제 사과 케이크",
+        "수제 사과케이크",
+        "수제 사과케이크 Apple Cake"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-50d5aa384e87703e",
+      "name": "수제 살구파이",
+      "category": "디저트",
+      "aliases": [
+        "수제 살구파이",
+        "수제 살구파이 Apricot Pie"
+      ],
+      "originalCategories": [
+        "Dessert"
+      ]
+    },
+    {
+      "id": "product-fa84f03bd0433d56",
+      "name": "수제 티라미수",
+      "category": "디저트",
+      "aliases": [
+        "수제 티라미수",
+        "수제 티라미수 Tiramisu"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-b7bd7fd4f5f7b926",
+      "name": "수제 판나코타",
+      "category": "디저트",
+      "aliases": [
+        "수제 판나코타",
+        "수제 판나코타 Panna Cotta"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-862f0fbc81388427",
+      "name": "수제 플레인 휘낭시에",
+      "category": "빵",
+      "aliases": [
+        "수제 플레인 휘낭시에 Lorenzo's Financier",
+        "수제 플레인 휘낭시에 Plain Financier"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "Dessert & Deli",
+        "빵"
+      ]
+    },
+    {
+      "id": "product-9d6a5f041a842fdf",
+      "name": "수제 피넛 쿠키",
+      "category": "디저트",
+      "aliases": [
+        "수제  피넛  쿠키  Peanut cookie",
+        "수제 피넛 쿠키  Peanut cookie"
+      ],
+      "originalCategories": [
+        "Dessert"
+      ]
+    },
+    {
+      "id": "product-7225e7b6b0164b96",
+      "name": "수제 피스타치오 티라미수",
+      "category": "디저트",
+      "aliases": [
+        "수제 피스타치오 티라미수",
+        "수제 피스타치오 티라미수 Pistachio Tiramisu"
+      ],
+      "originalCategories": [
+        "Dessert"
+      ]
+    },
+    {
+      "id": "product-0c1fae581e0a4e99",
+      "name": "수제 햄 토마토 파누쪼",
+      "category": "피자",
+      "aliases": [
+        "수재 햄 토마토 파누쪼",
+        "수제 햄 토마토 파누쪼",
+        "수제 햄 토마토 파누쪼 Homemade Ham & Tomato Panuo",
+        "수제 햄 토마토 파누쪼 Homemade Ham & Tomato Panuozzo"
+      ],
+      "originalCategories": [
+        "Dessert & Deli",
+        "Lorenzo's Pizza",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-925c1990e1757a81",
+      "name": "수플레 크레이프 케이크",
+      "category": "배달앱",
+      "aliases": [
+        "수플레 크레이프 케이크",
+        "수플레 크레이프 케이크 "
+      ],
+      "originalCategories": [
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-bc7f2503b82ec520",
+      "name": "스몰 박스 2가지 맛 (450g)",
+      "category": "젤라또",
+      "aliases": [
+        "스몰 박스 2가지 맛 (450g)",
+        "스몰박스 젤라또 2가지맛 (450g)"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "젤라또"
+      ]
+    },
+    {
+      "id": "product-ec3aa702f8f4c1ca",
+      "name": "스파클링 958 산테로 로시니",
+      "category": "와인",
+      "aliases": [
+        "스파클링 13 _ 958 산테로 로시니"
+      ],
+      "originalCategories": [
+        "Wine",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-d75ad03c7e85fd70",
+      "name": "스파클링 958 산테로 밀레시마토",
+      "category": "와인",
+      "aliases": [
+        "스파클링 2 _ 958 산테로 밀레시마토"
+      ],
+      "originalCategories": [
+        "Wine",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-5a04d116264e499f",
+      "name": "스파클링 958 산테로 벨리니",
+      "category": "와인",
+      "aliases": [
+        "스파클링 12 _ 958 산테로 벨리니"
+      ],
+      "originalCategories": [
+        "Wine",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-e5affb788860d035",
+      "name": "스파클링 골드 모스카토",
+      "category": "주류",
+      "aliases": [
+        "스파클링 2 _ 골드 모스카토",
+        "스파클링 ② 골드 모스카토"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-7a0c9ca6e37f2236",
+      "name": "스파클링 더 오프닝",
+      "category": "와인",
+      "aliases": [
+        "스파클링 4 _ 더 오프닝"
+      ],
+      "originalCategories": [
+        "Wine",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-e32ba916cefa1200",
+      "name": "스파클링 샤를 루",
+      "category": "와인",
+      "aliases": [
+        "스파클링 1 _ 샤를 루",
+        "스파클링 3 _ 샤를 루",
+        "스파클링 4 _ 샤를 루",
+        "스파클링 ① 샤를 루"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-5c988966836c8df7",
+      "name": "스파클링 스프링 블라썸",
+      "category": "주류",
+      "aliases": [
+        "스파클링 11 _ 스프링 블라썸",
+        "스파클링 9 _ 스프링 블라썸",
+        "스파클링 ⑨ 스프링 블라썸"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-5081872b86ba6cbd",
+      "name": "스파클링 아메리카노",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "스파클링 아메리카노 Sparkling Americano"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-f5b55598010c8bb8",
+      "name": "스파클링 애플 샹그리아",
+      "category": "와인",
+      "aliases": [
+        "스파클링 10 _ 애플 샹그리아",
+        "스파클링 5 _ 애플 샹그리아",
+        "스파클링 7 _ 애플 샹그리아"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-10ff949775cc1d5d",
+      "name": "스파클링 요새 로제",
+      "category": "와인",
+      "aliases": [
+        "스파클링 6 _ 요새 로제",
+        "스파클링 7 _ 요새 로제",
+        "스파클링 8 _ 요새 로제",
+        "스파클링 ⑧ 요새 로제"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-46dd9b091af7c917",
+      "name": "스파클링 웨스트와일더 로제스파클링",
+      "category": "와인",
+      "aliases": [
+        "스파클링 14 _ 웨스트와일더 로제스파클링",
+        "스파클링 4 _ 웨스트와일더 로제스파클링"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-9448795f94d056b8",
+      "name": "스파클링 임펄스 까바 블라썸 에디션",
+      "category": "와인",
+      "aliases": [
+        "스파클링 2 _ 임펄스 까바 블라썸 에디션",
+        "스파클링 5 _ 임펄스 까바 블라썸 에디션"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-ea1aa007276411a6",
+      "name": "스파클링 클레레뜨 드 디",
+      "category": "와인",
+      "aliases": [
+        "스파클링 3 _ 클레레뜨 드 디",
+        "스파클링 6 _ 클레레뜨 드 디",
+        "스파클링 ④ 클레레뜨 드 디"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-7d252710a3fb24a9",
+      "name": "스파클링 펠리시타 브뤼",
+      "category": "와인",
+      "aliases": [
+        "스파클링 1 _ 펠리시타 브뤼"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-f7c06e20d6976b03",
+      "name": "스파클링 프로벤코 브뤼",
+      "category": "주류",
+      "aliases": [
+        "스파클링 3 _ 프로벤코 브뤼",
+        "스파클링 ③ 프로벤코 브뤼"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-a36a9a1cc897828d",
+      "name": "스파클링 허니문 배",
+      "category": "와인",
+      "aliases": [
+        "스파클링 7 _ 허니문 배",
+        "스파클링 8 _ 허니문 배",
+        "스파클링 9 _ 허니문 배",
+        "스파클링 ⑨ 허니문 배"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-8bb24c6e2957154f",
+      "name": "스파클링 화사",
+      "category": "와인",
+      "aliases": [
+        "스파클링 10 _ 화사",
+        "스파클링 8 _ 화사",
+        "스파클링 9 _ 화사",
+        "스파클링 ⑩ 화사"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-fd8afa39d54ef2e4",
+      "name": "스페셜티크림라떼",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "스페셜티크림라떼 ICE",
+        "스페셜티크림라떼 Specialty Cream Latte",
+        "스페셜티크림라떼 Specialty Cream Latte ",
+        "스페셜티크림라떼 Specialty Cream Latte (ICED ONLY)",
+        "스페셜티크림라떼 Specialty Cream Latte (Only Ice)"
+      ],
+      "originalCategories": [
+        "SPECIALTYCOFFEE",
+        "SpecialtyCoffee",
+        "배달앱",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-ca07036e55de2300",
+      "name": "스페셜티 피넛크림라떼",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "스페셜티 피넛크림라떼",
+        "스페셜티 피넛크림라떼 Specialty Peanut Cream Latte"
+      ],
+      "originalCategories": [
+        "SPECIALTYCOFFEE",
+        "SpecialtyCoffee"
+      ]
+    },
+    {
+      "id": "product-c188ea7eea1524fc",
+      "name": "슬림 바스크 치즈 케이크",
+      "category": "케이크",
+      "aliases": [
+        "슬림 바스크 치즈 케이크",
+        "슬림 바스크 치즈 케이크 Slim Basque Cheese Cake",
+        "슬림 바스크치즈 케이크"
+      ],
+      "originalCategories": [
+        "Cake",
+        "Dessert",
+        "Dessert & Deli",
+        "배달앱",
+        "케이크"
+      ]
+    },
+    {
+      "id": "product-7ef0a1162d940018",
+      "name": "슬림 바스크 치즈케이크 커피 세트",
+      "category": "배달앱",
+      "aliases": [
+        "슬림 바스크 치즈케이크 커피 세트",
+        "슬림 바스크 치즈케이크 커피 세트 *"
+      ],
+      "originalCategories": [
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-5387a53599bec61d",
+      "name": "시그니처 피칸파이",
+      "category": "디저트",
+      "aliases": [
+        "시그니처 피칸파이 Pecan Pie",
+        "시그니쳐 피칸파이"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-44154cc3f08332bb",
+      "name": "시나몬 번 라떼",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "시나몬 번 라떼 Cinnamon Bun Latte",
+        "시나몬 번 라떼 Cinnamon Bun Latte (ICED ONLY)"
+      ],
+      "originalCategories": [
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-ba77040fde3de7e1",
+      "name": "시나몬 번 말차라떼",
+      "category": "논커피",
+      "aliases": [
+        "시나몬 번 말차라떼 Cinnamon Bun Matcha",
+        "시나몬 번 말차라떼 Cinnamon Bun Matcha (ICED ONL"
+      ],
+      "originalCategories": [
+        "논커피"
+      ]
+    },
+    {
+      "id": "product-4f97f7a2c1fd6ef4",
+      "name": "시칠리안 피스타치오 티라미수",
+      "category": "케이크",
+      "aliases": [
+        "시칠리안 피스타치오 티라미수",
+        "시칠리안 피스타치오 티라미수 Pistachio Tiramisu"
+      ],
+      "originalCategories": [
+        "Cake",
+        "Dessert",
+        "Dessert & Deli",
+        "배달앱",
+        "케이크"
+      ]
+    },
+    {
+      "id": "product-5a0e0b3afab3e855",
+      "name": "써니 망고 판나코타",
+      "category": "디저트",
+      "aliases": [
+        "써니 망고 판나코타 Sunny Mango Panna Cotta"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "Dessert & Deli"
+      ]
+    },
+    {
+      "id": "product-6ba83637afed847b",
+      "name": "썸머 토마토 바질 스퀘어 크루아상",
+      "category": "빵",
+      "aliases": [
+        "[ 마감 특가 23% 할인 ] 썸머 토마토 바질 스퀘어 크루아상",
+        "썸머 토마토 바질 스퀘어 크루아상",
+        "썸머 토마토 바질 스퀘어 크루아상 Summer Tomato Basil"
+      ],
+      "originalCategories": [
+        "Bakery",
+        "배달앱",
+        "빵"
+      ]
+    },
+    {
+      "id": "product-5bce24b8ecf9474d",
+      "name": "썸머 토마토 바질 크루아상",
+      "category": "빵",
+      "aliases": [
+        "썸머 토마토 바질 크루아상",
+        "썸머 토마토 바질 크루아상 Summer Tomato Basil"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "빵"
+      ]
+    },
+    {
+      "id": "product-b75f011e4fc18075",
+      "name": "쑥 미숫가루",
+      "category": "논커피",
+      "aliases": [
+        "쑥 미숫가루 Mugwort Roasted Grain L (ICED ONLY)",
+        "쑥 미숫가루 Mugwort Roasted Grain Latte (ICED",
+        "쑥 미숫가루 Mugwort Roasted Grain Latte (ICED ONLY)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-fb6da12ead6fe558",
+      "name": "아.빠.크",
+      "category": "빵",
+      "aliases": [
+        "아.빠.크 Croissant in Icecream"
+      ],
+      "originalCategories": [
+        "빵",
+        "아이스크림"
+      ]
+    },
+    {
+      "id": "product-019f085377ad53a6",
+      "name": "아메리카노",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "아메리카노",
+        "아메리카노 Americano",
+        "아메리카노 Americano ",
+        "아메리카노 Americano (HOT)",
+        "아메리카노 Americano (ICE)",
+        "아메리카노 Americano (ICED)"
+      ],
+      "originalCategories": [
+        "SPECIALTYCOFFEE",
+        "SpecialtyCoffee",
+        "배달앱",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-63cb575f1bb6fa0d",
+      "name": "아메리카노 4잔",
+      "category": "배달앱",
+      "aliases": [
+        "아메리카노 4잔 set",
+        "아메리카노 4잔 set (ICE x 4)",
+        "아메리카노 4잔 set (ICED x 4)"
+      ],
+      "originalCategories": [
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-f4df027f3546c351",
+      "name": "아샷추",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "아샷추 Ashotchu",
+        "아샷추 Ashotchu (ICED ONLY)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "SpecialtyCoffee",
+        "배달앱",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-71bf725e941e5f1c",
+      "name": "아포가토",
+      "category": "아이스크림",
+      "aliases": [
+        "아포가토 Affogato"
+      ],
+      "originalCategories": [
+        "Ice Cream",
+        "IceCream"
+      ]
+    },
+    {
+      "id": "product-08a48053af7f0507",
+      "name": "애사비",
+      "category": "논커피",
+      "aliases": [
+        "애사비 Apple Cider Vinegar (ICED ONLY)",
+        "애플 사이다 비니거 Apple Cider Vinegar (ICED ONLY)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "논커피",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-ae8af1c0d20fed80",
+      "name": "애플 크럼블 파이",
+      "category": "디저트",
+      "aliases": [
+        "애플 크럼블 파이 Apple Crumble Pie",
+        "애플크럼블 파이",
+        "애플크럼블 파이 "
+      ],
+      "originalCategories": [
+        "Dessert",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-ebaa36583b3f0eac",
+      "name": "얼그레이",
+      "category": "논커피",
+      "aliases": [
+        "얼그레이 Earl Grey",
+        "얼그레이 티",
+        "얼그레이 티 ",
+        "얼그레이 티 Earl Grey Tea",
+        "얼그레이 티 Earl Grey Tea (HOT)",
+        "얼그레이 티 Earl Grey Tea (ICED)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "논커피",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-c835dd59037d48a0",
+      "name": "얼그레이 구겔호프",
+      "category": "빵",
+      "aliases": [
+        "얼그레이 구겔호프",
+        "얼그레이 구겔호프 Earl Grey Gugelhupf"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "빵"
+      ]
+    },
+    {
+      "id": "product-ef019d11770310aa",
+      "name": "에스프레소",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "에스프레소 Espresso"
+      ],
+      "originalCategories": [
+        "SPECIALTYCOFFEE",
+        "SpecialtyCoffee",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-fd3ba473964f7adf",
+      "name": "에스프레소 밀크티",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "에스프레소 밀크티 Espresso Milk Tea",
+        "에스프레소 밀크티 Espresso Milk Tea ",
+        "에스프레소 밀크티 Espresso Milk Tea (ICED ONLY)",
+        "에스프레소 밀크티 Espresso Milk Tea (Only Ice)",
+        "에스프레소 밀크티 ICE"
+      ],
+      "originalCategories": [
+        "SPECIALTYCOFFEE",
+        "SpecialtyCoffee",
+        "배달앱",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-46be88f2637bcc9b",
+      "name": "에스프레소콘파냐",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "에스프레소콘파냐 Espresso Con Panna"
+      ],
+      "originalCategories": [
+        "SPECIALTYCOFFEE",
+        "SpecialtyCoffee",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-ee71eb676498c5fd",
+      "name": "에티오피아",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "에티오피아 ETHIOPIA",
+        "에티오피아　ETHIOPIA"
+      ],
+      "originalCategories": [
+        "Coffee Beans",
+        "SpecialtyCoffee"
+      ]
+    },
+    {
+      "id": "product-593034ac6fe05af7",
+      "name": "에티오피아 원두",
+      "category": "배달앱",
+      "aliases": [
+        "에티오피아 원두",
+        "에티오피아 원두 ETHIOPIA",
+        "에티오피아 원두 ETHIOPIA "
+      ],
+      "originalCategories": [
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-acc10f24f60c21ca",
+      "name": "오가닉 사과 주스",
+      "category": "논커피",
+      "aliases": [
+        "오가닉 사과 주스 organic apple juice"
+      ],
+      "originalCategories": [
+        "IceCream &Drink",
+        "Non Coffee"
+      ]
+    },
+    {
+      "id": "product-8a4bdc94a760b2ba",
+      "name": "오레오 드림 아이스크림",
+      "category": "아이스크림",
+      "aliases": [
+        "오레오 드림 아이스크림 Oreo Dream"
+      ],
+      "originalCategories": [
+        "Ice Cream",
+        "아이스크림"
+      ]
+    },
+    {
+      "id": "product-b75a68a3ca8f2034",
+      "name": "오레오 드림 치즈 케이크",
+      "category": "케이크",
+      "aliases": [
+        "오레오 드림 치즈 케이크",
+        "오레오 드림 치즈 케이크 Oreo Dream Cheesecake"
+      ],
+      "originalCategories": [
+        "Cake",
+        "Dessert",
+        "Dessert & Deli",
+        "배달앱",
+        "케이크"
+      ]
+    },
+    {
+      "id": "product-e4d177dec9e7fa16",
+      "name": "오레오 초코 드림 치즈 케이크",
+      "category": "디저트",
+      "aliases": [
+        "오레오 초코 드림 치즈 케이크 Oreo Choco Dream Cheese",
+        "오레오 초코드림 치즈 케이크"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-750e4d12e23b06ac",
+      "name": "오렌지 레몬 스퀘어 크루아상",
+      "category": "빵",
+      "aliases": [
+        "[ 마감 특가 23% 할인 ] 오렌지 레몬 스퀘어 크루아상",
+        "오렌지 레몬 스퀘어 크루아상",
+        "오렌지 레몬 스퀘어 크루아상 Orange Lemon Square Croi"
+      ],
+      "originalCategories": [
+        "Bakery",
+        "배달앱",
+        "빵"
+      ]
+    },
+    {
+      "id": "product-21915bfb2528ddbf",
+      "name": "올드패션드 초콜릿 케이크",
+      "category": "디저트",
+      "aliases": [
+        "올드패션드 초콜릿 케이크",
+        "올드패션드 초콜릿 케이크 Old-Fashioned Chocolate"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "Dessert & Deli",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-3de8b09d52d34cc7",
+      "name": "우베 라떼",
+      "category": "논커피",
+      "aliases": [
+        "우베 라떼 Ube Latte (ICED ONLY)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "논커피",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-5f8a87c7e6857d2f",
+      "name": "우베 바스크 치즈케이크",
+      "category": "디저트",
+      "aliases": [
+        "우베 바스크 치즈케이크",
+        "우베 바스크 치즈케이크 Ube Basque Cheese",
+        "우베 바스크 치즈케이크 Ube Basque Cheesecake"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-d94ee495853d4ec7",
+      "name": "우베 아이스크림",
+      "category": "아이스크림",
+      "aliases": [
+        "우베 아이스크림 Ube"
+      ],
+      "originalCategories": [
+        "Ice Cream",
+        "아이스크림"
+      ]
+    },
+    {
+      "id": "product-925e695d5bc7c4fe",
+      "name": "우베 에스프레소 라떼",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "우베 에스프레소 라떼 Ube Espresso Latte (ICED ONL",
+        "우베 에스프레소 라떼 Ube Espresso Latte (ICED ONLY)"
+      ],
+      "originalCategories": [
+        "SpecialtyCoffee",
+        "배달앱",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-8506f4c7e78a3e22",
+      "name": "유기농제주말차라떼",
+      "category": "논커피",
+      "aliases": [
+        "유기농제주말차라떼",
+        "유기농제주말차라떼 Matcha Latt",
+        "유기농제주말차라떼 Matcha Latte",
+        "유기농제주말차라떼 Matcha Latte ",
+        "유기농제주말차라떼 Matcha Latte (HOT)",
+        "유기농제주말차라떼 Matcha Latte (ICE)",
+        "유기농제주말차라떼 Matcha Latte (ICED)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "논커피",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-c1552393a6879865",
+      "name": "유기농제주말차초코라떼",
+      "category": "논커피",
+      "aliases": [
+        "유기농제주말차초코라떼 Matcha Choco Latte",
+        "유기농제주말차초코라떼 Matcha Choco Latte (ICED ONLY)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "논커피",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-9073f72ccdf517d7",
+      "name": "이코복스 아포가토",
+      "category": "아이스크림",
+      "aliases": [
+        "이코복스 아포가토 Ikovox's Affogato"
+      ],
+      "originalCategories": [
+        "Ice Cream",
+        "아이스크림"
+      ]
+    },
+    {
+      "id": "product-b06cb9fb94675bb3",
+      "name": "제로슈가 레몬에이드",
+      "category": "논커피",
+      "aliases": [
+        "제로슈가 레몬에이드 Zero Sugar Lemon Ade"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "논커피"
+      ]
+    },
+    {
+      "id": "product-14ac70ab6954d4ed",
+      "name": "제로슈가바닐라라떼",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "제로슈가바닐라라떼 Zero Sugar Vanilla Latte"
+      ],
+      "originalCategories": [
+        "SPECIALTYCOFFEE",
+        "SpecialtyCoffee"
+      ]
+    },
+    {
+      "id": "product-18abbcd50282f3e0",
+      "name": "제로슈가시럽라떼",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "제로슈가시럽라떼 Zero Sugar Latte"
+      ],
+      "originalCategories": [
+        "SPECIALTYCOFFEE",
+        "SpecialtyCoffee",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-a9de4ade45e4c093",
+      "name": "제스티 라임 파이",
+      "category": "케이크",
+      "aliases": [
+        "제스티 라임 파이",
+        "제스티 라임 파이 Zesty Lime Pie"
+      ],
+      "originalCategories": [
+        "Cake",
+        "Dessert",
+        "Dessert & Deli",
+        "배달앱",
+        "케이크"
+      ]
+    },
+    {
+      "id": "product-1034f12185c8f1fa",
+      "name": "제스티 라임 파이 + 글라스 와인(화이트) 세트",
+      "category": "와인",
+      "aliases": [
+        "제스티 라임 파이 + 글라스 와인 (화이트) 세트",
+        "제스티 라임 파이 + 글라스 와인(화이트) 세트"
+      ],
+      "originalCategories": [
+        "Cake",
+        "Dessert",
+        "Wine",
+        "Wine & Beer",
+        "와인",
+        "케이크"
+      ]
+    },
+    {
+      "id": "product-16a92c6245a8c52a",
+      "name": "제스티 라임 파이 + 화이트 와인 (1번) 세트",
+      "category": "디저트",
+      "aliases": [
+        "제스티 라임 파이 + 화이트 와인 (1번) 세트"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "Wine",
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-a4476337f2d1e88b",
+      "name": "제스티 라임 파이 + 화이트 와인 (2번) 세트",
+      "category": "케이크",
+      "aliases": [
+        "제스티 라임 파이 + 화이트 와인 (2번) 세트"
+      ],
+      "originalCategories": [
+        "Wine",
+        "와인",
+        "케이크"
+      ]
+    },
+    {
+      "id": "product-58be20e4cd412df8",
+      "name": "제스티 라임 파이 커피 세트",
+      "category": "배달앱",
+      "aliases": [
+        "제스티 라임 파이 커피 세트",
+        "제스티 라임 파이 커피 세트 *"
+      ],
+      "originalCategories": [
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-41de642e4864643a",
+      "name": "제주 감귤 초콜릿 맛 케이크",
+      "category": "케이크",
+      "aliases": [
+        "제주 감귤 초콜릿 맛 케이크 Tangerine Choc",
+        "제주 감귤 초콜릿 맛 케이크 Tangerine Chocolate"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "케이크"
+      ]
+    },
+    {
+      "id": "product-43cfbaf2bd1dafb5",
+      "name": "젤라또 + 글라스 와인 (화이트) 세트",
+      "category": "젤라또",
+      "aliases": [
+        "젤라또 + 글라스 와인 (화이트) 세트"
+      ],
+      "originalCategories": [
+        "와인",
+        "젤라또"
+      ]
+    },
+    {
+      "id": "product-29c1300441056072",
+      "name": "젤라또 2가지맛 (350g)",
+      "category": "배달앱",
+      "aliases": [
+        "젤라또 2가지맛 (350g)",
+        "젤라또 2가지맛 350g"
+      ],
+      "originalCategories": [
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-8ebc9ac82d206733",
+      "name": "지리산 돌배 감기차",
+      "category": "논커피",
+      "aliases": [
+        "지리산 돌배 감기차 Wild Pear Remedy (HOT ONLY)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-783beb8d7dd06742",
+      "name": "진저 라떼",
+      "category": "논커피",
+      "aliases": [
+        "진저 라떼 Ginger Latte (HOT ONLY)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-9de8b756d006da7e",
+      "name": "청포도 에이드",
+      "category": "논커피",
+      "aliases": [
+        "청포도 에이드 Green Grape Ade",
+        "청포도 에이드 Green Grape Ade (ICED ONLY)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "논커피",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-4e83e9a0ad44a330",
+      "name": "체리 베리 초콜릿케이크",
+      "category": "케이크",
+      "aliases": [
+        "체리 베리 초콜릿 케이크",
+        "체리 베리 초콜릿케이크 Cherry Berry Chocolate Cake"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "배달앱",
+        "케이크"
+      ]
+    },
+    {
+      "id": "product-7f50e13e5194b166",
+      "name": "초코",
+      "category": "아이스크림",
+      "aliases": [
+        "초코 Chocolate"
+      ],
+      "originalCategories": [
+        "Ice Cream",
+        "IceCream"
+      ]
+    },
+    {
+      "id": "product-e75f53dd1d7465ec",
+      "name": "초코 디핑 크림 쿠키",
+      "category": "디저트",
+      "aliases": [
+        "초코 디핑 크림 쿠키",
+        "초코 디핑 크림 쿠키 Chocolate-Dipped Cream Cooki"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "Dessert & Deli",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-fe8903b00c44a42b",
+      "name": "초코라떼",
+      "category": "논커피",
+      "aliases": [
+        "초코라떼",
+        "초코라떼 Choco Latte",
+        "초코라떼 Choco Latte ",
+        "초코라떼 Choco Latte (HOT)",
+        "초코라떼 Choco Latte (ICE)",
+        "초코라떼 Choco Latte (ICED)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "논커피",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-a282ede648720644",
+      "name": "초코 무스 바스크 치즈 케이크",
+      "category": "디저트",
+      "aliases": [
+        "초코 무스 바스크 치즈 케이크",
+        "초코 무스 바스크 치즈 케이크 Chocolate Mousse Basque"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "Dessert & Deli",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-eaa856e61d217f81",
+      "name": "초코베리 레드 문 치즈케이크",
+      "category": "디저트",
+      "aliases": [
+        "초코베리 레드 문 치즈케이크",
+        "초코베리 레드 문 치즈케이크 ChocoBerry Red Moon Chee"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "Dessert & Deli",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-430dc290be74097e",
+      "name": "초콜릿 쿠키",
+      "category": "디저트",
+      "aliases": [
+        "초콜릿 쿠키 Chocolate Cookie"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "Dessert & Deli"
+      ]
+    },
+    {
+      "id": "product-9862e2dd0caf40a1",
+      "name": "초콜릿 키스 바스크 치즈 케이크",
+      "category": "디저트",
+      "aliases": [
+        "초콜릿 키스 바스크 치즈 케이크",
+        "초콜릿 키스 바스크 치즈 케이크 Chocolate Kiss Basque"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "Dessert & Deli",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-2b4d7663ab5d5bef",
+      "name": "카다멈 번",
+      "category": "빵",
+      "aliases": [
+        "[ 마감 특가 21% 할인 ] 카다멈 번",
+        "카다멈 번",
+        "카다멈 번 Cardamom Bun"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "빵"
+      ]
+    },
+    {
+      "id": "product-a985d90056eecb7d",
+      "name": "카리나 안쵸아 올리브 (60g)",
+      "category": "주류",
+      "aliases": [
+        "카리나 안쵸아 올리브 60g"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-07a9c0110cd389a2",
+      "name": "카페라떼",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "카페라떼",
+        "카페라떼 Caffe Latte",
+        "카페라떼 Caffe Latte ",
+        "카페라떼 Caffe Latte (HOT)",
+        "카페라떼 Caffe Latte (ICE)",
+        "카페라떼 Caffe Latte (ICED)"
+      ],
+      "originalCategories": [
+        "SPECIALTYCOFFEE",
+        "SpecialtyCoffee",
+        "배달앱",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-a67bab62df3728d3",
+      "name": "카페모카",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "카페모카",
+        "카페모카 Cafe Mocha",
+        "카페모카 Cafe Mocha ",
+        "카페모카 Cafe Mocha (HOT)",
+        "카페모카 Cafe Mocha (ICE)",
+        "카페모카 Cafe Mocha (ICED)",
+        "카페모카 Caffe Mocha"
+      ],
+      "originalCategories": [
+        "SPECIALTYCOFFEE",
+        "SpecialtyCoffee",
+        "배달앱",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-55f4066820e06019",
+      "name": "카푸치노",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "카푸치노 (HOT ONLY)",
+        "카푸치노 (Only Hot)",
+        "카푸치노 Cappuccino ",
+        "카푸치노 Cappuccino (HOT ONLY)",
+        "카푸치노 Cappuccino (Only Hot)",
+        "카푸치노 Cappuccino (Only Hot) ",
+        "카푸치노 Cappuccino (Only Hot) (HOT)"
+      ],
+      "originalCategories": [
+        "SPECIALTYCOFFEE",
+        "SpecialtyCoffee",
+        "배달앱",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-f17086f110e65f39",
+      "name": "캐모마일",
+      "category": "논커피",
+      "aliases": [
+        "캐모마일 Chamomile",
+        "캐모마일 티",
+        "캐모마일 티 ",
+        "캐모마일 티 (HOT)",
+        "캐모마일 티 (ICE)",
+        "캐모마일 티 Chamomile Tea",
+        "캐모마일 티 Chamomile Tea (HOT)",
+        "캐모마일 티 Chamomile Tea (ICED)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "논커피",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-19ebb458bd47ef76",
+      "name": "캐모마일 애플 아이스티",
+      "category": "논커피",
+      "aliases": [
+        "캐모마일 애플 아이스티 Chamomile Apple (ICED ONLY)",
+        "캐모마일 애플 아이스티 Chamomile Apple Iced Tea"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-f7fefb6eebd6b76f",
+      "name": "캡슐 커피",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "캡슐 커피 Capsule Coffee"
+      ],
+      "originalCategories": [
+        "SpecialtyCoffee",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-1a284c015e1085aa",
+      "name": "케냐",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "케냐 KENYA",
+        "케냐KENYA"
+      ],
+      "originalCategories": [
+        "Coffee Beans",
+        "SpecialtyCoffee",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-d76363336143e5ab",
+      "name": "케냐 원두",
+      "category": "배달앱",
+      "aliases": [
+        "케냐 원두",
+        "케냐 원두 KENYA"
+      ],
+      "originalCategories": [
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-9ab21e1ef8b1d8b4",
+      "name": "코스타리카",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "코스타리카　COSTARICA"
+      ],
+      "originalCategories": [
+        "Coffee Beans",
+        "SpecialtyCoffee"
+      ]
+    },
+    {
+      "id": "product-6d85c71453d89470",
+      "name": "코스타리카 원두",
+      "category": "배달앱",
+      "aliases": [
+        "코스타리카 원두",
+        "코스타리카 원두 COSTARICA",
+        "코스타리카 원두 COSTARICA "
+      ],
+      "originalCategories": [
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-fdbbf39a67c6d797",
+      "name": "콜롬비아 디카페인",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "콜롬비아 디카페인 COLOMBIA DECAF"
+      ],
+      "originalCategories": [
+        "Coffee Beans",
+        "SpecialtyCoffee",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-55e1f0bf93f6bf0c",
+      "name": "콜롬비아 디카페인 원두",
+      "category": "배달앱",
+      "aliases": [
+        "콜롬비아 디카페인 원두",
+        "콜롬비아 디카페인 원두 COLOMBIA DECAF",
+        "콜롬비아 디카페인 원두 COLOMBIA DECAF "
+      ],
+      "originalCategories": [
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-ed383cd4ee817248",
+      "name": "콰트로 스타조니 4 (9인치)",
+      "category": "피자",
+      "aliases": [
+        "콰트로 스타조니 4STAGIONI (9인치)"
+      ],
+      "originalCategories": [
+        "Lorenzo's Pizza",
+        "피자"
+      ]
+    },
+    {
+      "id": "product-675c106b1b6c3151",
+      "name": "쿠키",
+      "category": "디저트",
+      "aliases": [
+        "쿠키 cookie"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "Dessert & Deli"
+      ]
+    },
+    {
+      "id": "product-8fb068170c714360",
+      "name": "크럼블 브라우니",
+      "category": "빵",
+      "aliases": [
+        "크럼블 브라우니",
+        "크럼블 브라우니 Crumble Brownie"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "빵"
+      ]
+    },
+    {
+      "id": "product-6709c4660c812cc7",
+      "name": "크레마 디 애플 크럼블",
+      "category": "디저트",
+      "aliases": [
+        "크레마 디 애플 크럼블",
+        "크레마 디 애플 크럼블 Crema di Apple Crumble"
+      ],
+      "originalCategories": [
+        "Dessert & Deli",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-4f331fc0ce263838",
+      "name": "크루아상",
+      "category": "빵",
+      "aliases": [
+        "크로와상",
+        "크로와상 Croissant",
+        "크루아상",
+        "크루아상  Croissant",
+        "크루아상 Croissant"
+      ],
+      "originalCategories": [
+        "Bakery",
+        "Dessert",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-fe9b0ad16d2dde72",
+      "name": "크루아상 잠봉 샌드위치",
+      "category": "빵",
+      "aliases": [
+        "크루아상 잠봉 샌드위치",
+        "크루아상 잠봉 샌드위치 Jambon Croissant Sandwich"
+      ],
+      "originalCategories": [
+        "Bakery",
+        "Dessert",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-a69321dc7a27a0be",
+      "name": "클래식 이탈리안 티라미수",
+      "category": "케이크",
+      "aliases": [
+        "클래식 이탈리안 티라미수 Classic Italian Tiramisu"
+      ],
+      "originalCategories": [
+        "Cake",
+        "Dessert",
+        "Dessert & Deli",
+        "케이크"
+      ]
+    },
+    {
+      "id": "product-91a79f41aa29e4ec",
+      "name": "클래식 크루아상",
+      "category": "빵",
+      "aliases": [
+        "[ 마감 특가 33% 할인] 클래식 크루아상",
+        "클래식 크루아상  Classic Croissant"
+      ],
+      "originalCategories": [
+        "Bakery",
+        "빵"
+      ]
+    },
+    {
+      "id": "product-4011f1498b5741c4",
+      "name": "클래식 크루아상 잠봉 샌드위치",
+      "category": "빵",
+      "aliases": [
+        "[ 마감특가 20% 할인 ] 클래식 크루아상 잠봉 샌드위치",
+        "클래식 크루아상 잠봉 샌드위치 Classic Croissant Jambo"
+      ],
+      "originalCategories": [
+        "Bakery",
+        "빵"
+      ]
+    },
+    {
+      "id": "product-5a6a43d4e8987e55",
+      "name": "키위 생크림 케이크",
+      "category": "케이크",
+      "aliases": [
+        "키위 생크림 케이크",
+        "키위 생크림 케이크 Kiwi Cream Cake"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "케이크"
+      ]
+    },
+    {
+      "id": "product-2b7c3a6ad66a0cca",
+      "name": "탄산음료",
+      "category": "피자",
+      "aliases": [
+        "탄산음료"
+      ],
+      "originalCategories": [
+        "Lorenzo's Pizza",
+        "피자"
+      ]
+    },
+    {
+      "id": "product-dda51e6c0d69ab96",
+      "name": "토마토 레몬에이드",
+      "category": "논커피",
+      "aliases": [
+        "토마토 레몬에이드 Tomato Lemonade"
+      ],
+      "originalCategories": [
+        "논커피",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-bd5848555c2fb382",
+      "name": "파누쪼 & 스프 세트",
+      "category": "피자",
+      "aliases": [
+        "파누쪼 & 스프 세트 Panuozzo & Soup Set"
+      ],
+      "originalCategories": [
+        "Dessert & Deli",
+        "Lorenzo's Pizza",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-8aa8abc692496740",
+      "name": "파누쪼 & 커피 세트",
+      "category": "피자",
+      "aliases": [
+        "파누쪼 & 커피 세트",
+        "파누쪼 & 커피 세트 Panuozzo & Coffee Set"
+      ],
+      "originalCategories": [
+        "Dessert & Deli",
+        "Lorenzo's Pizza",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-67bed9948978e289",
+      "name": "파인애플 코코넛 스퀘어 크루아상",
+      "category": "빵",
+      "aliases": [
+        "파인애플 코코넛 스퀘어 크루아상",
+        "파인애플 코코넛 스퀘어 크루아상 Pineapple Coconut Squa"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "빵"
+      ]
+    },
+    {
+      "id": "product-89830b95923422d3",
+      "name": "펑션원 블렌드",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "펑션원 블렌드 FUNKTION-ONE BLEND",
+        "펑션원 블렌드　FUNKTION-ONE BLEND"
+      ],
+      "originalCategories": [
+        "Coffee Beans",
+        "SpecialtyCoffee",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-c02c26b6c9cc6cbf",
+      "name": "펑션원 블렌드 원두",
+      "category": "배달앱",
+      "aliases": [
+        "펑션원 블렌드 원두",
+        "펑션원 블렌드 원두 FUNKTION  1",
+        "펑션원 블렌드 원두 FUNKTION  1 ",
+        "펑션원 블렌드 원두 FUNKTION 1"
+      ],
+      "originalCategories": [
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-f335075e86ffaac7",
+      "name": "펑션원 블렌드 원두 (200g)",
+      "category": "배달앱",
+      "aliases": [
+        "펑션원 블렌드 원두 FUNKTION  1 (200g)",
+        "펑션원 블렌드 원두 FUNKTION 1 (200g)"
+      ],
+      "originalCategories": [
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-f354e448fd738c66",
+      "name": "펑션투 블렌드",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "펑션투 블렌드 FUNKTION-TWO BLEND",
+        "펑션투 블렌드　FUNKTION-TWO BLEND"
+      ],
+      "originalCategories": [
+        "Coffee Beans",
+        "SpecialtyCoffee",
+        "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-161d23bf62e0ac74",
+      "name": "펑션투 블렌드 원두",
+      "category": "배달앱",
+      "aliases": [
+        "펑션투 블렌드 원두",
+        "평션투 블렌드 원두 FUNKTION  2",
+        "평션투 블렌드 원두 FUNKTION 2",
+        "평션투 블렌드 원두 FUNKTION 2 "
+      ],
+      "originalCategories": [
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-0d228c577cd7eff0",
+      "name": "펑션투 블렌드 원두 (200g)",
+      "category": "배달앱",
+      "aliases": [
+        "펑션투 블렌드 원두 FUNKTION 2 (200g)",
+        "평션투 블렌드 원두 FUNKTION 2 (200g)"
+      ],
+      "originalCategories": [
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-735a4a5a032fd560",
+      "name": "페퍼로니 (9인치)",
+      "category": "피자",
+      "aliases": [
+        "페퍼로니 (9인치)",
+        "페퍼로니 DIAVOLA (9인치)"
+      ],
+      "originalCategories": [
+        "Lorenzo's Pizza",
+        "배달앱",
+        "피자"
+      ]
+    },
+    {
+      "id": "product-5f403fb0be549753",
+      "name": "페퍼민트",
+      "category": "논커피",
+      "aliases": [
+        "페퍼민트 Peppermint",
+        "페퍼민트 티",
+        "페퍼민트 티 (ICE)",
+        "페퍼민트 티 Peppermint Tea",
+        "페퍼민트 티 Peppermint Tea (HOT)",
+        "페퍼민트 티 Peppermint Tea (ICED)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "논커피",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-15ef7e780b2df678",
+      "name": "페퍼 바닐라크림 크루아상",
+      "category": "빵",
+      "aliases": [
+        "페퍼 바닐라크림 크루아상",
+        "페퍼 바닐라크림 크루아상 Pepper Vanilla Cream Crois"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "빵"
+      ]
+    },
+    {
+      "id": "product-f6765108dd438cb0",
+      "name": "포레스트베리 판나코타",
+      "category": "디저트",
+      "aliases": [
+        "포레스트베리 판나코타 Forest Berry Panna Cotta"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "Dessert & Deli"
+      ]
+    },
+    {
+      "id": "product-949a604167e91e23",
+      "name": "프레시 스트로베리 아이스크림",
+      "category": "아이스크림",
+      "aliases": [
+        "프레시 스트로베리 아이스크림 Fresh Strawberry"
+      ],
+      "originalCategories": [
+        "Ice Cream",
+        "아이스크림"
+      ]
+    },
+    {
+      "id": "product-46cdeb4a6f88bb05",
+      "name": "플러피 베리 바나나 케이크",
+      "category": "케이크",
+      "aliases": [
+        "플러피 베리 바나나 케이크",
+        "플러피 베리 바나나 케이크 Fluffy Berry Banana Cake"
+      ],
+      "originalCategories": [
+        "Cake",
+        "Dessert",
+        "Dessert & Deli",
+        "배달앱",
+        "케이크"
+      ]
+    },
+    {
+      "id": "product-f23189d50d9609d5",
+      "name": "플레인 밀크 아이스크림",
+      "category": "아이스크림",
+      "aliases": [
+        "플레인 밀크 아이스크림 Plain Milk"
+      ],
+      "originalCategories": [
+        "Ice Cream",
+        "아이스크림"
+      ]
+    },
+    {
+      "id": "product-5a3f24fa2ba3b929",
+      "name": "플레인 스콘",
+      "category": "빵",
+      "aliases": [
+        "플레인 스콘",
+        "플레인 스콘 Plain Scone"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "빵"
+      ]
+    },
+    {
+      "id": "product-fbb511e456c367b9",
+      "name": "피스타치오 쿠키",
+      "category": "디저트",
+      "aliases": [
+        "피스타치오 쿠키 Pistachio Cookie"
+      ],
+      "originalCategories": [
+        "Dessert",
+        "Dessert & Deli"
+      ]
+    },
+    {
+      "id": "product-4d75263afd909170",
+      "name": "피자 & 맥주 세트",
+      "category": "피자",
+      "aliases": [
+        "피자 & 맥주 세트 Pizza & Beer Set",
+        "피자 & 맥주 세트 Pizza + Beer Set"
+      ],
+      "originalCategories": [
+        "Lorenzo's Pizza",
+        "피자"
+      ]
+    },
+    {
+      "id": "product-1f6c89ab736cad02",
+      "name": "피자 & 커피 세트",
+      "category": "피자",
+      "aliases": [
+        "피자 & 커피 세트 Pizza & Coffee Set"
+      ],
+      "originalCategories": [
+        "Lorenzo's Pizza",
+        "피자"
+      ]
+    },
+    {
+      "id": "product-c25f6340cd37ae00",
+      "name": "허니 레몬티",
+      "category": "논커피",
+      "aliases": [
+        "허니 레몬티",
+        "허니 레몬티 Honey Lemon Tea",
+        "허니 레몬티 Honey Lemon Tea (HOT ONLY)",
+        "허니 레몬티(HOT ONLY)",
+        "허니 레몬티(HOT ONLY) (Only Hot)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "논커피",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-ed5bdee660878c75",
+      "name": "허니버터 크루아상",
+      "category": "빵",
+      "aliases": [
+        "허니버터 크루아상",
+        "허니버터 크루아상 Honey Butter Croissant"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "빵"
+      ]
+    },
+    {
+      "id": "product-f3b3dd37ee2ba1de",
+      "name": "호지티라떼",
+      "category": "논커피",
+      "aliases": [
+        "호지티라떼 Hoji Tea Latte",
+        "호지티라떼 Hoji Tea Latte (ICED ONLY)"
+      ],
+      "originalCategories": [
+        "논커피"
+      ]
+    },
+    {
+      "id": "product-79f650dcf4659ae0",
+      "name": "화이트 7 컬러즈 샤도네이",
+      "category": "와인",
+      "aliases": [
+        "화이트 4 _ 7 컬러즈 샤도네이"
+      ],
+      "originalCategories": [
+        "Wine",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-821e5c0eaa36c2ac",
+      "name": "화이트 도멘 데 에르보쥬",
+      "category": "와인",
+      "aliases": [
+        "화이트 1 _ 도멘 데 에르보쥬"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-cf5010e064910b78",
+      "name": "화이트 로손스 리트리트 샤르도네",
+      "category": "주류",
+      "aliases": [
+        "화이트 1 _ 로손스 리트리트 샤르도네",
+        "화이트 7 _ 로손스 리트리트 샤르도네",
+        "화이트 8 _ 로손스 리트리트 샤르도네",
+        "화이트 ① 로손스 리트리트 샤르도네"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-9c49daa379408ebe",
+      "name": "화이트 마르싼",
+      "category": "주류",
+      "aliases": [
+        "화이트 7 _ 마르싼",
+        "화이트 ⑦ 마르싼"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-d047c393cc3442db",
+      "name": "화이트 마이펫 소비뇽블랑",
+      "category": "와인",
+      "aliases": [
+        "화이트 1 _ 마이펫 소비뇽블랑",
+        "화이트 2 _ 마이펫 소비뇽블랑"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-fc17bf105912a093",
+      "name": "화이트 무초 마스 (187ml)",
+      "category": "와인",
+      "aliases": [
+        "화이트 1 _ 무초 마스 187ml"
+      ],
+      "originalCategories": [
+        "Wine",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-78db7725078bedcf",
+      "name": "화이트 브래드앤버터 샤도네이",
+      "category": "와인",
+      "aliases": [
+        "화이트 7 _ 브래드앤버터 샤도네이",
+        "화이트 9 _ 브래드앤버터 샤도네이"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-8ffd0eb9f87776a2",
+      "name": "화이트 블랙 라벨 소비뇽 블랑",
+      "category": "와인",
+      "aliases": [
+        "화이트 2 _ 블랙 라벨 소비뇽 블랑"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-c5cde673bb1c5482",
+      "name": "화이트 샤또 오뜨-브랑드 모엘루",
+      "category": "와인",
+      "aliases": [
+        "화이트 10 _ 샤또 오뜨-브랑드 모엘루",
+        "화이트 2 _ 샤또 오뜨-브랑드 모엘루",
+        "화이트 ② 샤또 오뜨-브랑드 모엘루"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-5b58a86b08caf58f",
+      "name": "화이트 오땅스",
+      "category": "와인",
+      "aliases": [
+        "화이트 5 _ 오땅스",
+        "화이트 6 _ 오땅스"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-8ecdc993e1450c0d",
+      "name": "화이트 웨스트와일더 화이트",
+      "category": "와인",
+      "aliases": [
+        "화이트 10 _ 웨스트와일더 화이트",
+        "화이트 8 _ 웨스트와일더 화이트"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-364878a2268c5821",
+      "name": "화이트 타피 소비뇽블랑",
+      "category": "와인",
+      "aliases": [
+        "화이트 2 _ 타피 소비뇽블랑",
+        "화이트 3 _ 타피 소비뇽블랑"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer",
+        "와인"
+      ]
+    },
+    {
+      "id": "product-86ba82f47d852861",
+      "name": "화이트 트윈 오크스 샤도네이",
+      "category": "와인",
+      "aliases": [
+        "화이트 6 _ 트윈 오크스 샤도네이",
+        "화이트 8 _ 트윈 오크스 샤도네이"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-853834f9e9a3cb29",
+      "name": "화이트 한스 베어 리슬링",
+      "category": "주류",
+      "aliases": [
+        "화이트 1 _ 한스 베어 리슬링",
+        "화이트 ⑩ 한스 베어 리슬링"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-a5535285d4e7ec78",
+      "name": "화이트 후안 길 블랑코",
+      "category": "주류",
+      "aliases": [
+        "화이트 9 _ 후안 길 블랑코",
+        "화이트 ⑥ 후안 길 블랑코"
+      ],
+      "originalCategories": [
+        "Wine",
+        "Wine & Beer"
+      ]
+    },
+    {
+      "id": "product-7b153c194ead0857",
+      "name": "황치즈 휘낭시에",
+      "category": "빵",
+      "aliases": [
+        "황치즈 휘낭시에",
+        "황치즈 휘낭시에 Cheddar Financier"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "빵"
+      ]
+    },
+    {
+      "id": "product-a68b666072e6c0f4",
+      "name": "히비스커스 라떼",
+      "category": "논커피",
+      "aliases": [
+        "히비스커스 라떼 Hibiscus Latte",
+        "히비스커스 라떼 Hibiscus Latte ",
+        "히비스커스 라떼 Hibiscus Latte (ICED ONLY)",
+        "히비스커스 라떼 ICE"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "논커피",
+        "배달앱"
+      ]
+    },
+    {
+      "id": "product-7c2de50477909f13",
+      "name": "히비스커스 에이드",
+      "category": "논커피",
+      "aliases": [
+        "히비스커스 에이드",
+        "히비스커스 에이드 Hibiscus Ade",
+        "히비스커스 에이드 Hibiscus Ade ",
+        "히비스커스 에이드 Hibiscus Ade (ICED ONLY)",
+        "히비스커스 에이드 Hibiscus Ade (Only Ice)"
+      ],
+      "originalCategories": [
+        "Non Coffee",
+        "논커피",
+        "배달앱"
+      ]
+    }
+  ]
+}

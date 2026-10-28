@@ -1,0 +1,31 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {createProductCatalog} from '../dist/product-catalog.js';
+import {createSalesView} from '../dist/sales-view.js';
+const a=JSON.parse(fs.readFileSync(new URL('../dist/analysis-data.json',import.meta.url)));
+const master=JSON.parse(fs.readFileSync(new URL('../dist/product-master.json',import.meta.url)));
+const catalog=createProductCatalog(master),id=name=>catalog.resolve({name,category:'미분류'}).id;
+const allNames=master.products.flatMap(p=>p.aliases);
+assert.equal(new Set(allNames).size,allNames.length,'Each original name has exactly one identity');
+for(const r of a.products)assert.ok(catalog.get(id(r.name)),r.name);
+for(const n of ['아메리카노','아메리카노 Americano (HOT)','아메리카노 Americano (ICED)'])assert.equal(id(n),id('아메리카노 Americano'));
+assert.equal(id('수제 바닐라 라떼 Vanilla Latte (ICE)'),id('바닐라라떼 Vanilla Latte'));
+assert.equal(id('화이트 1 _ 로손스 리트리트 샤르도네'),id('화이트 8 _ 로손스 리트리트 샤르도네'));
+assert.notEqual(id('아메리카노 Americano'),id('아메리카노 4잔 set'));
+assert.notEqual(id('아메리카노 Americano'),id('스파클링 아메리카노 Sparkling Americano'));
+assert.notEqual(id('스몰박스 젤라또 2가지맛 (450g)'),id('미디엄박스 젤라또 3가지맛 (650g)'));
+assert.notEqual(id('과테말라 원두 GUATEMALA'),id('과테말라 원두 GUATEMALA (200g)'));
+assert.notEqual(id('화이트 1 _ 마이펫 소비뇽블랑'),id('화이트 1 _ 로손스 리트리트 샤르도네'));
+assert.equal(catalog.storedKey(JSON.stringify(['SPECIALTYCOFFEE','아메리카노 Americano'])),id('아메리카노'));
+const view=createSalesView({getAnalysis:()=>a,read:(k,d)=>d,catalog:()=>catalog});
+const prepared=view.data().products;
+for(const month of new Set(a.products.map(r=>r.date.slice(0,7)))){
+  const before=a.products.filter(r=>r.date.startsWith(month));
+  const grouped=view.groupProducts(prepared.filter(r=>r.date.startsWith(month)));
+  for(const metric of ['qty','sales'])assert.equal(grouped.reduce((n,r)=>n+r[metric],0),before.reduce((n,r)=>n+r[metric],0),month+metric);
+}
+const americano=view.groupProducts(prepared).filter(r=>r.key===id('아메리카노'));
+assert.equal(americano.length,1);
+assert.equal(americano[0].sales,a.products.filter(r=>id(r.name)===id('아메리카노')).reduce((n,r)=>n+r.sales,0));
+assert.ok(a.products.every(r=>!r.productId),'Raw rows unchanged');
+console.log(`Verified ${master.products.length} product identities, alias uniqueness, distinct sizes/sets, legacy selection migration and unchanged sales/quantity for every month.`);

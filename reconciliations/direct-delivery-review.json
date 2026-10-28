@@ -1,0 +1,726 @@
+{
+  "revision": "2026-10-28-direct-platform",
+  "start": "2026-07-01",
+  "end": "2026-08-31",
+  "stores": [
+    {
+      "month": "2026-07",
+      "channel": "baemin",
+      "store": "커피",
+      "completedOrders": 187,
+      "cancelledOrders": 4,
+      "sales": 3673800,
+      "basis": "배달완료 주문 결제금액 · 취소 별도 제외",
+      "status": "확보"
+    },
+    {
+      "month": "2026-08",
+      "channel": "baemin",
+      "store": "커피",
+      "completedOrders": 190,
+      "cancelledOrders": 2,
+      "sales": 4019300,
+      "basis": "배달완료 주문 결제금액 · 취소 별도 제외",
+      "status": "확보"
+    },
+    {
+      "month": "2026-07",
+      "channel": "baemin",
+      "store": "젤라또",
+      "completedOrders": 0,
+      "cancelledOrders": 0,
+      "sales": 0,
+      "basis": "배달완료 주문 결제금액 · 취소 별도 제외",
+      "status": "확보"
+    },
+    {
+      "month": "2026-08",
+      "channel": "baemin",
+      "store": "젤라또",
+      "completedOrders": 4,
+      "cancelledOrders": 1,
+      "sales": 108000,
+      "basis": "배달완료 주문 결제금액 · 취소 별도 제외",
+      "status": "확보"
+    },
+    {
+      "month": "2026-07",
+      "channel": "coupang",
+      "store": "커피",
+      "completedOrders": 439,
+      "cancelledOrders": 23,
+      "sales": 8971800,
+      "gross": 10388800,
+      "customerPayment": 8646308,
+      "basis": "판매금액인 주문금액 · 결제/취소 원본 부호 합산",
+      "status": "확보"
+    },
+    {
+      "month": "2026-08",
+      "channel": "coupang",
+      "store": "커피",
+      "completedOrders": 460,
+      "cancelledOrders": 12,
+      "sales": 9568000,
+      "gross": 11047400,
+      "customerPayment": 9211302,
+      "basis": "판매금액인 주문금액 · 결제/취소 원본 부호 합산",
+      "status": "확보"
+    },
+    {
+      "month": "2026-08",
+      "channel": "coupang",
+      "store": "젤라또",
+      "completedOrders": 1,
+      "cancelledOrders": 0,
+      "sales": 34000,
+      "gross": 36700,
+      "customerPayment": 34000,
+      "basis": "판매금액인 주문금액 · 결제/취소 원본 부호 합산",
+      "status": "확보"
+    },
+    {
+      "month": "2026-07",
+      "channel": "coupang",
+      "store": "젤라또",
+      "completedOrders": 0,
+      "cancelledOrders": null,
+      "sales": 0,
+      "basis": "7/1~7/31 매출 관리 화면에서 0원·0건 확인",
+      "status": "화면 확인"
+    }
+  ],
+  "daily": [
+    {
+      "date": "2026-07-01",
+      "prior": 2614300,
+      "sales": 2671300,
+      "payhereStore": 2130800,
+      "excludedPosDelivery": 483500,
+      "baemin": 182800,
+      "coupang": 316100,
+      "naver": 41600
+    },
+    {
+      "date": "2026-07-02",
+      "prior": 2308000,
+      "sales": 2339000,
+      "payhereStore": 2131900,
+      "excludedPosDelivery": 176100,
+      "baemin": 53800,
+      "coupang": 153300,
+      "naver": 0
+    },
+    {
+      "date": "2026-07-03",
+      "prior": 2843800,
+      "sales": 2863800,
+      "payhereStore": 2723900,
+      "excludedPosDelivery": 119900,
+      "baemin": 47600,
+      "coupang": 79900,
+      "naver": 12400
+    },
+    {
+      "date": "2026-07-04",
+      "prior": 4552900,
+      "sales": 4667100,
+      "payhereStore": 4131700,
+      "excludedPosDelivery": 421200,
+      "baemin": 106100,
+      "coupang": 312400,
+      "naver": 116900
+    },
+    {
+      "date": "2026-07-05",
+      "prior": 2733100,
+      "sales": 2788800,
+      "payhereStore": 2278100,
+      "excludedPosDelivery": 455000,
+      "baemin": 155800,
+      "coupang": 323000,
+      "naver": 31900
+    },
+    {
+      "date": "2026-07-06",
+      "prior": 1926800,
+      "sales": 1940000,
+      "payhereStore": 1622300,
+      "excludedPosDelivery": 304500,
+      "baemin": 61400,
+      "coupang": 256300,
+      "naver": 0
+    },
+    {
+      "date": "2026-07-07",
+      "prior": 1722600,
+      "sales": 1765000,
+      "payhereStore": 1464700,
+      "excludedPosDelivery": 257900,
+      "baemin": 115100,
+      "coupang": 150800,
+      "naver": 34400
+    },
+    {
+      "date": "2026-07-08",
+      "prior": 1988800,
+      "sales": 1988900,
+      "payhereStore": 1590400,
+      "excludedPosDelivery": 398400,
+      "baemin": 151900,
+      "coupang": 246600,
+      "naver": 0
+    },
+    {
+      "date": "2026-07-09",
+      "prior": 1910900,
+      "sales": 1928500,
+      "payhereStore": 1412500,
+      "excludedPosDelivery": 498400,
+      "baemin": 128800,
+      "coupang": 387200,
+      "naver": 0
+    },
+    {
+      "date": "2026-07-10",
+      "prior": 2719300,
+      "sales": 2729500,
+      "payhereStore": 2202500,
+      "excludedPosDelivery": 516800,
+      "baemin": 380200,
+      "coupang": 146800,
+      "naver": 0
+    },
+    {
+      "date": "2026-07-11",
+      "prior": 3422700,
+      "sales": 3413700,
+      "payhereStore": 3171600,
+      "excludedPosDelivery": 251100,
+      "baemin": 16700,
+      "coupang": 219100,
+      "naver": 6300
+    },
+    {
+      "date": "2026-07-12",
+      "prior": 2237000,
+      "sales": 2261200,
+      "payhereStore": 1835700,
+      "excludedPosDelivery": 401300,
+      "baemin": 127500,
+      "coupang": 291000,
+      "naver": 7000
+    },
+    {
+      "date": "2026-07-13",
+      "prior": 1938000,
+      "sales": 1977700,
+      "payhereStore": 1509900,
+      "excludedPosDelivery": 428100,
+      "baemin": 183500,
+      "coupang": 264000,
+      "naver": 20300
+    },
+    {
+      "date": "2026-07-14",
+      "prior": 2080800,
+      "sales": 2094800,
+      "payhereStore": 1418000,
+      "excludedPosDelivery": 662800,
+      "baemin": 158200,
+      "coupang": 518600,
+      "naver": 0
+    },
+    {
+      "date": "2026-07-15",
+      "prior": 2269800,
+      "sales": 2271300,
+      "payhereStore": 1841900,
+      "excludedPosDelivery": 427900,
+      "baemin": 191200,
+      "coupang": 238200,
+      "naver": 0
+    },
+    {
+      "date": "2026-07-16",
+      "prior": 2482100,
+      "sales": 2476600,
+      "payhereStore": 2079000,
+      "excludedPosDelivery": 387200,
+      "baemin": 149100,
+      "coupang": 248500,
+      "naver": 0
+    },
+    {
+      "date": "2026-07-17",
+      "prior": 3490700,
+      "sales": 3503600,
+      "payhereStore": 2957600,
+      "excludedPosDelivery": 517200,
+      "baemin": 158900,
+      "coupang": 387100,
+      "naver": 0
+    },
+    {
+      "date": "2026-07-18",
+      "prior": 3068700,
+      "sales": 3047400,
+      "payhereStore": 2706300,
+      "excludedPosDelivery": 362400,
+      "baemin": 98300,
+      "coupang": 242800,
+      "naver": 0
+    },
+    {
+      "date": "2026-07-19",
+      "prior": 2580700,
+      "sales": 2636700,
+      "payhereStore": 2079600,
+      "excludedPosDelivery": 501100,
+      "baemin": 138300,
+      "coupang": 380800,
+      "naver": 38000
+    },
+    {
+      "date": "2026-07-20",
+      "prior": 1364500,
+      "sales": 1397700,
+      "payhereStore": 1043700,
+      "excludedPosDelivery": 320800,
+      "baemin": 75800,
+      "coupang": 260200,
+      "naver": 18000
+    },
+    {
+      "date": "2026-07-21",
+      "prior": 1345600,
+      "sales": 1362000,
+      "payhereStore": 1064400,
+      "excludedPosDelivery": 281200,
+      "baemin": 72100,
+      "coupang": 225500,
+      "naver": 0
+    },
+    {
+      "date": "2026-07-22",
+      "prior": 1603100,
+      "sales": 1621500,
+      "payhereStore": 1286400,
+      "excludedPosDelivery": 316700,
+      "baemin": 47300,
+      "coupang": 287800,
+      "naver": 0
+    },
+    {
+      "date": "2026-07-23",
+      "prior": 1982100,
+      "sales": 1981100,
+      "payhereStore": 1629000,
+      "excludedPosDelivery": 353100,
+      "baemin": 76200,
+      "coupang": 275900,
+      "naver": 0
+    },
+    {
+      "date": "2026-07-24",
+      "prior": 2706600,
+      "sales": 2730000,
+      "payhereStore": 2314100,
+      "excludedPosDelivery": 392500,
+      "baemin": 83000,
+      "coupang": 332900,
+      "naver": 0
+    },
+    {
+      "date": "2026-07-25",
+      "prior": 3936100,
+      "sales": 4029100,
+      "payhereStore": 3316200,
+      "excludedPosDelivery": 619900,
+      "baemin": 177200,
+      "coupang": 434600,
+      "naver": 101100
+    },
+    {
+      "date": "2026-07-26",
+      "prior": 3269200,
+      "sales": 3265600,
+      "payhereStore": 2704400,
+      "excludedPosDelivery": 564800,
+      "baemin": 117200,
+      "coupang": 435700,
+      "naver": 8300
+    },
+    {
+      "date": "2026-07-27",
+      "prior": 2263800,
+      "sales": 2283200,
+      "payhereStore": 1876200,
+      "excludedPosDelivery": 387600,
+      "baemin": 82300,
+      "coupang": 324700,
+      "naver": 0
+    },
+    {
+      "date": "2026-07-28",
+      "prior": 2427700,
+      "sales": 2426000,
+      "payhereStore": 2028100,
+      "excludedPosDelivery": 399600,
+      "baemin": 95900,
+      "coupang": 302000,
+      "naver": 0
+    },
+    {
+      "date": "2026-07-29",
+      "prior": 2128000,
+      "sales": 2131900,
+      "payhereStore": 1813900,
+      "excludedPosDelivery": 314100,
+      "baemin": 72800,
+      "coupang": 220700,
+      "naver": 24500
+    },
+    {
+      "date": "2026-07-30",
+      "prior": 2316300,
+      "sales": 2336900,
+      "payhereStore": 1911300,
+      "excludedPosDelivery": 405000,
+      "baemin": 71400,
+      "coupang": 354200,
+      "naver": 0
+    },
+    {
+      "date": "2026-07-31",
+      "prior": 2723800,
+      "sales": 2680800,
+      "payhereStore": 2228300,
+      "excludedPosDelivery": 495500,
+      "baemin": 97400,
+      "coupang": 355100,
+      "naver": 0
+    },
+    {
+      "date": "2026-08-01",
+      "prior": 3366500,
+      "sales": 3368300,
+      "payhereStore": 2743100,
+      "excludedPosDelivery": 623400,
+      "baemin": 238300,
+      "coupang": 386900,
+      "naver": 0
+    },
+    {
+      "date": "2026-08-02",
+      "prior": 2913300,
+      "sales": 2951000,
+      "payhereStore": 2191700,
+      "excludedPosDelivery": 721600,
+      "baemin": 225900,
+      "coupang": 526500,
+      "naver": 6900
+    },
+    {
+      "date": "2026-08-03",
+      "prior": 1665600,
+      "sales": 1911700,
+      "payhereStore": 1451400,
+      "excludedPosDelivery": 214200,
+      "baemin": 116800,
+      "coupang": 343500,
+      "naver": 0
+    },
+    {
+      "date": "2026-08-04",
+      "prior": 1648400,
+      "sales": 1959400,
+      "payhereStore": 1585700,
+      "excludedPosDelivery": 62700,
+      "baemin": 62700,
+      "coupang": 311000,
+      "naver": 0
+    },
+    {
+      "date": "2026-08-05",
+      "prior": 1489000,
+      "sales": 2045100,
+      "payhereStore": 1313900,
+      "excludedPosDelivery": 175100,
+      "baemin": 239900,
+      "coupang": 491300,
+      "naver": 0
+    },
+    {
+      "date": "2026-08-06",
+      "prior": 2531700,
+      "sales": 2682800,
+      "payhereStore": 2134100,
+      "excludedPosDelivery": 397600,
+      "baemin": 397600,
+      "coupang": 151100,
+      "naver": 0
+    },
+    {
+      "date": "2026-08-07",
+      "prior": 2129300,
+      "sales": 2439300,
+      "payhereStore": 2059500,
+      "excludedPosDelivery": 69800,
+      "baemin": 69800,
+      "coupang": 310000,
+      "naver": 0
+    },
+    {
+      "date": "2026-08-08",
+      "prior": 2711000,
+      "sales": 3150900,
+      "payhereStore": 2621000,
+      "excludedPosDelivery": 90000,
+      "baemin": 90000,
+      "coupang": 439900,
+      "naver": 0
+    },
+    {
+      "date": "2026-08-09",
+      "prior": 1952700,
+      "sales": 2324200,
+      "payhereStore": 1910500,
+      "excludedPosDelivery": 42200,
+      "baemin": 42200,
+      "coupang": 366200,
+      "naver": 5300
+    },
+    {
+      "date": "2026-08-10",
+      "prior": 1364800,
+      "sales": 1585700,
+      "payhereStore": 1013600,
+      "excludedPosDelivery": 351200,
+      "baemin": 351200,
+      "coupang": 220900,
+      "naver": 0
+    },
+    {
+      "date": "2026-08-11",
+      "prior": 2134400,
+      "sales": 2325100,
+      "payhereStore": 1961200,
+      "excludedPosDelivery": 173200,
+      "baemin": 173200,
+      "coupang": 160600,
+      "naver": 30100
+    },
+    {
+      "date": "2026-08-12",
+      "prior": 1879200,
+      "sales": 2251200,
+      "payhereStore": 1772700,
+      "excludedPosDelivery": 106500,
+      "baemin": 106500,
+      "coupang": 372000,
+      "naver": 0
+    },
+    {
+      "date": "2026-08-13",
+      "prior": 1901400,
+      "sales": 2090500,
+      "payhereStore": 1805600,
+      "excludedPosDelivery": 95800,
+      "baemin": 95800,
+      "coupang": 157500,
+      "naver": 31600
+    },
+    {
+      "date": "2026-08-14",
+      "prior": 2404600,
+      "sales": 2719100,
+      "payhereStore": 2178600,
+      "excludedPosDelivery": 226000,
+      "baemin": 226000,
+      "coupang": 314500,
+      "naver": 0
+    },
+    {
+      "date": "2026-08-15",
+      "prior": 3208200,
+      "sales": 3463200,
+      "payhereStore": 3017300,
+      "excludedPosDelivery": 190900,
+      "baemin": 190900,
+      "coupang": 255000,
+      "naver": 0
+    },
+    {
+      "date": "2026-08-16",
+      "prior": 3122300,
+      "sales": 3558000,
+      "payhereStore": 3017700,
+      "excludedPosDelivery": 104600,
+      "baemin": 104600,
+      "coupang": 423900,
+      "naver": 11800
+    },
+    {
+      "date": "2026-08-17",
+      "prior": 1926500,
+      "sales": 2339200,
+      "payhereStore": 1745100,
+      "excludedPosDelivery": 181400,
+      "baemin": 181400,
+      "coupang": 412700,
+      "naver": 0
+    },
+    {
+      "date": "2026-08-18",
+      "prior": 1440700,
+      "sales": 1821100,
+      "payhereStore": 1389300,
+      "excludedPosDelivery": 51400,
+      "baemin": 51400,
+      "coupang": 380400,
+      "naver": 0
+    },
+    {
+      "date": "2026-08-19",
+      "prior": 1459400,
+      "sales": 1820700,
+      "payhereStore": 1420500,
+      "excludedPosDelivery": 38900,
+      "baemin": 38900,
+      "coupang": 344500,
+      "naver": 16800
+    },
+    {
+      "date": "2026-08-20",
+      "prior": 1867500,
+      "sales": 2105300,
+      "payhereStore": 1826500,
+      "excludedPosDelivery": 41000,
+      "baemin": 77600,
+      "coupang": 201200,
+      "naver": 0
+    },
+    {
+      "date": "2026-08-21",
+      "prior": 2366100,
+      "sales": 2629900,
+      "payhereStore": 2366100,
+      "excludedPosDelivery": 0,
+      "baemin": 112100,
+      "coupang": 151700,
+      "naver": 0
+    },
+    {
+      "date": "2026-08-22",
+      "prior": 3729700,
+      "sales": 4152500,
+      "payhereStore": 3729700,
+      "excludedPosDelivery": 0,
+      "baemin": 60900,
+      "coupang": 361900,
+      "naver": 0
+    },
+    {
+      "date": "2026-08-23",
+      "prior": 2517500,
+      "sales": 3016200,
+      "payhereStore": 2517500,
+      "excludedPosDelivery": 0,
+      "baemin": 105300,
+      "coupang": 388100,
+      "naver": 5300
+    },
+    {
+      "date": "2026-08-24",
+      "prior": 1363200,
+      "sales": 1570200,
+      "payhereStore": 1363200,
+      "excludedPosDelivery": 0,
+      "baemin": 65900,
+      "coupang": 141100,
+      "naver": 0
+    },
+    {
+      "date": "2026-08-25",
+      "prior": 1870100,
+      "sales": 2109900,
+      "payhereStore": 1870100,
+      "excludedPosDelivery": 0,
+      "baemin": 55100,
+      "coupang": 184700,
+      "naver": 0
+    },
+    {
+      "date": "2026-08-26",
+      "prior": 2319400,
+      "sales": 2606400,
+      "payhereStore": 2319400,
+      "excludedPosDelivery": 0,
+      "baemin": 109000,
+      "coupang": 120700,
+      "naver": 57300
+    },
+    {
+      "date": "2026-08-27",
+      "prior": 2254100,
+      "sales": 2566500,
+      "payhereStore": 2254100,
+      "excludedPosDelivery": 0,
+      "baemin": 97700,
+      "coupang": 214700,
+      "naver": 0
+    },
+    {
+      "date": "2026-08-28",
+      "prior": 2254300,
+      "sales": 2493300,
+      "payhereStore": 2254300,
+      "excludedPosDelivery": 0,
+      "baemin": 71900,
+      "coupang": 167100,
+      "naver": 0
+    },
+    {
+      "date": "2026-08-29",
+      "prior": 3279400,
+      "sales": 3733200,
+      "payhereStore": 3279400,
+      "excludedPosDelivery": 0,
+      "baemin": 112900,
+      "coupang": 340900,
+      "naver": 0
+    },
+    {
+      "date": "2026-08-30",
+      "prior": 2137400,
+      "sales": 2713400,
+      "payhereStore": 2137400,
+      "excludedPosDelivery": 0,
+      "baemin": 111300,
+      "coupang": 464700,
+      "naver": 0
+    },
+    {
+      "date": "2026-08-31",
+      "prior": 1064600,
+      "sales": 1705900,
+      "payhereStore": 1064600,
+      "excludedPosDelivery": 0,
+      "baemin": 144500,
+      "coupang": 496800,
+      "naver": 0
+    }
+  ],
+  "policy": "7~8월은 POS 배달앱과 오터를 제외하고 배민·쿠팡이츠 직접 원본으로 대체. 네이버는 기존 확인 원본 합산. 주문 수는 POS 원본에 없어 전체 거래건수 미표시. 원본 할인·취소를 재차 차감하지 않음. 상품 미확인 금액 보존. 배분 상품액은 순매출이며 할인 전 총매출·상품별 할인액을 추정하지 않음.",
+  "definitions": [
+    {
+      "label": "쿠팡이츠 판매금액 기준",
+      "url": "https://partners.coupangeats.com/start-guide/step-4/3385/"
+    },
+    {
+      "label": "배민 주문내역",
+      "url": "https://self.baemin.com/orders/history"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {sourceProducts,renderChannelAudit} from '../dist/channel-audit.js';
+import {createProductCatalog} from '../dist/product-catalog.js';
+import {createSalesView} from '../dist/sales-view.js';
+const read=p=>JSON.parse(fs.readFileSync(new URL('../'+p,import.meta.url)));
+const d=read('dist/direct-delivery.json'),a=read('dist/analysis-data.json'),c={...read('dist/channel-data.json'),direct:d},b=read('dist/data.json'),master=read('dist/product-master.json');
+const sum=(rs,k)=>rs.reduce((s,r)=>s+(r[k]??0),0),isTransition=s=>s>='2026-07-01'&&s<='2026-08-31';
+assert.equal(d.daily.length,62);assert.equal(new Set(d.daily.map(x=>x.date)).size,62);
+assert.equal(sum(d.daily.filter(r=>r.date.startsWith('2026-07')),'sales'),77610700);
+assert.equal(sum(d.daily.filter(r=>r.date.startsWith('2026-08')),'sales'),78209200);
+assert.equal(sum(d.daily.filter(r=>r.date.startsWith('2026-08')),'prior'),68272300);
+assert.equal(sum(d.stores.filter(r=>r.channel==='baemin'),'sales'),7801100);
+assert.equal(sum(d.stores.filter(r=>r.channel==='coupang'),'sales'),18573800);
+const raw=sourceProducts(a.products,c),catalog=createProductCatalog(master);
+assert.ok(!raw.some(r=>isTransition(r.date)&&r.channel==='otter'));
+assert.ok(!raw.some(r=>isTransition(r.date)&&r.channel==='payhere'&&r.category==='배달앱'));
+assert.ok(a.products.some(r=>isTransition(r.date)&&r.category==='배달앱'),'Original POS delivery records retained');
+for(const r of d.daily){const ledger=b.daily.find(x=>x.date===r.date);assert.equal(ledger.sales,r.payhereStore+r.baemin+r.coupang+r.naver);assert.equal(ledger.orders,null);assert.equal(sum(raw.filter(x=>x.date===r.date),'sales'),ledger.sales);}
+assert.equal(b.daily.find(r=>r.date==='2026-10-27').sales,1757000);
+for(const r of d.products){assert.equal(r.gross,null);assert.equal(r.discount,null);assert.ok(Number.isSafeInteger(r.sales));assert.ok(!('key' in r));assert.ok(!('orderId' in r));if(r.unallocated)assert.equal(r.unknownQty,true);}
+assert.equal(sum(d.products,'sales'),sum(d.stores,'sales'));
+assert.equal(d.stores.find(r=>r.store==='젤라또'&&r.channel==='coupang'&&r.month==='2026-08').sales,34000,'Use merchant sales field rather than 36700 gross');
+assert.ok(renderChannelAudit(c,{won:n=>'₩'+n,esc:String,nf:String}).includes('배민·쿠팡이츠 원본으로 대체 반영'));
+const iso=d=>d.toISOString().slice(0,10),date=s=>new Date(s+'T00:00:00Z');globalThis.location={hash:'#dashboard?from=2026-08-01&to=2026-08-31&tab=products'};
+const view=createSalesView({getAnalysis:()=>a,getChannels:()=>c,getRows:()=>b.daily,catalog:()=>catalog,read:(k,d)=>d,today:'2026-10-28',sum,date,iso,add:(s,n)=>iso(new Date(+date(s)+n*86400000)),esc:String,nf:String,won:n=>'₩'+n});
+assert.equal(sum(view.data().products.filter(r=>r.date.startsWith('2026-08')),'sales'),78209200);
+assert.equal(view.stats(view.days('2026-08-01','2026-08-31'),'pos').total,68272300,'Original POS-only forensic scope remains intact');
+assert.ok(view.render().includes('배민'));
+console.log('62 days reconciled, platform/store totals, refund signs, POS/Otter duplication exclusion, unknown product preservation, raw POS scope and August 34,000 merchant sales verified.');

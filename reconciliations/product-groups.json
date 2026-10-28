@@ -1,6 +1,6 @@
 {
   "originalPairs": 1100,
-  "products": 532,
+  "products": 534,
   "mergedGroups": [
     {
       "id": "product-faea5e120fc542ef",
@@ -953,6 +953,7 @@
       "category": "논커피",
       "aliases": [
         "말차 딸기 라떼",
+        "말차 딸기 라떼 Matcha Strawberry Lat",
         "말차 딸기 라떼 Matcha Strawberry Lat (ICED ONLY)",
         "말차 딸기 라떼 Matcha Strawberry Latte (ICED O",
         "말차 딸기 라떼 Matcha Strawberry Latte (ICED ONLY)"
@@ -2611,14 +2612,15 @@
     {
       "id": "product-593034ac6fe05af7",
       "name": "에티오피아 원두",
-      "category": "배달앱",
+      "category": "채널 미분류",
       "aliases": [
         "에티오피아 원두",
         "에티오피아 원두 ETHIOPIA",
         "에티오피아 원두 ETHIOPIA "
       ],
       "originalCategories": [
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -2723,6 +2725,7 @@
       "category": "논커피",
       "aliases": [
         "우베 라떼",
+        "우베 라떼 Ube Latte",
         "우베 라떼 Ube Latte (ICED ONLY)"
       ],
       "originalCategories": [

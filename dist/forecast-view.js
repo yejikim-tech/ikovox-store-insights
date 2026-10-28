@@ -1,4 +1,4 @@
-import {forecastMonth} from './forecast.js?v=20261028-channel-audit-v1';
+import {forecastMonth} from './forecast.js?v=20261028-direct-v1';
 const DOW=['일','월','화','수','목','금','토'];
 export function renderForecast(f,{won,nf,esc,expanded=false}){
   if(f.status==='missing')return `<section class="card forecast-panel"><h3>월말 예상 매출</h3><p class="sub">${esc(f.reason)}</p></section>`;

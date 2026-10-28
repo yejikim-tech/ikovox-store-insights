@@ -45,7 +45,8 @@ categories={'SPECIALTYCOFFEE':'스페셜티 커피','SpecialtyCoffee':'스페셜
  'Cheese & Snack':'치즈 & 스낵','Grocery':'그로서리','Coffee Beans':'원두'}
 groups=collections.defaultdict(list)
 extra=json.loads((ROOT/'dist/channel-data.json').read_text()).get('products',[]) if (ROOT/'dist/channel-data.json').exists() else []
-for r in a['products']+extra:groups[identity(r['name'])].append(r)
+direct=json.loads((ROOT/'dist/direct-delivery.json').read_text()).get('products',[]) if (ROOT/'dist/direct-delivery.json').exists() else []
+for r in a['products']+extra+direct:groups[identity(r['name'])].append(r)
 master=[]
 for key,rs in sorted(groups.items()):
     # A stable label/category across periods, independent of the selected date range.

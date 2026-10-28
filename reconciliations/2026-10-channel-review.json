@@ -1,0 +1,32 @@
+{
+  "start": "2026-10-01",
+  "end": "2026-10-27",
+  "reviewed_on": "2026-10-28",
+  "status": "needs_reconciliation",
+  "store": "이코복스커피 스튜디오 이태원점",
+  "payhere": {
+    "sales": 75574100,
+    "basis": "SmartPlace Payhere-connected sales calendar, sum of displayed Oct 1–27 daily net sales; matches daily product export. Oct 28 excluded.",
+    "url": "https://new.smartplace.naver.com/bizes/place/9592135/statistics?bookingBusinessId=1587066&menu=place&placeTab=sales"
+  },
+  "otter": {
+    "sales": 11280900,
+    "completed_orders": 569,
+    "basis": "Custom date range Oct 1 00:00 through Oct 27 23:59:59.999 KST; one location 이코복스커피_이태원점, all channels. Net sales, not gross 11504500.",
+    "url": "https://manager.tryotter.com/analytics/sales/business"
+  },
+  "naver": {
+    "sales": 1739500,
+    "applications": 99,
+    "completed": 97,
+    "cancelled": 2,
+    "gross": 1766700,
+    "cancelled_amount": 27200,
+    "basis": "SmartPlace booking/order statistics custom Oct 1–27; displayed net sales = gross less cancellation/no-show plus cancellation fees. Order list separately confirmed 99 records with receipt-date/all-status filters. Daily allocation and deduplication with POS remain unverified.",
+    "url": "https://new.smartplace.naver.com/bizes/place/9592135/statistics?bookingBusinessId=1587066&endDate=2026-10-27&menu=booking&placeTab=sales&startDate=2026-10-01&term=free"
+  },
+  "sum_before_duplicate_and_date_review": 88594500,
+  "existing_daily_total": 88413300,
+  "difference": 181200,
+  "action": "Existing daily totals retained pending daily date, cancellation and cross-channel duplicate reconciliation. Do not allocate this difference to arbitrary days or claim it is independently confirmed Naver revenue missing from the ledger."
+}

@@ -1,0 +1,21 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {createSalesView} from '../dist/sales-view.js';
+const a=JSON.parse(fs.readFileSync(new URL('../dist/analysis-data.json',import.meta.url)));
+const b=JSON.parse(fs.readFileSync(new URL('../dist/data.json',import.meta.url)));
+const nf=n=>Math.round(n).toLocaleString('ko-KR'),iso=d=>d.toISOString().slice(0,10),date=s=>new Date(s+'T00:00:00Z');
+globalThis.location={hash:'#dashboard?scope=pos'};
+const view=createSalesView({getAnalysis:()=>a,getRows:()=>b.daily,read:(k,d)=>d,today:'2026-10-28',
+  sum:(rs,k)=>rs.reduce((n,r)=>n+(r[k]??0),0),date,iso,add:(s,n)=>iso(new Date(+date(s)+n*86400000)),esc:String,nf,won:n=>'₩'+nf(n)});
+const html=view.render();
+assert.ok(html.includes('₩88,413,300'),'Default month uses existing combined ledger');
+assert.ok(!html.includes('₩76,231,800'),'POS product total cannot replace store total');
+assert.ok(!html.includes('₩803,858,280'),'POS annual total cannot replace store annual total');
+assert.ok(html.includes('연 누적 매장 총매출')&&html.includes('확인 필요'));
+assert.ok(html.includes('페이히어 + 오터 + 네이버'));
+assert.ok(html.includes('181,200원 차이'));
+assert.ok(!html.includes('<select id="salesScope"'),'Store revenue cannot switch to POS-only scope');
+const audit=JSON.parse(fs.readFileSync(new URL('../reconciliations/2026-10-channel-review.json',import.meta.url)));
+assert.equal(audit.payhere.sales+audit.otter.sales+audit.naver.sales,audit.sum_before_duplicate_and_date_review);
+assert.equal(audit.sum_before_duplicate_and_date_review-audit.existing_daily_total,audit.difference);
+console.log('Combined revenue policy, locked store scope, incomplete annual coverage and unresolved reconciliation difference verified.');

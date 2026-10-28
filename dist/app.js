@@ -1,4 +1,4 @@
-import {createSalesView} from './sales-view.js';
+import {createSalesView} from './sales-view.js?v=20261028-ytd';
 import {createImportView} from './import-view.js';
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

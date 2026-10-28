@@ -1,0 +1,108 @@
+{
+  "sources": [
+    {
+      "id": "xlsx-fd3a27b107a95be3",
+      "label": "상품 분석_상품별 조회(일자별)_이코복스 이태원점_2026-01-01~2026-06-30.xlsx",
+      "start": "2026-01-01",
+      "end": "2026-06-30",
+      "sheet": "상품 분석_상품별 조회(일자별)",
+      "kind": "products",
+      "sha256": "fd3a27b107a95be375845a15ad47d623b2efce73f6c8566b1b291fadb3aafb3f",
+      "declared": {
+        "unitPrice": 0.0,
+        "qty": 76760.0,
+        "sold": null,
+        "gross": 514429200.0,
+        "sales": 510440780.0,
+        "discount": 3988420.0,
+        "points": 0.0,
+        "prepaid": 0.0,
+        "refund": 3962200.0,
+        "refundQty": 500.0
+      },
+      "days": 181,
+      "records": 14201
+    },
+    {
+      "id": "xlsx-ad72747761aaa559",
+      "label": "상품 분석_옵션별 조회(옵션별)_이코복스 이태원점_2026-01-01~2026-06-30.xlsx",
+      "start": "2026-01-01",
+      "end": "2026-06-30",
+      "sheet": "상품 분석_옵션별 조회(옵션별)",
+      "kind": "options",
+      "sha256": "ad72747761aaa5593764ff87887c60164a1dc30e37bb9e94654fe01fdd81de18",
+      "selections": 112706.0,
+      "optionSales": 8221400.0,
+      "records": 1032
+    },
+    {
+      "id": "xlsx-ca93c8a44fa2fa67",
+      "label": "상품 분석_상품별 조회(일자별)_이코복스 이태원점_2026-07-01~2026-10-28.xlsx",
+      "start": "2026-07-01",
+      "end": "2026-10-28",
+      "sheet": "상품 분석_상품별 조회(일자별)",
+      "kind": "products",
+      "sha256": "ca93c8a44fa2fa6757f7fa8e14ea92684e54da6baa71b04ef99598a47c57c547",
+      "declared": {
+        "unitPrice": 0.0,
+        "qty": 44923.0,
+        "sold": null,
+        "gross": 295223900.0,
+        "sales": 294075200.0,
+        "discount": 1148700.0,
+        "points": 0.0,
+        "prepaid": 0.0,
+        "refund": 2684200.0,
+        "refundQty": 377.0
+      },
+      "days": 120,
+      "records": 9144
+    },
+    {
+      "id": "xlsx-45ed463e9e8e1ebe",
+      "label": "상품 분석_옵션별 조회(옵션별)_이코복스 이태원점_2026-07-01~2026-10-28.xlsx",
+      "start": "2026-07-01",
+      "end": "2026-10-28",
+      "sheet": "상품 분석_옵션별 조회(옵션별)",
+      "kind": "options",
+      "sha256": "45ed463e9e8e1ebe1e4cc4595410e1f0b94ec551072dbec0db1296858c6a0c51",
+      "selections": 71568.0,
+      "optionSales": 4207800.0,
+      "records": 1012
+    }
+  ],
+  "productRecords": 23345,
+  "optionRecords": 2044,
+  "days": 301,
+  "adjustments": [
+    {
+      "source": "xlsx-fd3a27b107a95be3",
+      "label": "부분 분할결제",
+      "unitPrice": 0.0,
+      "qty": 5.0,
+      "sold": null,
+      "gross": 300.0,
+      "sales": 0.0,
+      "discount": 300.0,
+      "points": 0.0,
+      "prepaid": 0.0,
+      "refund": 22600.0,
+      "refundQty": 0.0
+    },
+    {
+      "source": "xlsx-ca93c8a44fa2fa67",
+      "label": "부분 분할결제",
+      "unitPrice": 0.0,
+      "qty": 0.0,
+      "sold": null,
+      "gross": 0.0,
+      "sales": 0.0,
+      "discount": 0.0,
+      "points": 0.0,
+      "prepaid": 0.0,
+      "refund": 0.0,
+      "refundQty": 0.0
+    }
+  ],
+  "method": "Daily detail reconciles to each daily subtotal; subtotals plus split-payment adjustments reconcile to file totals. Options remain period-only rows and are never added to product revenue."
+}

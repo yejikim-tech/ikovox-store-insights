@@ -1,0 +1,24 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {createSalesView} from '../dist/sales-view.js';
+const a=JSON.parse(fs.readFileSync(new URL('../dist/analysis-data.json',import.meta.url)));
+const base=JSON.parse(fs.readFileSync(new URL('../dist/data.json',import.meta.url)));
+const iso=d=>d.toISOString().slice(0,10),date=s=>new Date(s+'T00:00:00Z');
+const view=createSalesView({getAnalysis:()=>a,getRows:()=>base.daily,read:(k,d)=>d,
+  sum:(rs,k)=>rs.reduce((n,r)=>n+(r[k]??0),0),date,iso,add:(s,n)=>iso(new Date(+date(s)+n*86400000))});
+assert.equal(a.products.filter(r=>r.date.startsWith('2026')).length,23345);
+assert.equal(a.options.length,2044);
+assert.equal(a.productCoverage.filter(d=>d.startsWith('2026')).length,301);
+for(const d of a.dailyProductTotals)assert.equal(view.stats([d.date],'pos').total,d.sales);
+assert.equal(view.stats(['2026-10-28'],'pos').complete,false);
+assert.equal(view.stats(['2026-01-01'],'pos').complete,true);
+assert.equal(view.stats(['2024-01-01'],'pos').total,null);
+assert.equal(view.stats(['2026-10-27'],'stored').total,1757000);
+assert.equal(view.stats(['2026-10-27'],'pos').orders,null);
+assert.ok(a.products.some(r=>r.date.startsWith('2025')));
+assert.equal(view.stats(view.days('2026-01-01','2026-06-30'),'pos').total,510440780);
+assert.equal(view.stats(view.days('2026-07-01','2026-10-28'),'pos').total,294075200);
+assert.equal(a.options.filter(r=>r.start==='2026-01-01').reduce((n,r)=>n+r.sales,0),8221400);
+assert.equal(a.options.filter(r=>r.start==='2026-07-01').reduce((n,r)=>n+r.sales,0),4207800);
+assert.equal(a.options.filter(r=>r.date).length,0);
+console.log('All 301 daily totals, period totals, partial-day completeness, missing data, options and preserved combined sales verified.');

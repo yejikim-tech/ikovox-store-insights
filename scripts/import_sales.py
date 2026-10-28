@@ -1,14 +1,15 @@
-"""Read the four supplied exports without editing them; reconcile before publishing."""
+"""Read the seven supplied exports without editing them; reconcile before publishing."""
 import collections, datetime, hashlib, json, pathlib, unicodedata
 import openpyxl
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-periods = ['2026-01-01~2026-06-30', '2026-07-01~2026-10-28']
+periods = ['2025-01-01~2025-06-30', '2025-07-01~2025-11-30', '2025-12-01~2025-12-31',
+           '2026-01-01~2026-06-30', '2026-07-01~2026-10-28']
 analysis = json.loads((ROOT/'dist/analysis-data.json').read_text())
 products, options, totals, sources, adjustments = [], [], [], [], []
 metrics = ['unitPrice','qty','sold','gross','sales','discount','points','prepaid','refund','refundQty']
 for period in periods:
-    for kind in ['상품별 조회(일자별)', '옵션별 조회(옵션별)']:
+    for kind in (['상품별 조회(일자별)'] if period.startswith('2025') else ['상품별 조회(일자별)', '옵션별 조회(옵션별)']):
         files = [p for p in pathlib.Path('/Users/kimyeji/Downloads').glob('*.xlsx')
                  if period in p.name and kind in unicodedata.normalize('NFC', p.name)]
         assert len(files) == 1, files
@@ -63,9 +64,9 @@ analysis['dailyProductTotals'] = totals
 analysis['productAdjustments'] = adjustments
 analysis['partialProductDates'] = ['2026-10-28']
 analysis['importSources'] = sources
-analysis['importRevision'] = '2026-10-28-four-exports-v1'
+analysis['importRevision'] = '2026-10-28-seven-exports-v2'
 (ROOT/'dist/analysis-data.json').write_text(json.dumps(analysis, ensure_ascii=False, separators=(',',':')))
-(ROOT/'reconciliations/2026-product-import.json').write_text(json.dumps(dict(sources=sources,
+(ROOT/'reconciliations/2025-2026-product-import.json').write_text(json.dumps(dict(sources=sources,
     productRecords=len(products), optionRecords=len(options), days=len(coverage), adjustments=adjustments,
     method='Daily detail reconciles to each daily subtotal; subtotals plus split-payment adjustments reconcile to file totals. Options remain period-only rows and are never added to product revenue.'), ensure_ascii=False, indent=2))
 print(json.dumps(dict(products=len(products),options=len(options),days=len(coverage),productSales=sum(r['sales'] for r in products),sources=sources),ensure_ascii=False))

@@ -1,4 +1,4 @@
-import {CHANNELS,renderChannelAudit,channelNote,sourceProducts} from './channel-audit.js?v=20261028-direct-v1';
+import {CHANNELS,renderChannelAudit,channelNote,sourceProducts} from './channel-audit.js?v=20261028-weather-v1';
 export function createImportView(api) {
   const {$,$$,esc,nf,won,sum,getAnalysis,download,csvCell,rerender}=api;
   let kind='products',from='2026-01-01',to='2026-10-28',period='2026-07-01',query='',category='',sort='sales',page=0,channel='all',auditExpanded=true;

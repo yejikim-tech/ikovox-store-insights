@@ -1,0 +1,315 @@
+{
+  "asOf": "2026-10-27",
+  "records": 665,
+  "sources": [
+    {
+      "year": 2025,
+      "month": 1,
+      "element": 1,
+      "sha256": "12a801b2f4baac1322ac9ee6de80721f393d60a74208eb0d53466f5dcf486cc7",
+      "records": 31
+    },
+    {
+      "year": 2025,
+      "month": 1,
+      "element": 9,
+      "sha256": "813c2f77ba69a246845e0dbc8236e6603897db2d316d099abbd7c675080c2fee",
+      "records": 31
+    },
+    {
+      "year": 2025,
+      "month": 2,
+      "element": 1,
+      "sha256": "9e4e9434853341b788a14bb904020338945d2b1a7d02805a223e915872f9f187",
+      "records": 28
+    },
+    {
+      "year": 2025,
+      "month": 2,
+      "element": 9,
+      "sha256": "f91b2ca3449cf07d3386f1c0bcbd4df5bb5148812a3e92cd014dc462dc7ce966",
+      "records": 28
+    },
+    {
+      "year": 2025,
+      "month": 3,
+      "element": 1,
+      "sha256": "41617fb1ee2896f2ba420fdbce090a79408027f9456ca5d53add4f8c4307026a",
+      "records": 31
+    },
+    {
+      "year": 2025,
+      "month": 3,
+      "element": 9,
+      "sha256": "8d843df6727c9362717ec006c754450c8a561f74a1c12233ab751c4f13f8938b",
+      "records": 31
+    },
+    {
+      "year": 2025,
+      "month": 4,
+      "element": 1,
+      "sha256": "ff19bfcedde481ae5c3f3d700f085c93537887ca503716bffcdc46d0203a611e",
+      "records": 30
+    },
+    {
+      "year": 2025,
+      "month": 4,
+      "element": 9,
+      "sha256": "ca1ccd389e5b319eeecd8aa795e9bcae61874fe849a1760a718d76333c0f8db7",
+      "records": 30
+    },
+    {
+      "year": 2025,
+      "month": 5,
+      "element": 1,
+      "sha256": "1012ce0c5dd6f4eebae80202128472ed863f21e599f6f144727f2da90727709b",
+      "records": 31
+    },
+    {
+      "year": 2025,
+      "month": 5,
+      "element": 9,
+      "sha256": "975568ec12da4cfc598c1836bb6c7818d10f53a58bd25b1583f2cd098dbfaf74",
+      "records": 31
+    },
+    {
+      "year": 2025,
+      "month": 6,
+      "element": 1,
+      "sha256": "f70ce56f9bc0246edb9ac66c010c69e9dcba9b6fce960ae2251febcf6684064b",
+      "records": 30
+    },
+    {
+      "year": 2025,
+      "month": 6,
+      "element": 9,
+      "sha256": "51116d2a13af94dad8b94a9cff7c64f139adb1e2c25746f9a869b5f667375c9a",
+      "records": 30
+    },
+    {
+      "year": 2025,
+      "month": 7,
+      "element": 1,
+      "sha256": "e5c82279f4641640cbd464d2adc97e2d81b235c65e967e6a1ed7477770305515",
+      "records": 31
+    },
+    {
+      "year": 2025,
+      "month": 7,
+      "element": 9,
+      "sha256": "c0760acd9f3f008f82ddc263ae39ae4635503a47136e1f41ced4d2f2c4ebbbc4",
+      "records": 31
+    },
+    {
+      "year": 2025,
+      "month": 8,
+      "element": 1,
+      "sha256": "cbba6a5faccf258b0fd8ecdc1074b0039a778bb7f3eaad1c6cd0a020b984af6b",
+      "records": 31
+    },
+    {
+      "year": 2025,
+      "month": 8,
+      "element": 9,
+      "sha256": "604f28e5634a95c152d4df0bfcfd96ba64ca5d8f1ddc42ad4f4ba820e0cf5d61",
+      "records": 31
+    },
+    {
+      "year": 2025,
+      "month": 9,
+      "element": 1,
+      "sha256": "9bfebdc75b8404bcd01606b511361bdb375d416293bb3915802b81410704a32d",
+      "records": 30
+    },
+    {
+      "year": 2025,
+      "month": 9,
+      "element": 9,
+      "sha256": "d68e52ff1b5e99db01c7b222c19e22d279e3b564c56e20f0694db4b5570d61bc",
+      "records": 30
+    },
+    {
+      "year": 2025,
+      "month": 10,
+      "element": 1,
+      "sha256": "b81a4df2925185d0c19979dbcc774f5da7c3d0398ee486553b9eb254c73b86fc",
+      "records": 31
+    },
+    {
+      "year": 2025,
+      "month": 10,
+      "element": 9,
+      "sha256": "95f6e759dd14df4fe02584427cc5f62427cb48064f4edf0ddcf41b35f78f07b3",
+      "records": 31
+    },
+    {
+      "year": 2025,
+      "month": 11,
+      "element": 1,
+      "sha256": "915840c6d004b0c02da9a54c70af91ff1316a46019833657038062b0c2c245fe",
+      "records": 30
+    },
+    {
+      "year": 2025,
+      "month": 11,
+      "element": 9,
+      "sha256": "a6645c61b8526402258957632b10742e7dd037ff095c874948fa2fa57be5a800",
+      "records": 30
+    },
+    {
+      "year": 2025,
+      "month": 12,
+      "element": 1,
+      "sha256": "2a023eb9c2c3a373630739ed75fc2587fb04a24260ac5d9a642c3fbbf52008fd",
+      "records": 31
+    },
+    {
+      "year": 2025,
+      "month": 12,
+      "element": 9,
+      "sha256": "837c97b9431b886c28997f30777895673e12e6edbe8a2c440a4efb24497a06e6",
+      "records": 31
+    },
+    {
+      "year": 2026,
+      "month": 1,
+      "element": 1,
+      "sha256": "eec6662bb91f03e272a806de2eb6a680cebfe96ef438eb132901106d4756da66",
+      "records": 31
+    },
+    {
+      "year": 2026,
+      "month": 1,
+      "element": 9,
+      "sha256": "0cfd8a4a6b0ece3889abb6197d12723449b1251fdbaadd27319919a96ca1e738",
+      "records": 31
+    },
+    {
+      "year": 2026,
+      "month": 2,
+      "element": 1,
+      "sha256": "5173d10dedad4d001ffce81d8f98f653813b45c4731a2fe4bce4b1082181cc5c",
+      "records": 28
+    },
+    {
+      "year": 2026,
+      "month": 2,
+      "element": 9,
+      "sha256": "1ab191c9e67e1e3e49ca50c16892c4688632d92865303de14728b75a4017a11a",
+      "records": 28
+    },
+    {
+      "year": 2026,
+      "month": 3,
+      "element": 1,
+      "sha256": "432be413db064cedafd84e9f358e13a72d9fcf19c11a0b59f92f3588f96187d2",
+      "records": 31
+    },
+    {
+      "year": 2026,
+      "month": 3,
+      "element": 9,
+      "sha256": "5937a13ed13364afdaee51f69a0679bd138d9e7c1dc5c6c7cd9fd486ffde8b31",
+      "records": 31
+    },
+    {
+      "year": 2026,
+      "month": 4,
+      "element": 1,
+      "sha256": "ea525545aaa828a04e7fbc0ee8b693904f4e447dd1643473a32f58b1fed8fe34",
+      "records": 30
+    },
+    {
+      "year": 2026,
+      "month": 4,
+      "element": 9,
+      "sha256": "903cc2f6d7d581b69b897b7ce21a2658144ccc697849e522fe294d909ddf05e5",
+      "records": 30
+    },
+    {
+      "year": 2026,
+      "month": 5,
+      "element": 1,
+      "sha256": "7b34a0a0013e9bcc2088243ecd73b89622a935286a7137750150e05f42ff5ba4",
+      "records": 31
+    },
+    {
+      "year": 2026,
+      "month": 5,
+      "element": 9,
+      "sha256": "5b8d9c6ed50e19f47a5c912b5da2c82c81b2110adc1cedd77e6ae7b52da6ed93",
+      "records": 31
+    },
+    {
+      "year": 2026,
+      "month": 6,
+      "element": 1,
+      "sha256": "0a9d5c1edf9a332ea78fc4dc5c6a08b78ad08cc3eaa1c003b404a2544480510d",
+      "records": 30
+    },
+    {
+      "year": 2026,
+      "month": 6,
+      "element": 9,
+      "sha256": "4e679bbf15178eeb5f2c26363dc17c46df14fa6f40085cfac7a1c08e835b5ace",
+      "records": 30
+    },
+    {
+      "year": 2026,
+      "month": 7,
+      "element": 1,
+      "sha256": "b2d5369754b03f360643754dd1cc3b0e321ba95da9e54d16ff5d69e92c2e015d",
+      "records": 31
+    },
+    {
+      "year": 2026,
+      "month": 7,
+      "element": 9,
+      "sha256": "4e231b09c0e3706414318bfe46e30b63ae05a8b20cbbcddee89bd11182f4960c",
+      "records": 31
+    },
+    {
+      "year": 2026,
+      "month": 8,
+      "element": 1,
+      "sha256": "be1618769495b10e3f47ce70f8430d41ddc88a7d2ee140d16dd4d0efd08811f8",
+      "records": 31
+    },
+    {
+      "year": 2026,
+      "month": 8,
+      "element": 9,
+      "sha256": "7ad204c1cc914a8422c030a1a566771053f32dd7ed080e8c39c5bcc8671339f1",
+      "records": 31
+    },
+    {
+      "year": 2026,
+      "month": 9,
+      "element": 1,
+      "sha256": "91f9e5375317612715ac5a51a62ee7aabc4e8f836df0ead8cf089bb24b6ae472",
+      "records": 30
+    },
+    {
+      "year": 2026,
+      "month": 9,
+      "element": 9,
+      "sha256": "f4f91eada550839b2363d562ca3ee4223f8cc66d03c76c130ccb5a9aca1ea594",
+      "records": 30
+    },
+    {
+      "year": 2026,
+      "month": 10,
+      "element": 1,
+      "sha256": "c966c11772b6ba429a565df75c2fee359081d2df2ba95fe6bbc318b4e2357876",
+      "records": 27
+    },
+    {
+      "year": 2026,
+      "month": 10,
+      "element": 9,
+      "sha256": "65d48380bd256a2efff787ce2c28393905d56a9f001e7a0b1c8008165576a899",
+      "records": 27
+    }
+  ],
+  "notes": "기온·강수·현상은 서울 관측소(108), 바람은 이태원 인근 격자 재분석자료. 루프탑 실측과 다를 수 있음. 기상청 강수 -/공백은 숫자 0으로 바꾸지 않음. 서울 일자 00~24시 기준. 기존 매장 날씨 메모는 별도 보존."
+}

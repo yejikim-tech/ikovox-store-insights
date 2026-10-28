@@ -13,3 +13,7 @@
 `python3 -m http.server 4173 --directory dist --bind 127.0.0.1`
 
 `pm-guide.md`, `weekly-report.md`는 웹에서도 내려받을 수 있습니다.
+
+## Calendar update
+
+`dist/sales-view.js` owns the weekly/monthly calendar, date/range detail routes, comparison and coverage logic, product/category filters, weekly menu analysis, hourly CSV import, and operational insights. Deep links use `#dashboard?from=YYYY-MM-DD&to=YYYY-MM-DD&tab=trend` (tabs: trend/time/products/menus/insights). `analysis-data.json` contains 2026-08 and 2025-10 POS product records and explicit day coverage. No time-series product data is synthesized from monthly reports. Local uploads replace whole covered dates, after complete CSV validation. Missing data is never filled with zero. Browser backups include analysis uploads and menu settings.

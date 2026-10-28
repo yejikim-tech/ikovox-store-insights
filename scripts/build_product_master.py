@@ -44,11 +44,12 @@ categories={'SPECIALTYCOFFEE':'스페셜티 커피','SpecialtyCoffee':'스페셜
  'Gelato':'젤라또','IceCream':'아이스크림','Ice Cream':'아이스크림',
  'Cheese & Snack':'치즈 & 스낵','Grocery':'그로서리','Coffee Beans':'원두'}
 groups=collections.defaultdict(list)
-for r in a['products']:groups[identity(r['name'])].append(r)
+extra=json.loads((ROOT/'dist/channel-data.json').read_text()).get('products',[]) if (ROOT/'dist/channel-data.json').exists() else []
+for r in a['products']+extra:groups[identity(r['name'])].append(r)
 master=[]
 for key,rs in sorted(groups.items()):
     # A stable label/category across periods, independent of the selected date range.
-    useful=[r for r in rs if r['category'] not in ['배달앱','미분류']]
+    useful=[r for r in rs if not r.get('channel') and r['category'] not in ['배달앱','미분류']] 
     preferred=max(useful or rs,key=lambda r:(r['date'],len(r['name'])))
     label=stem(preferred['name'])
     canonical=aliases.get(re.sub(r'\s','',label).lower())

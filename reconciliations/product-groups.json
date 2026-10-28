@@ -1,7 +1,19 @@
 {
   "originalPairs": 1100,
-  "products": 518,
+  "products": 532,
   "mergedGroups": [
+    {
+      "id": "product-faea5e120fc542ef",
+      "name": "[리뷰이벤트] 디저트 or 아메리카노",
+      "category": "채널 미분류",
+      "aliases": [
+        "[리뷰이벤트] 디저트 or 아메리카노"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "채널 미분류"
+      ]
+    },
     {
       "id": "product-d6b07d6ba49ca307",
       "name": "[운영 안내]",
@@ -97,10 +109,12 @@
       "name": "그로서리 그랑도르 고다 미니 치즈 (1pcs)",
       "category": "치즈 & 스낵",
       "aliases": [
+        "그로서리 4 _ 그랑도르 고다 미니 치즈 (1pcs)",
         "그로서리 4_ 그랑도르 고다 미니 치즈 (1pcs)"
       ],
       "originalCategories": [
         "Cheese & Snack",
+        "채널 미분류",
         "치즈 & 스낵"
       ]
     },
@@ -126,7 +140,8 @@
       ],
       "originalCategories": [
         "Cheese & Snack",
-        "Grocery"
+        "Grocery",
+        "채널 미분류"
       ]
     },
     {
@@ -152,6 +167,7 @@
       ],
       "originalCategories": [
         "Cheese & Snack",
+        "채널 미분류",
         "치즈 & 스낵"
       ]
     },
@@ -164,6 +180,7 @@
       ],
       "originalCategories": [
         "Cheese & Snack",
+        "채널 미분류",
         "치즈 & 스낵"
       ]
     },
@@ -188,7 +205,8 @@
       ],
       "originalCategories": [
         "Cheese & Snack",
-        "Grocery"
+        "Grocery",
+        "채널 미분류"
       ]
     },
     {
@@ -245,10 +263,12 @@
       "name": "그로서리 퀼리 브레드스틱 오리지날",
       "category": "치즈 & 스낵",
       "aliases": [
+        "그로서리 11 _ 퀼리 브레드스틱 오리지날",
         "그로서리 12 _ 퀼리 브레드스틱 오리지날"
       ],
       "originalCategories": [
         "Cheese & Snack",
+        "채널 미분류",
         "치즈 & 스낵"
       ]
     },
@@ -262,6 +282,18 @@
       "originalCategories": [
         "Cheese & Snack",
         "Grocery"
+      ]
+    },
+    {
+      "id": "product-ce84676fe3598e48",
+      "name": "그로서리 프리코 미니 고다 치즈스틱 (1pcs)",
+      "category": "치즈 & 스낵",
+      "aliases": [
+        "그로서리 5 _ 프리코 미니 고다 치즈스틱 (1pcs)"
+      ],
+      "originalCategories": [
+        "Cheese & Snack",
+        "채널 미분류"
       ]
     },
     {
@@ -305,11 +337,13 @@
       "name": "그리너리 말차 아이스크림",
       "category": "아이스크림",
       "aliases": [
+        "그리너리 말차 아이스크림",
         "그리너리 말차 아이스크림 Greenery Matcha"
       ],
       "originalCategories": [
         "Ice Cream",
-        "아이스크림"
+        "아이스크림",
+        "채널 미분류"
       ]
     },
     {
@@ -335,7 +369,8 @@
       "originalCategories": [
         "Wine",
         "Wine & Beer",
-        "와인"
+        "와인",
+        "채널 미분류"
       ]
     },
     {
@@ -361,6 +396,19 @@
       "originalCategories": [
         "Dessert & Deli",
         "Lorenzo's Pizza"
+      ]
+    },
+    {
+      "id": "product-3282743c466f4848",
+      "name": "당근라페 치킨에그 샌드위치",
+      "category": "빵",
+      "aliases": [
+        "당근라페 치킨에그 샌드위치",
+        "당근라페 치킨에그 샌드위치 Carrot Rapee&Egg Sandwich"
+      ],
+      "originalCategories": [
+        "빵",
+        "채널 미분류"
       ]
     },
     {
@@ -400,7 +448,21 @@
       ],
       "originalCategories": [
         "배달앱",
-        "빵"
+        "빵",
+        "채널 미분류"
+      ]
+    },
+    {
+      "id": "product-b8771b1d997a5867",
+      "name": "더티 초코 크루아상",
+      "category": "빵",
+      "aliases": [
+        "더티 초코 크루아상",
+        "더티 초코 크루아상 Dirty Choco Croissant"
+      ],
+      "originalCategories": [
+        "빵",
+        "채널 미분류"
       ]
     },
     {
@@ -426,7 +488,8 @@
       ],
       "originalCategories": [
         "배달앱",
-        "빵"
+        "빵",
+        "채널 미분류"
       ]
     },
     {
@@ -439,6 +502,18 @@
       "originalCategories": [
         "SpecialtyCoffee",
         "스페셜티 커피"
+      ]
+    },
+    {
+      "id": "product-1f6430db654604b4",
+      "name": "디저트 or 아메리카노",
+      "category": "채널 미분류",
+      "aliases": [
+        "디저트 or 아메리카노"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -459,6 +534,7 @@
       "name": "딸기라떼",
       "category": "논커피",
       "aliases": [
+        "딸기 라떼",
         "딸기라떼 ICE",
         "딸기라떼 Strawberry Latte",
         "딸기라떼 Strawberry Latte ",
@@ -468,7 +544,8 @@
       "originalCategories": [
         "Non Coffee",
         "논커피",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -478,13 +555,15 @@
       "aliases": [
         "딸기 레몬에이드 Strawberry Lemonade",
         "딸기 레몬에이드 Strawberry Lemonade (ICED ONLY)",
+        "딸기레몬에이드",
         "딸기레몬에이드 Strawberry Lemonade",
         "딸기레몬에이드 Strawberry Lemonade (ICED ONLY)"
       ],
       "originalCategories": [
         "Non Coffee",
         "논커피",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -556,6 +635,19 @@
       ]
     },
     {
+      "id": "product-f457d42888d39a90",
+      "name": "뚱바나나라떼",
+      "category": "스페셜티 커피",
+      "aliases": [
+        "뚱바나나라떼",
+        "뚱바나나라떼 Banana Latte (ICED ONLY)"
+      ],
+      "originalCategories": [
+        "스페셜티 커피",
+        "채널 미분류"
+      ]
+    },
+    {
       "id": "product-67784e911076dc9f",
       "name": "라지 박스 4가지 맛 (900g)",
       "category": "젤라또",
@@ -565,7 +657,8 @@
       ],
       "originalCategories": [
         "배달앱",
-        "젤라또"
+        "젤라또",
+        "채널 미분류"
       ]
     },
     {
@@ -615,7 +708,8 @@
       "originalCategories": [
         "Dessert",
         "Dessert & Deli",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -628,7 +722,8 @@
       "originalCategories": [
         "Wine",
         "Wine & Beer",
-        "와인"
+        "와인",
+        "채널 미분류"
       ]
     },
     {
@@ -640,6 +735,7 @@
       ],
       "originalCategories": [
         "Lorenzo's Pizza",
+        "채널 미분류",
         "피자"
       ]
     },
@@ -710,18 +806,33 @@
       ]
     },
     {
+      "id": "product-a2188e1150d8b3ec",
+      "name": "레몬 글레이즈 휘낭시에",
+      "category": "빵",
+      "aliases": [
+        "레몬 글레이즈 휘낭시에",
+        "레몬 글레이즈 휘낭시에 Lemon Glazed Financier"
+      ],
+      "originalCategories": [
+        "빵",
+        "채널 미분류"
+      ]
+    },
+    {
       "id": "product-41c2742501d6acd3",
       "name": "레몬 머랭 클래식 크루아상",
       "category": "빵",
       "aliases": [
         "[ 마감 특가 27% 할인 ] 레몬 머랭 클래식 크루아상",
+        "레몬 머랭 클래식 크루아상",
         "레몬 머랭 클래식 크루아상 Lemon Meringue",
         "레몬 머랭 클래식 크루아상 Lemon Meringue Classic",
         "레몬 머랭 클래식 크루아상 Lemon Meringue Classic Croissant"
       ],
       "originalCategories": [
         "배달앱",
-        "빵"
+        "빵",
+        "채널 미분류"
       ]
     },
     {
@@ -734,7 +845,8 @@
       ],
       "originalCategories": [
         "Wine",
-        "와인"
+        "와인",
+        "채널 미분류"
       ]
     },
     {
@@ -769,11 +881,13 @@
       "name": "로투스 아이스크림",
       "category": "아이스크림",
       "aliases": [
+        "로투스 아이스크림",
         "로투스 아이스크림 Lotus Ice Cream"
       ],
       "originalCategories": [
         "Ice Cream",
-        "아이스크림"
+        "아이스크림",
+        "채널 미분류"
       ]
     },
     {
@@ -787,6 +901,7 @@
       "originalCategories": [
         "Lorenzo's Pizza",
         "배달앱",
+        "채널 미분류",
         "피자"
       ]
     },
@@ -803,7 +918,21 @@
       "originalCategories": [
         "Non Coffee",
         "논커피",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
+      ]
+    },
+    {
+      "id": "product-7211c8620d62d6a6",
+      "name": "마틸다 케이크",
+      "category": "케이크",
+      "aliases": [
+        "마틸다 케이크",
+        "마틸다 케이크 Matilda Cake"
+      ],
+      "originalCategories": [
+        "채널 미분류",
+        "케이크"
       ]
     },
     {
@@ -823,6 +952,7 @@
       "name": "말차 딸기 라떼",
       "category": "논커피",
       "aliases": [
+        "말차 딸기 라떼",
         "말차 딸기 라떼 Matcha Strawberry Lat (ICED ONLY)",
         "말차 딸기 라떼 Matcha Strawberry Latte (ICED O",
         "말차 딸기 라떼 Matcha Strawberry Latte (ICED ONLY)"
@@ -830,7 +960,8 @@
       "originalCategories": [
         "Non Coffee",
         "논커피",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -846,6 +977,7 @@
         "Cake",
         "Dessert",
         "배달앱",
+        "채널 미분류",
         "케이크"
       ]
     },
@@ -854,12 +986,14 @@
       "name": "말차 우베 라떼",
       "category": "논커피",
       "aliases": [
+        "말차 우베 라떼",
         "말차 우베 라떼 Matcha Ube Latte (ICED ONLY)"
       ],
       "originalCategories": [
         "Non Coffee",
         "논커피",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -872,7 +1006,8 @@
       ],
       "originalCategories": [
         "배달앱",
-        "빵"
+        "빵",
+        "채널 미분류"
       ]
     },
     {
@@ -884,7 +1019,8 @@
         "말차크림 크루아상 Matcha Cream Croissant"
       ],
       "originalCategories": [
-        "빵"
+        "빵",
+        "채널 미분류"
       ]
     },
     {
@@ -928,11 +1064,13 @@
       "name": "맥주 기린 (330ml)",
       "category": "맥주",
       "aliases": [
+        "맥주 14 _ 기린 330ml",
         "맥주14 _ 기린 330ml"
       ],
       "originalCategories": [
         "Beer",
-        "맥주"
+        "맥주",
+        "채널 미분류"
       ]
     },
     {
@@ -968,7 +1106,8 @@
       ],
       "originalCategories": [
         "Beer",
-        "맥주"
+        "맥주",
+        "채널 미분류"
       ]
     },
     {
@@ -976,11 +1115,13 @@
       "name": "맥주 삿포로 (330ml)",
       "category": "맥주",
       "aliases": [
+        "맥주 15 _ 삿포로 330ml",
         "맥주15 _ 삿포로 330ml"
       ],
       "originalCategories": [
         "Beer",
-        "맥주"
+        "맥주",
+        "채널 미분류"
       ]
     },
     {
@@ -992,7 +1133,8 @@
       ],
       "originalCategories": [
         "Beer",
-        "맥주"
+        "맥주",
+        "채널 미분류"
       ]
     },
     {
@@ -1005,7 +1147,8 @@
       ],
       "originalCategories": [
         "Beer",
-        "Wine & Beer"
+        "Wine & Beer",
+        "채널 미분류"
       ]
     },
     {
@@ -1018,7 +1161,8 @@
       ],
       "originalCategories": [
         "Beer",
-        "Wine & Beer"
+        "Wine & Beer",
+        "채널 미분류"
       ]
     },
     {
@@ -1043,7 +1187,8 @@
       ],
       "originalCategories": [
         "Beer",
-        "Wine & Beer"
+        "Wine & Beer",
+        "채널 미분류"
       ]
     },
     {
@@ -1055,7 +1200,8 @@
       ],
       "originalCategories": [
         "Beer",
-        "맥주"
+        "맥주",
+        "채널 미분류"
       ]
     },
     {
@@ -1068,7 +1214,8 @@
       "originalCategories": [
         "Beer",
         "Wine & Beer",
-        "맥주"
+        "맥주",
+        "채널 미분류"
       ]
     },
     {
@@ -1088,11 +1235,13 @@
       "name": "멜팅 초콜릿 아이스크림",
       "category": "아이스크림",
       "aliases": [
+        "멜팅 초콜릿 아이스크림",
         "멜팅 초콜릿 아이스크림 Melting Chocolate"
       ],
       "originalCategories": [
         "Ice Cream",
-        "아이스크림"
+        "아이스크림",
+        "채널 미분류"
       ]
     },
     {
@@ -1133,7 +1282,8 @@
       ],
       "originalCategories": [
         "배달앱",
-        "빵"
+        "빵",
+        "채널 미분류"
       ]
     },
     {
@@ -1146,7 +1296,8 @@
       ],
       "originalCategories": [
         "배달앱",
-        "젤라또"
+        "젤라또",
+        "채널 미분류"
       ]
     },
     {
@@ -1154,12 +1305,14 @@
       "name": "밀크티",
       "category": "논커피",
       "aliases": [
+        "밀크티",
         "밀크티(ICED ONLY) Milk Tea",
         "밀크티(Only Ice) Milk Tea"
       ],
       "originalCategories": [
         "Non Coffee",
-        "논커피"
+        "논커피",
+        "채널 미분류"
       ]
     },
     {
@@ -1167,11 +1320,13 @@
       "name": "바나나 푸딩",
       "category": "케이크",
       "aliases": [
+        "바나나 푸딩",
         "바나나 푸딩 Banana Pudding"
       ],
       "originalCategories": [
         "Cake",
         "Dessert",
+        "채널 미분류",
         "케이크"
       ]
     },
@@ -1181,6 +1336,7 @@
       "category": "스페셜티 커피",
       "aliases": [
         "바닐라 라떼 Vanilla Latte",
+        "바닐라라떼",
         "바닐라라떼 Vanilla Latte",
         "수제 바닐라 라떼",
         "수제 바닐라 라떼 Vanilla Latte",
@@ -1194,7 +1350,8 @@
         "SPECIALTYCOFFEE",
         "SpecialtyCoffee",
         "배달앱",
-        "스페셜티 커피"
+        "스페셜티 커피",
+        "채널 미분류"
       ]
     },
     {
@@ -1215,11 +1372,13 @@
       "category": "디저트",
       "aliases": [
         "버터떡 (3PCS)",
-        "버터떡 (3PCS) Butter Tteok"
+        "버터떡 (3PCS) Butter Tteok",
+        "버터떡 (3pcs)"
       ],
       "originalCategories": [
         "Dessert",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -1273,6 +1432,7 @@
       ],
       "originalCategories": [
         "배달앱",
+        "채널 미분류",
         "케이크"
       ]
     },
@@ -1289,6 +1449,7 @@
         "Cake",
         "Dessert",
         "배달앱",
+        "채널 미분류",
         "케이크"
       ]
     },
@@ -1318,6 +1479,18 @@
       ]
     },
     {
+      "id": "product-3e75536618f542a7",
+      "name": "브라질 원두 (200g)",
+      "category": "채널 미분류",
+      "aliases": [
+        "브라질 원두 BRAZIL (200g)"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "채널 미분류"
+      ]
+    },
+    {
       "id": "product-252c068a52c58b27",
       "name": "브루잉 과테말라",
       "category": "스페셜티 커피",
@@ -1331,7 +1504,8 @@
         "SPECIALTYCOFFEE",
         "SpecialtyCoffee",
         "배달앱",
-        "스페셜티 커피"
+        "스페셜티 커피",
+        "채널 미분류"
       ]
     },
     {
@@ -1348,7 +1522,8 @@
         "SPECIALTYCOFFEE",
         "SpecialtyCoffee",
         "배달앱",
-        "스페셜티 커피"
+        "스페셜티 커피",
+        "채널 미분류"
       ]
     },
     {
@@ -1365,7 +1540,8 @@
         "SPECIALTYCOFFEE",
         "SpecialtyCoffee",
         "배달앱",
-        "스페셜티 커피"
+        "스페셜티 커피",
+        "채널 미분류"
       ]
     },
     {
@@ -1381,7 +1557,8 @@
         "SPECIALTYCOFFEE",
         "SpecialtyCoffee",
         "배달앱",
-        "스페셜티 커피"
+        "스페셜티 커피",
+        "채널 미분류"
       ]
     },
     {
@@ -1397,7 +1574,8 @@
         "SPECIALTYCOFFEE",
         "SpecialtyCoffee",
         "배달앱",
-        "스페셜티 커피"
+        "스페셜티 커피",
+        "채널 미분류"
       ]
     },
     {
@@ -1518,6 +1696,7 @@
       "category": "논커피",
       "aliases": [
         "생과일레몬 에이드",
+        "생과일레몬에이드",
         "생과일레몬에이드 Homemade Lemonade",
         "생과일레몬에이드 Lemon Ade",
         "생과일레몬에이드 Lemon Ade ",
@@ -1527,7 +1706,8 @@
       "originalCategories": [
         "Non Coffee",
         "논커피",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -1535,12 +1715,14 @@
       "name": "서리태 흑임자",
       "category": "논커피",
       "aliases": [
+        "서리태 흑임자",
         "서리태 흑임자 Black Soybean & Sesame (ICED ONL",
         "서리태 흑임자 Black Soybean & Sesame (ICED ONLY)"
       ],
       "originalCategories": [
         "Non Coffee",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -1555,7 +1737,8 @@
       ],
       "originalCategories": [
         "Dessert",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -1577,11 +1760,13 @@
       "name": "수박 주스",
       "category": "논커피",
       "aliases": [
+        "수박 주스",
         "수박 주스 Watermelon Juice"
       ],
       "originalCategories": [
         "논커피",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -1691,13 +1876,15 @@
       "name": "수제 플레인 휘낭시에",
       "category": "빵",
       "aliases": [
+        "수제 플레인 휘낭시에",
         "수제 플레인 휘낭시에 Lorenzo's Financier",
         "수제 플레인 휘낭시에 Plain Financier"
       ],
       "originalCategories": [
         "Dessert",
         "Dessert & Deli",
-        "빵"
+        "빵",
+        "채널 미분류"
       ]
     },
     {
@@ -1762,7 +1949,8 @@
       ],
       "originalCategories": [
         "배달앱",
-        "젤라또"
+        "젤라또",
+        "채널 미분류"
       ]
     },
     {
@@ -1786,7 +1974,8 @@
       ],
       "originalCategories": [
         "Wine",
-        "와인"
+        "와인",
+        "채널 미분류"
       ]
     },
     {
@@ -1819,11 +2008,13 @@
       "name": "스파클링 더 오프닝",
       "category": "와인",
       "aliases": [
+        "스파클링 3 _ 더 오프닝",
         "스파클링 4 _ 더 오프닝"
       ],
       "originalCategories": [
         "Wine",
-        "와인"
+        "와인",
+        "채널 미분류"
       ]
     },
     {
@@ -1839,7 +2030,8 @@
       "originalCategories": [
         "Wine",
         "Wine & Beer",
-        "와인"
+        "와인",
+        "채널 미분류"
       ]
     },
     {
@@ -1865,7 +2057,8 @@
       ],
       "originalCategories": [
         "배달앱",
-        "스페셜티 커피"
+        "스페셜티 커피",
+        "채널 미분류"
       ]
     },
     {
@@ -1880,7 +2073,8 @@
       "originalCategories": [
         "Wine",
         "Wine & Beer",
-        "와인"
+        "와인",
+        "채널 미분류"
       ]
     },
     {
@@ -1896,7 +2090,8 @@
       "originalCategories": [
         "Wine",
         "Wine & Beer",
-        "와인"
+        "와인",
+        "채널 미분류"
       ]
     },
     {
@@ -1924,7 +2119,8 @@
       "originalCategories": [
         "Wine",
         "Wine & Beer",
-        "와인"
+        "와인",
+        "채널 미분류"
       ]
     },
     {
@@ -1980,7 +2176,8 @@
       "originalCategories": [
         "Wine",
         "Wine & Beer",
-        "와인"
+        "와인",
+        "채널 미분류"
       ]
     },
     {
@@ -1996,7 +2193,8 @@
       "originalCategories": [
         "Wine",
         "Wine & Beer",
-        "와인"
+        "와인",
+        "채널 미분류"
       ]
     },
     {
@@ -2004,6 +2202,7 @@
       "name": "스페셜티크림라떼",
       "category": "스페셜티 커피",
       "aliases": [
+        "스페셜티크림라떼",
         "스페셜티크림라떼 ICE",
         "스페셜티크림라떼 Specialty Cream Latte",
         "스페셜티크림라떼 Specialty Cream Latte ",
@@ -2014,7 +2213,8 @@
         "SPECIALTYCOFFEE",
         "SpecialtyCoffee",
         "배달앱",
-        "스페셜티 커피"
+        "스페셜티 커피",
+        "채널 미분류"
       ]
     },
     {
@@ -2044,19 +2244,21 @@
         "Dessert",
         "Dessert & Deli",
         "배달앱",
+        "채널 미분류",
         "케이크"
       ]
     },
     {
       "id": "product-7ef0a1162d940018",
       "name": "슬림 바스크 치즈케이크 커피 세트",
-      "category": "배달앱",
+      "category": "채널 미분류",
       "aliases": [
         "슬림 바스크 치즈케이크 커피 세트",
         "슬림 바스크 치즈케이크 커피 세트 *"
       ],
       "originalCategories": [
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -2077,11 +2279,14 @@
       "name": "시나몬 번 라떼",
       "category": "스페셜티 커피",
       "aliases": [
+        "시나몬 번 라떼",
         "시나몬 번 라떼 Cinnamon Bun Latte",
-        "시나몬 번 라떼 Cinnamon Bun Latte (ICED ONLY)"
+        "시나몬 번 라떼 Cinnamon Bun Latte (ICED ONLY)",
+        "시나몬 번 라떼 Cinnamon Bun Latte (ICED)"
       ],
       "originalCategories": [
-        "스페셜티 커피"
+        "스페셜티 커피",
+        "채널 미분류"
       ]
     },
     {
@@ -2089,11 +2294,15 @@
       "name": "시나몬 번 말차라떼",
       "category": "논커피",
       "aliases": [
+        "시나몬 번 말차라떼",
         "시나몬 번 말차라떼 Cinnamon Bun Matcha",
-        "시나몬 번 말차라떼 Cinnamon Bun Matcha (ICED ONL"
+        "시나몬 번 말차라떼 Cinnamon Bun Matcha (HOT)",
+        "시나몬 번 말차라떼 Cinnamon Bun Matcha (ICED ONL",
+        "시나몬 번 말차라떼 Cinnamon Bun Matcha Latte"
       ],
       "originalCategories": [
-        "논커피"
+        "논커피",
+        "채널 미분류"
       ]
     },
     {
@@ -2109,6 +2318,7 @@
         "Dessert",
         "Dessert & Deli",
         "배달앱",
+        "채널 미분류",
         "케이크"
       ]
     },
@@ -2149,7 +2359,8 @@
       ],
       "originalCategories": [
         "배달앱",
-        "빵"
+        "빵",
+        "채널 미분류"
       ]
     },
     {
@@ -2157,13 +2368,15 @@
       "name": "쑥 미숫가루",
       "category": "논커피",
       "aliases": [
+        "쑥 미숫가루",
         "쑥 미숫가루 Mugwort Roasted Grain L (ICED ONLY)",
         "쑥 미숫가루 Mugwort Roasted Grain Latte (ICED",
         "쑥 미숫가루 Mugwort Roasted Grain Latte (ICED ONLY)"
       ],
       "originalCategories": [
         "Non Coffee",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -2194,20 +2407,23 @@
         "SPECIALTYCOFFEE",
         "SpecialtyCoffee",
         "배달앱",
-        "스페셜티 커피"
+        "스페셜티 커피",
+        "채널 미분류"
       ]
     },
     {
       "id": "product-63cb575f1bb6fa0d",
       "name": "아메리카노 4잔",
-      "category": "배달앱",
+      "category": "채널 미분류",
       "aliases": [
         "아메리카노 4잔 set",
+        "아메리카노 4잔 set (HOT x 4)",
         "아메리카노 4잔 set (ICE x 4)",
         "아메리카노 4잔 set (ICED x 4)"
       ],
       "originalCategories": [
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -2215,6 +2431,7 @@
       "name": "아샷추",
       "category": "스페셜티 커피",
       "aliases": [
+        "아샷추",
         "아샷추 Ashotchu",
         "아샷추 Ashotchu (ICED ONLY)"
       ],
@@ -2222,7 +2439,8 @@
         "Non Coffee",
         "SpecialtyCoffee",
         "배달앱",
-        "스페셜티 커피"
+        "스페셜티 커피",
+        "채널 미분류"
       ]
     },
     {
@@ -2242,13 +2460,15 @@
       "name": "애사비",
       "category": "논커피",
       "aliases": [
+        "애사비",
         "애사비 Apple Cider Vinegar (ICED ONLY)",
         "애플 사이다 비니거 Apple Cider Vinegar (ICED ONLY)"
       ],
       "originalCategories": [
         "Non Coffee",
         "논커피",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -2270,6 +2490,7 @@
       "name": "얼그레이",
       "category": "논커피",
       "aliases": [
+        "얼그레이",
         "얼그레이 Earl Grey",
         "얼그레이 티",
         "얼그레이 티 ",
@@ -2280,7 +2501,8 @@
       "originalCategories": [
         "Non Coffee",
         "논커피",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -2293,7 +2515,34 @@
       ],
       "originalCategories": [
         "배달앱",
-        "빵"
+        "빵",
+        "채널 미분류"
+      ]
+    },
+    {
+      "id": "product-b5ca96cecea98c16",
+      "name": "얼그레이 무화과 복숭아 케이크",
+      "category": "케이크",
+      "aliases": [
+        "얼그레이 무화과 복숭아 케이크",
+        "얼그레이 무화과 복숭아 케이크 Earl Grey Fig & Peach C"
+      ],
+      "originalCategories": [
+        "채널 미분류",
+        "케이크"
+      ]
+    },
+    {
+      "id": "product-7a981475d092953b",
+      "name": "얼그레이 무화과 케이크",
+      "category": "케이크",
+      "aliases": [
+        "얼그레이 무화과 케이크",
+        "얼그레이 무화과 케이크 Earl Grey Fig Cake"
+      ],
+      "originalCategories": [
+        "채널 미분류",
+        "케이크"
       ]
     },
     {
@@ -2301,12 +2550,14 @@
       "name": "에스프레소",
       "category": "스페셜티 커피",
       "aliases": [
+        "에스프레소",
         "에스프레소 Espresso"
       ],
       "originalCategories": [
         "SPECIALTYCOFFEE",
         "SpecialtyCoffee",
-        "스페셜티 커피"
+        "스페셜티 커피",
+        "채널 미분류"
       ]
     },
     {
@@ -2314,6 +2565,7 @@
       "name": "에스프레소 밀크티",
       "category": "스페셜티 커피",
       "aliases": [
+        "에스프레소 밀크티",
         "에스프레소 밀크티 Espresso Milk Tea",
         "에스프레소 밀크티 Espresso Milk Tea ",
         "에스프레소 밀크티 Espresso Milk Tea (ICED ONLY)",
@@ -2324,7 +2576,8 @@
         "SPECIALTYCOFFEE",
         "SpecialtyCoffee",
         "배달앱",
-        "스페셜티 커피"
+        "스페셜티 커피",
+        "채널 미분류"
       ]
     },
     {
@@ -2332,12 +2585,14 @@
       "name": "에스프레소콘파냐",
       "category": "스페셜티 커피",
       "aliases": [
+        "에스프레소 콘파냐",
         "에스프레소콘파냐 Espresso Con Panna"
       ],
       "originalCategories": [
         "SPECIALTYCOFFEE",
         "SpecialtyCoffee",
-        "스페셜티 커피"
+        "스페셜티 커피",
+        "채널 미분류"
       ]
     },
     {
@@ -2403,7 +2658,20 @@
         "Dessert",
         "Dessert & Deli",
         "배달앱",
+        "채널 미분류",
         "케이크"
+      ]
+    },
+    {
+      "id": "product-cbc33922f57ab860",
+      "name": "오레오 드림 치즈 케이크 (오레오 치즈 케이크)",
+      "category": "채널 미분류",
+      "aliases": [
+        "오레오 드림 치즈 케이크 (오레오 치즈 케이크)"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -2445,7 +2713,8 @@
       "originalCategories": [
         "Dessert",
         "Dessert & Deli",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -2453,12 +2722,14 @@
       "name": "우베 라떼",
       "category": "논커피",
       "aliases": [
+        "우베 라떼",
         "우베 라떼 Ube Latte (ICED ONLY)"
       ],
       "originalCategories": [
         "Non Coffee",
         "논커피",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -2472,7 +2743,8 @@
       ],
       "originalCategories": [
         "Dessert",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -2480,11 +2752,13 @@
       "name": "우베 아이스크림",
       "category": "아이스크림",
       "aliases": [
+        "우베 아이스크림",
         "우베 아이스크림 Ube"
       ],
       "originalCategories": [
         "Ice Cream",
-        "아이스크림"
+        "아이스크림",
+        "채널 미분류"
       ]
     },
     {
@@ -2492,13 +2766,15 @@
       "name": "우베 에스프레소 라떼",
       "category": "스페셜티 커피",
       "aliases": [
+        "우베 에스프레소 라떼",
         "우베 에스프레소 라떼 Ube Espresso Latte (ICED ONL",
         "우베 에스프레소 라떼 Ube Espresso Latte (ICED ONLY)"
       ],
       "originalCategories": [
         "SpecialtyCoffee",
         "배달앱",
-        "스페셜티 커피"
+        "스페셜티 커피",
+        "채널 미분류"
       ]
     },
     {
@@ -2506,6 +2782,7 @@
       "name": "유기농제주말차라떼",
       "category": "논커피",
       "aliases": [
+        "유기농 제주 말차 라떼",
         "유기농제주말차라떼",
         "유기농제주말차라떼 Matcha Latt",
         "유기농제주말차라떼 Matcha Latte",
@@ -2517,7 +2794,8 @@
       "originalCategories": [
         "Non Coffee",
         "논커피",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -2525,13 +2803,15 @@
       "name": "유기농제주말차초코라떼",
       "category": "논커피",
       "aliases": [
+        "유기농 제주 말차 초코 라떼",
         "유기농제주말차초코라떼 Matcha Choco Latte",
         "유기농제주말차초코라떼 Matcha Choco Latte (ICED ONLY)"
       ],
       "originalCategories": [
         "Non Coffee",
         "논커피",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -2539,11 +2819,13 @@
       "name": "이코복스 아포가토",
       "category": "아이스크림",
       "aliases": [
+        "이코복스 아포가토",
         "이코복스 아포가토 Ikovox's Affogato"
       ],
       "originalCategories": [
         "Ice Cream",
-        "아이스크림"
+        "아이스크림",
+        "채널 미분류"
       ]
     },
     {
@@ -2551,11 +2833,13 @@
       "name": "제로슈가 레몬에이드",
       "category": "논커피",
       "aliases": [
+        "제로슈가 레몬에이드",
         "제로슈가 레몬에이드 Zero Sugar Lemon Ade"
       ],
       "originalCategories": [
         "Non Coffee",
-        "논커피"
+        "논커피",
+        "채널 미분류"
       ]
     },
     {
@@ -2563,11 +2847,13 @@
       "name": "제로슈가바닐라라떼",
       "category": "스페셜티 커피",
       "aliases": [
+        "제로슈가 바닐라라떼",
         "제로슈가바닐라라떼 Zero Sugar Vanilla Latte"
       ],
       "originalCategories": [
         "SPECIALTYCOFFEE",
-        "SpecialtyCoffee"
+        "SpecialtyCoffee",
+        "채널 미분류"
       ]
     },
     {
@@ -2575,12 +2861,14 @@
       "name": "제로슈가시럽라떼",
       "category": "스페셜티 커피",
       "aliases": [
+        "제로슈가시럽라떼",
         "제로슈가시럽라떼 Zero Sugar Latte"
       ],
       "originalCategories": [
         "SPECIALTYCOFFEE",
         "SpecialtyCoffee",
-        "스페셜티 커피"
+        "스페셜티 커피",
+        "채널 미분류"
       ]
     },
     {
@@ -2596,6 +2884,7 @@
         "Dessert",
         "Dessert & Deli",
         "배달앱",
+        "채널 미분류",
         "케이크"
       ]
     },
@@ -2613,6 +2902,7 @@
         "Wine",
         "Wine & Beer",
         "와인",
+        "채널 미분류",
         "케이크"
       ]
     },
@@ -2626,7 +2916,8 @@
       "originalCategories": [
         "Dessert",
         "Wine",
-        "Wine & Beer"
+        "Wine & Beer",
+        "채널 미분류"
       ]
     },
     {
@@ -2645,13 +2936,14 @@
     {
       "id": "product-58be20e4cd412df8",
       "name": "제스티 라임 파이 커피 세트",
-      "category": "배달앱",
+      "category": "채널 미분류",
       "aliases": [
         "제스티 라임 파이 커피 세트",
         "제스티 라임 파이 커피 세트 *"
       ],
       "originalCategories": [
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -2659,11 +2951,13 @@
       "name": "제주 감귤 초콜릿 맛 케이크",
       "category": "케이크",
       "aliases": [
+        "제주 감귤 초콜릿 맛 케이크",
         "제주 감귤 초콜릿 맛 케이크 Tangerine Choc",
         "제주 감귤 초콜릿 맛 케이크 Tangerine Chocolate"
       ],
       "originalCategories": [
         "배달앱",
+        "채널 미분류",
         "케이크"
       ]
     },
@@ -2720,13 +3014,15 @@
       "name": "청포도 에이드",
       "category": "논커피",
       "aliases": [
+        "청포도 에이드",
         "청포도 에이드 Green Grape Ade",
         "청포도 에이드 Green Grape Ade (ICED ONLY)"
       ],
       "originalCategories": [
         "Non Coffee",
         "논커피",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -2784,7 +3080,8 @@
       "originalCategories": [
         "Non Coffee",
         "논커피",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -2852,7 +3149,8 @@
       ],
       "originalCategories": [
         "배달앱",
-        "빵"
+        "빵",
+        "채널 미분류"
       ]
     },
     {
@@ -2883,7 +3181,8 @@
         "SPECIALTYCOFFEE",
         "SpecialtyCoffee",
         "배달앱",
-        "스페셜티 커피"
+        "스페셜티 커피",
+        "채널 미분류"
       ]
     },
     {
@@ -2903,7 +3202,8 @@
         "SPECIALTYCOFFEE",
         "SpecialtyCoffee",
         "배달앱",
-        "스페셜티 커피"
+        "스페셜티 커피",
+        "채널 미분류"
       ]
     },
     {
@@ -2911,6 +3211,7 @@
       "name": "카푸치노",
       "category": "스페셜티 커피",
       "aliases": [
+        "카푸치노",
         "카푸치노 (HOT ONLY)",
         "카푸치노 (Only Hot)",
         "카푸치노 Cappuccino ",
@@ -2923,7 +3224,8 @@
         "SPECIALTYCOFFEE",
         "SpecialtyCoffee",
         "배달앱",
-        "스페셜티 커피"
+        "스페셜티 커피",
+        "채널 미분류"
       ]
     },
     {
@@ -2931,6 +3233,7 @@
       "name": "캐모마일",
       "category": "논커피",
       "aliases": [
+        "캐모마일",
         "캐모마일 Chamomile",
         "캐모마일 티",
         "캐모마일 티 ",
@@ -2943,7 +3246,8 @@
       "originalCategories": [
         "Non Coffee",
         "논커피",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -2951,12 +3255,14 @@
       "name": "캐모마일 애플 아이스티",
       "category": "논커피",
       "aliases": [
+        "캐모마일 애플 아이스티",
         "캐모마일 애플 아이스티 Chamomile Apple (ICED ONLY)",
         "캐모마일 애플 아이스티 Chamomile Apple Iced Tea"
       ],
       "originalCategories": [
         "Non Coffee",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -3038,14 +3344,39 @@
     {
       "id": "product-55e1f0bf93f6bf0c",
       "name": "콜롬비아 디카페인 원두",
-      "category": "배달앱",
+      "category": "채널 미분류",
       "aliases": [
         "콜롬비아 디카페인 원두",
         "콜롬비아 디카페인 원두 COLOMBIA DECAF",
         "콜롬비아 디카페인 원두 COLOMBIA DECAF "
       ],
       "originalCategories": [
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
+      ]
+    },
+    {
+      "id": "product-745b716c74402397",
+      "name": "콜롬비아 디카페인 원두 (200g)",
+      "category": "채널 미분류",
+      "aliases": [
+        "콜롬비아 디카페인 원두 COLOMBIA DECAF (200g)"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "채널 미분류"
+      ]
+    },
+    {
+      "id": "product-10be5915b11a24f7",
+      "name": "콰트로 스타조니 (9인치)",
+      "category": "채널 미분류",
+      "aliases": [
+        "콰트로 스타조니 (9인치)"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -3082,7 +3413,8 @@
       ],
       "originalCategories": [
         "배달앱",
-        "빵"
+        "빵",
+        "채널 미분류"
       ]
     },
     {
@@ -3112,7 +3444,8 @@
       "originalCategories": [
         "Bakery",
         "Dessert",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -3126,7 +3459,8 @@
       "originalCategories": [
         "Bakery",
         "Dessert",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -3134,12 +3468,14 @@
       "name": "클래식 이탈리안 티라미수",
       "category": "케이크",
       "aliases": [
+        "클래식 이탈리안 티라미수",
         "클래식 이탈리안 티라미수 Classic Italian Tiramisu"
       ],
       "originalCategories": [
         "Cake",
         "Dessert",
         "Dessert & Deli",
+        "채널 미분류",
         "케이크"
       ]
     },
@@ -3157,16 +3493,30 @@
       ]
     },
     {
+      "id": "product-1cdc69f978acc4bb",
+      "name": "클래식 크루아상 + 커피 세트",
+      "category": "빵",
+      "aliases": [
+        "클래식 크루아상 + 커피 세트"
+      ],
+      "originalCategories": [
+        "빵",
+        "채널 미분류"
+      ]
+    },
+    {
       "id": "product-4011f1498b5741c4",
       "name": "클래식 크루아상 잠봉 샌드위치",
       "category": "빵",
       "aliases": [
         "[ 마감특가 20% 할인 ] 클래식 크루아상 잠봉 샌드위치",
+        "클래식 크루아상 잠봉 샌드위치",
         "클래식 크루아상 잠봉 샌드위치 Classic Croissant Jambo"
       ],
       "originalCategories": [
         "Bakery",
-        "빵"
+        "빵",
+        "채널 미분류"
       ]
     },
     {
@@ -3199,11 +3549,13 @@
       "name": "토마토 레몬에이드",
       "category": "논커피",
       "aliases": [
+        "토마토 레몬에이드",
         "토마토 레몬에이드 Tomato Lemonade"
       ],
       "originalCategories": [
         "논커피",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -3263,7 +3615,7 @@
     {
       "id": "product-c02c26b6c9cc6cbf",
       "name": "펑션원 블렌드 원두",
-      "category": "배달앱",
+      "category": "채널 미분류",
       "aliases": [
         "펑션원 블렌드 원두",
         "펑션원 블렌드 원두 FUNKTION  1",
@@ -3271,19 +3623,21 @@
         "펑션원 블렌드 원두 FUNKTION 1"
       ],
       "originalCategories": [
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
       "id": "product-f335075e86ffaac7",
       "name": "펑션원 블렌드 원두 (200g)",
-      "category": "배달앱",
+      "category": "채널 미분류",
       "aliases": [
         "펑션원 블렌드 원두 FUNKTION  1 (200g)",
         "펑션원 블렌드 원두 FUNKTION 1 (200g)"
       ],
       "originalCategories": [
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -3303,15 +3657,17 @@
     {
       "id": "product-161d23bf62e0ac74",
       "name": "펑션투 블렌드 원두",
-      "category": "배달앱",
+      "category": "채널 미분류",
       "aliases": [
         "펑션투 블렌드 원두",
+        "펑션투 블렌드 원두 FUNKTION 2",
         "평션투 블렌드 원두 FUNKTION  2",
         "평션투 블렌드 원두 FUNKTION 2",
         "평션투 블렌드 원두 FUNKTION 2 "
       ],
       "originalCategories": [
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -3337,6 +3693,7 @@
       "originalCategories": [
         "Lorenzo's Pizza",
         "배달앱",
+        "채널 미분류",
         "피자"
       ]
     },
@@ -3345,6 +3702,7 @@
       "name": "페퍼민트",
       "category": "논커피",
       "aliases": [
+        "페퍼민트",
         "페퍼민트 Peppermint",
         "페퍼민트 티",
         "페퍼민트 티 (ICE)",
@@ -3355,7 +3713,8 @@
       "originalCategories": [
         "Non Coffee",
         "논커피",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -3368,7 +3727,8 @@
       ],
       "originalCategories": [
         "배달앱",
-        "빵"
+        "빵",
+        "채널 미분류"
       ]
     },
     {
@@ -3388,11 +3748,13 @@
       "name": "프레시 스트로베리 아이스크림",
       "category": "아이스크림",
       "aliases": [
+        "프레시 스트로베리 아이스크림",
         "프레시 스트로베리 아이스크림 Fresh Strawberry"
       ],
       "originalCategories": [
         "Ice Cream",
-        "아이스크림"
+        "아이스크림",
+        "채널 미분류"
       ]
     },
     {
@@ -3408,6 +3770,7 @@
         "Dessert",
         "Dessert & Deli",
         "배달앱",
+        "채널 미분류",
         "케이크"
       ]
     },
@@ -3416,11 +3779,13 @@
       "name": "플레인 밀크 아이스크림",
       "category": "아이스크림",
       "aliases": [
+        "플레인 밀크 아이스크림",
         "플레인 밀크 아이스크림 Plain Milk"
       ],
       "originalCategories": [
         "Ice Cream",
-        "아이스크림"
+        "아이스크림",
+        "채널 미분류"
       ]
     },
     {
@@ -3433,7 +3798,45 @@
       ],
       "originalCategories": [
         "배달앱",
-        "빵"
+        "빵",
+        "채널 미분류"
+      ]
+    },
+    {
+      "id": "product-cb98c835310c87b8",
+      "name": "플레인 휘낭시에",
+      "category": "채널 미분류",
+      "aliases": [
+        "플레인 휘낭시에"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "채널 미분류"
+      ]
+    },
+    {
+      "id": "product-faee860d269598ea",
+      "name": "플레인 휘낭시에 (플레인)",
+      "category": "채널 미분류",
+      "aliases": [
+        "플레인 휘낭시에 (플레인)"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "채널 미분류"
+      ]
+    },
+    {
+      "id": "product-c6a087e16ce0edb5",
+      "name": "피냐 콜라다 스퀘어 크루아상",
+      "category": "빵",
+      "aliases": [
+        "피냐 콜라다 스퀘어 크루아상",
+        "피냐 콜라다 스퀘어 크루아상 Pina Colada Square Crois"
+      ],
+      "originalCategories": [
+        "빵",
+        "채널 미분류"
       ]
     },
     {
@@ -3453,11 +3856,13 @@
       "name": "피자 & 맥주 세트",
       "category": "피자",
       "aliases": [
+        "피자 & 맥주 세트",
         "피자 & 맥주 세트 Pizza & Beer Set",
         "피자 & 맥주 세트 Pizza + Beer Set"
       ],
       "originalCategories": [
         "Lorenzo's Pizza",
+        "채널 미분류",
         "피자"
       ]
     },
@@ -3466,10 +3871,12 @@
       "name": "피자 & 커피 세트",
       "category": "피자",
       "aliases": [
+        "피자 & 커피 세트",
         "피자 & 커피 세트 Pizza & Coffee Set"
       ],
       "originalCategories": [
         "Lorenzo's Pizza",
+        "채널 미분류",
         "피자"
       ]
     },
@@ -3487,7 +3894,8 @@
       "originalCategories": [
         "Non Coffee",
         "논커피",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -3500,7 +3908,8 @@
       ],
       "originalCategories": [
         "배달앱",
-        "빵"
+        "빵",
+        "채널 미분류"
       ]
     },
     {
@@ -3508,11 +3917,15 @@
       "name": "호지티라떼",
       "category": "논커피",
       "aliases": [
+        "호지티라떼",
         "호지티라떼 Hoji Tea Latte",
-        "호지티라떼 Hoji Tea Latte (ICED ONLY)"
+        "호지티라떼 Hoji Tea Latte (HOT)",
+        "호지티라떼 Hoji Tea Latte (ICED ONLY)",
+        "호지티라떼 Hoji Tea Latte (ICED)"
       ],
       "originalCategories": [
-        "논커피"
+        "논커피",
+        "채널 미분류"
       ]
     },
     {
@@ -3524,7 +3937,8 @@
       ],
       "originalCategories": [
         "Wine",
-        "와인"
+        "와인",
+        "채널 미분류"
       ]
     },
     {
@@ -3578,7 +3992,8 @@
       "originalCategories": [
         "Wine",
         "Wine & Beer",
-        "와인"
+        "와인",
+        "채널 미분류"
       ]
     },
     {
@@ -3645,7 +4060,8 @@
       "originalCategories": [
         "Wine",
         "Wine & Beer",
-        "와인"
+        "와인",
+        "채널 미분류"
       ]
     },
     {
@@ -3673,7 +4089,8 @@
       "originalCategories": [
         "Wine",
         "Wine & Beer",
-        "와인"
+        "와인",
+        "채널 미분류"
       ]
     },
     {
@@ -3725,7 +4142,21 @@
       ],
       "originalCategories": [
         "배달앱",
-        "빵"
+        "빵",
+        "채널 미분류"
+      ]
+    },
+    {
+      "id": "product-aabcdc1f3d0c5cce",
+      "name": "휘낭시에 선물세트 (5종)",
+      "category": "빵",
+      "aliases": [
+        "휘낭시에 선물세트 (5종)",
+        "휘낭시에 선물세트 (5종) Financier Gift Box"
+      ],
+      "originalCategories": [
+        "빵",
+        "채널 미분류"
       ]
     },
     {
@@ -3733,6 +4164,7 @@
       "name": "히비스커스 라떼",
       "category": "논커피",
       "aliases": [
+        "히비스커스 라떼",
         "히비스커스 라떼 Hibiscus Latte",
         "히비스커스 라떼 Hibiscus Latte ",
         "히비스커스 라떼 Hibiscus Latte (ICED ONLY)",
@@ -3741,7 +4173,8 @@
       "originalCategories": [
         "Non Coffee",
         "논커피",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -3758,7 +4191,8 @@
       "originalCategories": [
         "Non Coffee",
         "논커피",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     }
   ]

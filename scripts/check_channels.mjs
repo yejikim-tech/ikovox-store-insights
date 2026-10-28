@@ -1,0 +1,26 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {createProductCatalog} from '../dist/product-catalog.js';
+import {createSalesView} from '../dist/sales-view.js';
+const read=p=>JSON.parse(fs.readFileSync(new URL('../'+p,import.meta.url)));
+const c=read('dist/channel-data.json'),a=read('dist/analysis-data.json'),b=read('dist/data.json'),master=read('dist/product-master.json');
+const sum=(rs,k)=>rs.reduce((n,r)=>n+(r[k]||0),0);
+assert.equal(c.products.length,new Set(c.products.map(r=>JSON.stringify([r.date,r.name,r.channel,r.reason]))).size);
+for(const d of c.daily)for(const channel of ['otter','naver'])assert.equal(sum(c.products.filter(r=>r.date===d.date&&r.channel===channel),'sales'),d[channel],d.date+channel);
+assert.equal(sum(c.products.filter(r=>r.channel==='naver'),'sales'),15064200);
+assert.equal(c.exceptions['상품 상세 미제공'],193);assert.equal(c.exceptions['변경·부분취소 상품 대조 필요'],10);
+assert.ok(c.products.some(r=>r.unallocated&&r.unknownQty));
+assert.equal(sum(c.products.filter(r=>r.date==='2026-10-27'&&r.channel==='otter'),'sales'),286600);
+for(const r of c.products){assert.ok(Number.isInteger(r.sales));assert.ok(Number.isInteger(r.qty));assert.equal(r.sales,r.gross-r.discount);assert.ok(!('key' in r));assert.ok(!('orderId' in r));}
+assert.equal(c.months[0].posDays,31);assert.equal(c.months[0].legacy,null);assert.equal(c.months[0].otter,null);
+assert.equal(c.months[9].otter,11182300);assert.equal(c.months[9].payhere,75574100);
+const catalog=createProductCatalog(master),americano=c.products.find(r=>r.name.startsWith('아메리카노')&&!r.name.includes('세트'));
+assert.equal(catalog.row(americano).productId,catalog.row(a.products.find(r=>r.name==='아메리카노 Americano')).productId);
+const iso=d=>d.toISOString().slice(0,10),date=s=>new Date(s+'T00:00:00Z');
+globalThis.location={hash:'#dashboard?from=2026-01-01&to=2026-01-31&tab=products'};
+const api={getAnalysis:()=>a,getChannels:()=>c,getRows:()=>b.daily,catalog:()=>catalog,read:(k,d)=>d,today:'2026-10-28',sum,date,iso,add:(s,n)=>iso(new Date(+date(s)+n*86400000)),esc:String,nf:n=>Math.round(n).toLocaleString('ko-KR'),won:n=>'₩'+n};
+const view=createSalesView(api), data=view.data();assert.equal(data.products.length,a.products.length+c.products.length);
+assert.equal(view.stats(['2026-01-01'],'pos').total,sum(a.products.filter(r=>r.date==='2026-01-01'),'sales'));
+assert.ok(view.render().includes('전체 채널 · 잠정 합산'));
+assert.equal(b.daily.length,119,'Unverified source subtotal must not replace store ledger');
+console.log('Channel aggregation, source reconciliation, missing versus zero, partial cancellation isolation, quantity, shared catalog and POS-only scope checks passed.');

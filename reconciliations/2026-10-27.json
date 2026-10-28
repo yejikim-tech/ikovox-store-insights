@@ -1,0 +1,42 @@
+{
+  "business_date": "2026-10-27",
+  "store": "이코복스커피 스튜디오 이태원점",
+  "verified_on": "2026-10-28",
+  "method": "Logged-in browser UI; no private API or credential extraction",
+  "sources": [
+    {
+      "provider": "payhere-via-smartplace",
+      "sales": 1470400,
+      "orders": 111,
+      "basis": "어제 선택, 순매출 및 취소 차감 유효 결제 횟수",
+      "url": "https://new.smartplace.naver.com/bizes/place/9592135/statistics?bookingBusinessId=1587066&menu=place&placeTab=sales"
+    },
+    {
+      "provider": "otter",
+      "sales": 286600,
+      "orders": 13,
+      "basis": "2026-10-27 00:00–23:59:59.999 KST, 순 매출 및 완료된 주문. 전체14건 및 총매출288600원은 미사용",
+      "url": "https://manager.tryotter.com/analytics/sales/business"
+    },
+    {
+      "provider": "naver-order",
+      "sales": 0,
+      "orders": 0,
+      "basis": "접수일 기준, 2026-10-27 일간, 주문상태 전체, 검색어 없음, 유형·쿠폰 제한 없음. 조회결과0건 확인",
+      "url": "https://partner.booking.naver.com/bizes/1587066/order-list-view?dateDropdownType=TODAY&startDateTime=2026-10-27&endDateTime=2026-10-27&dateFilter=CONFIRMDATE&searchValueCode=PICKUP_NO"
+    }
+  ],
+  "total": {
+    "sales": 1757000,
+    "orders": 124,
+    "average": 14169.354838709678
+  },
+  "sheet": {
+    "id": "199eVxgoHIhX_wllhiukXI9HgeBjmlzS9v-dFKYF7i4s",
+    "sheet": "일별매출입력",
+    "row": 684,
+    "existing_sales": 1757000,
+    "existing_orders": 124,
+    "action": "unchanged; already matches verified sources"
+  }
+}

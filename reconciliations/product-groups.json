@@ -1,6 +1,6 @@
 {
-  "originalPairs": 1100,
-  "products": 534,
+  "originalPairs": 1102,
+  "products": 536,
   "mergedGroups": [
     {
       "id": "product-faea5e120fc542ef",
@@ -2398,6 +2398,7 @@
       "category": "스페셜티 커피",
       "aliases": [
         "아메리카노",
+        "아메리카노 ",
         "아메리카노 Americano",
         "아메리카노 Americano ",
         "아메리카노 Americano (HOT)",
@@ -2893,8 +2894,8 @@
     },
     {
       "id": "product-1034f12185c8f1fa",
-      "name": "제스티 라임 파이 + 글라스 와인(화이트) 세트",
-      "category": "와인",
+      "name": "제스티 라임 파이 + 글라스 와인 (화이트) 세트",
+      "category": "케이크",
       "aliases": [
         "제스티 라임 파이 + 글라스 와인 (화이트) 세트",
         "제스티 라임 파이 + 글라스 와인(화이트) 세트"

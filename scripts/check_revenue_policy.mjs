@@ -12,7 +12,7 @@ const html=view.render();
 assert.ok(html.includes('₩90,555,300'),'Default month uses existing combined ledger');
 assert.ok(!html.includes('₩76,231,800'),'POS product total cannot replace store total');
 assert.ok(!html.includes('₩803,858,280'),'POS annual total cannot replace store annual total');
-assert.ok(html.includes('연 누적 매장 총매출')&&html.includes('확인 필요'));
+assert.ok(html.includes('확인된 기간 매장 매출 합계')&&html.includes('연 누계 아님'));
 assert.ok(html.includes('페이히어 + 오터 + 네이버'));
 assert.ok(html.includes('82,600')&&html.includes('원본 합계 − 표시 총매출'),'Show the currently loaded channel originals and preserve their mismatch');
 assert.ok(html.includes('77,399,100')&&html.includes('1,739,500')&&html.includes('11,499,300'));

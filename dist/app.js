@@ -1,6 +1,6 @@
-import {createWeeklyView} from './weekly-view.js?v=20261029-weekly-v1';
+import {createWeeklyView} from './weekly-view.js?v=20261029-yoy-v1';
 import {createProductCatalog} from './product-catalog.js?v=20261028-weather-v1';
-import {createSalesView} from './sales-view.js?v=20261029-weekly-v1';
+import {createSalesView} from './sales-view.js?v=20261029-yoy-v1';
 import {createImportView} from './import-view.js?v=20261029-closing-v1';
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

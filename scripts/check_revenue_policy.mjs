@@ -21,3 +21,10 @@ const audit=JSON.parse(fs.readFileSync(new URL('../reconciliations/2026-10-chann
 assert.equal(audit.payhere.sales+audit.otter.sales+audit.naver.sales,audit.sum_before_duplicate_and_date_review);
 assert.equal(audit.sum_before_duplicate_and_date_review-audit.existing_daily_total,audit.difference);
 console.log('Combined revenue policy, locked store scope, complete annual coverage and preserved historical audit arithmetic verified.');
+
+const yoy=view.result('2026-10-28','2026-10-28','year');
+assert.equal(yoy.cur.total,1825000);assert.equal(yoy.prev.total,2475500);assert.equal(yoy.comparable,true);
+assert.equal(yoy.cur.total-yoy.prev.total,-650500);
+const weekly=view.result('2026-10-28','2026-10-28','week');assert.equal(weekly.cur.total,2142000);
+location.hash='#dashboard?from=2026-10-28&to=2026-10-28&tab=trend';
+const detail=view.render();assert.ok(detail.includes('전년 같은 날짜 · POS'));assert.ok(detail.includes('올해 같은 기간 POS ₩1,825,000 기준'));assert.ok(detail.includes('₩2,475,500'));

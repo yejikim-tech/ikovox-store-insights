@@ -70,5 +70,5 @@ export function forecastMonth(input,month,today,weatherPlan={}){
     trend:fit.trend,rawTrend:fit.rawTrend,weekday:fit.weekday,weatherKnown:fit.weatherKnown,weatherNormal:fit.weatherNormal,weatherFactors:fit.weatherFactors,
     evaluationStart:validation.results[0]?.origin,evaluationEnd:validation.results.at(-1)?.origin,horizon,
     provisional:!valid.length||!calibrated,weatherScenario,
-    stale:asof<add(today,-1),note:'기존 매장 총매출표 기준 조건부 예측. 채널 대조 차이·행사·공휴일·품절·영업시간 변경은 오차에 영향을 줄 수 있습니다.'};
+    stale:asof<add(today,-1),note:'확인한 채널 원본의 통합 매출 기준 조건부 예측. 행사·공휴일·품절·영업시간 변경은 오차에 영향을 줄 수 있습니다.'};
 }

@@ -1,0 +1,468 @@
+[
+  {
+    "date": "2026-09-01",
+    "sales": 1708100,
+    "orders": 125,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-02",
+    "sales": 1862600,
+    "orders": 144,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-03",
+    "sales": 2798700,
+    "orders": 204,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-04",
+    "sales": 3064900,
+    "orders": 244,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-05",
+    "sales": 4369700,
+    "orders": 327,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-06",
+    "sales": 3462800,
+    "orders": 241,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-07",
+    "sales": 2247900,
+    "orders": 163,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-08",
+    "sales": 1988100,
+    "orders": 153,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-09",
+    "sales": 2481900,
+    "orders": 173,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-10",
+    "sales": 2129000,
+    "orders": 143,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-11",
+    "sales": 2888800,
+    "orders": 213,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-12",
+    "sales": 4842900,
+    "orders": 347,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-13",
+    "sales": 3260100,
+    "orders": 228,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-14",
+    "sales": 2322300,
+    "orders": 156,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-15",
+    "sales": 2226600,
+    "orders": 160,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-16",
+    "sales": 1960600,
+    "orders": 148,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-17",
+    "sales": 2672600,
+    "orders": 193,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-18",
+    "sales": 3604200,
+    "orders": 287,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-19",
+    "sales": 5050200,
+    "orders": 327,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-20",
+    "sales": 3922300,
+    "orders": 273,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-21",
+    "sales": 2036500,
+    "orders": 151,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-22",
+    "sales": 2105800,
+    "orders": 157,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-23",
+    "sales": 2839300,
+    "orders": 197,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-24",
+    "sales": 3131800,
+    "orders": 228,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-25",
+    "sales": 3567100,
+    "orders": 245,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-26",
+    "sales": 4716300,
+    "orders": 339,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-27",
+    "sales": 2717100,
+    "orders": 210,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-28",
+    "sales": 1969700,
+    "orders": 146,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-29",
+    "sales": 1830600,
+    "orders": 149,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-30",
+    "sales": 1902900,
+    "orders": 145,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-01",
+    "sales": 2424900,
+    "orders": 176,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-02",
+    "sales": 3907400,
+    "orders": 287,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-03",
+    "sales": 5790700,
+    "orders": 430,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-04",
+    "sales": 4580300,
+    "orders": 339,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-05",
+    "sales": 3330200,
+    "orders": 238,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-06",
+    "sales": 2291800,
+    "orders": 161,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-07",
+    "sales": 2640900,
+    "orders": 188,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-08",
+    "sales": 2395500,
+    "orders": 189,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-09",
+    "sales": 7087500,
+    "orders": 466,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-10",
+    "sales": 6553300,
+    "orders": 454,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-11",
+    "sales": 4545600,
+    "orders": 318,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-12",
+    "sales": 1991000,
+    "orders": 159,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-13",
+    "sales": 1878700,
+    "orders": 137,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-14",
+    "sales": 2218600,
+    "orders": 155,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-15",
+    "sales": 2353200,
+    "orders": 173,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-16",
+    "sales": 3544900,
+    "orders": 254,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-17",
+    "sales": 5323800,
+    "orders": 369,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-18",
+    "sales": 2631700,
+    "orders": 168,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-19",
+    "sales": 1805900,
+    "orders": 137,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-20",
+    "sales": 2264200,
+    "orders": 159,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-21",
+    "sales": 1731600,
+    "orders": 128,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-22",
+    "sales": 2370700,
+    "orders": 176,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-23",
+    "sales": 2751900,
+    "orders": 235,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-24",
+    "sales": 4495000,
+    "orders": 312,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-25",
+    "sales": 3996900,
+    "orders": 223,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-26",
+    "sales": 1750100,
+    "orders": 139,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-27",
+    "sales": 1757000,
+    "orders": 124,
+    "weather": "",
+    "promotion": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-28",
+    "sales": 2142000,
+    "orders": 144,
+    "weather": "",
+    "promotion": "",
+    "note": "10/29 조회 마감 원본. 네이버 전체상태 10/28~29 0건. POS 환불은 원본 별도 표시, 오터 가맹점 할인 5,000원 반영.",
+    "revenueBasis": "POS 실매출 + 오터 소계·가맹점 할인 + 네이버 완료액",
+    "reconciliation": "daily-originals-verified"
+  }
+]

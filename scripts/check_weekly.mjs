@@ -25,6 +25,6 @@ location.hash='#weekly?week=2026-W44';c=view.context();assert.equal(c.partial,tr
 location.hash='#weekly?week=2026-W01';c=view.context();assert.equal(c.comparable,false);assert.equal(c.cur.total,null);assert.ok(view.render().includes('비교 자료 부족'));
 const read=p=>JSON.parse(fs.readFileSync(new URL('../dist/'+p,import.meta.url)));
 const a=read('analysis-data.json'),ch={...read('channel-data.json'),direct:read('direct-delivery.json')},l=read('data.json').daily;
-b=revenueBreakdown(dateRange('2026-07-01','2026-07-31'),{analysis:a,channels:ch,ledger:l});assert.equal(b.total,77610700);assert.equal(b.difference,0);
-b=revenueBreakdown(dateRange('2026-10-01','2026-10-27'),{analysis:a,channels:ch,ledger:l});assert.equal(b.parts.pos.value,75574100);assert.equal(b.parts.delivery.value,11182300);assert.equal(b.parts.naver.value,1739500);assert.equal(b.difference,82600);
+b=revenueBreakdown(dateRange('2026-07-01','2026-07-31'),{analysis:a,channels:ch,ledger:l});assert.equal(b.total,77599500);assert.equal(b.difference,0);
+b=revenueBreakdown(dateRange('2026-10-01','2026-10-27'),{analysis:a,channels:ch,ledger:l});assert.equal(b.parts.pos.value,75574100);assert.equal(b.parts.delivery.value,11182300);assert.equal(b.parts.naver.value,1739500);assert.equal(b.difference,0);
 console.log('ISO week boundaries, partial-week alignment, unknown vs zero, duplicate channel exclusion, original-vs-headline mismatch and product identity/quantity preservation verified.');

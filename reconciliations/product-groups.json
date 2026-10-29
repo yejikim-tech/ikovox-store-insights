@@ -101,7 +101,8 @@
         "과테말라 원두 GUATEMALA "
       ],
       "originalCategories": [
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -576,7 +577,8 @@
       ],
       "originalCategories": [
         "Dessert",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -598,13 +600,15 @@
       "name": "딸기 초코 라떼",
       "category": "논커피",
       "aliases": [
+        "딸기 초코 라떼 Strawberry Chocolate",
         "딸기 초코 라떼 Strawberry Chocolate (ICED ONLY)",
         "딸기 초코 라떼 Strawberry Chocolate Latte (ICE",
         "딸기 초코 라떼 Strawberry Chocolate Latte (ICED ONLY)"
       ],
       "originalCategories": [
         "Non Coffee",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -612,13 +616,15 @@
       "name": "딸기 크림 라떼",
       "category": "논커피",
       "aliases": [
+        "딸기 크림 라떼 Strawberry Cream Latt",
         "딸기 크림 라떼 Strawberry Cream Latt (ICED ONLY)",
         "딸기 크림 라떼 Strawberry Cream Latte (ICED ON",
         "딸기 크림 라떼 Strawberry Cream Latte (ICED ONLY)"
       ],
       "originalCategories": [
         "Non Coffee",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -836,6 +842,42 @@
       ]
     },
     {
+      "id": "product-b18490cc39adc4ef",
+      "name": "로렌조 수제 브라우니",
+      "category": "배달앱",
+      "aliases": [
+        "로렌조 수제 브라우니"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "채널 미분류"
+      ]
+    },
+    {
+      "id": "product-1f785d26f339a392",
+      "name": "로렌조 수제 쿠키",
+      "category": "배달앱",
+      "aliases": [
+        "로렌조 수제 쿠키"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "채널 미분류"
+      ]
+    },
+    {
+      "id": "product-17e56de9377f0732",
+      "name": "로렌조 수제 휘낭시에",
+      "category": "배달앱",
+      "aliases": [
+        "로렌조 수제 휘낭시에"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "채널 미분류"
+      ]
+    },
+    {
       "id": "product-86ade8940419fd07",
       "name": "로제 마이펫 모나스트렐 로제",
       "category": "와인",
@@ -988,6 +1030,7 @@
       "category": "논커피",
       "aliases": [
         "말차 우베 라떼",
+        "말차 우베 라떼 Matcha Ube Latte",
         "말차 우베 라떼 Matcha Ube Latte (ICED ONLY)"
       ],
       "originalCategories": [
@@ -1256,7 +1299,8 @@
       "originalCategories": [
         "Dessert",
         "Dessert & Deli",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -1393,7 +1437,8 @@
       "originalCategories": [
         "Dessert",
         "Dessert & Deli",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -1602,6 +1647,7 @@
       "originalCategories": [
         "Dessert",
         "배달앱",
+        "채널 미분류",
         "케이크"
       ]
     },
@@ -1717,6 +1763,7 @@
       "category": "논커피",
       "aliases": [
         "서리태 흑임자",
+        "서리태 흑임자 Black Soybean & Sesame",
         "서리태 흑임자 Black Soybean & Sesame (ICED ONL",
         "서리태 흑임자 Black Soybean & Sesame (ICED ONLY)"
       ],
@@ -2370,6 +2417,7 @@
       "category": "논커피",
       "aliases": [
         "쑥 미숫가루",
+        "쑥 미숫가루 Mugwort Roasted Grain L",
         "쑥 미숫가루 Mugwort Roasted Grain L (ICED ONLY)",
         "쑥 미숫가루 Mugwort Roasted Grain Latte (ICED",
         "쑥 미숫가루 Mugwort Roasted Grain Latte (ICED ONLY)"
@@ -2464,6 +2512,7 @@
       "aliases": [
         "애사비",
         "애사비 Apple Cider Vinegar (ICED ONLY)",
+        "애플 사이다 비니거 Apple Cider Vinegar",
         "애플 사이다 비니거 Apple Cider Vinegar (ICED ONLY)"
       ],
       "originalCategories": [
@@ -2771,6 +2820,7 @@
       "category": "스페셜티 커피",
       "aliases": [
         "우베 에스프레소 라떼",
+        "우베 에스프레소 라떼 Ube Espresso Latte",
         "우베 에스프레소 라떼 Ube Espresso Latte (ICED ONL",
         "우베 에스프레소 라떼 Ube Espresso Latte (ICED ONLY)"
       ],
@@ -2994,11 +3044,13 @@
       "name": "지리산 돌배 감기차",
       "category": "논커피",
       "aliases": [
+        "지리산 돌배 감기차 Wild Pear Remedy",
         "지리산 돌배 감기차 Wild Pear Remedy (HOT ONLY)"
       ],
       "originalCategories": [
         "Non Coffee",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -3066,7 +3118,8 @@
       "originalCategories": [
         "Dessert",
         "Dessert & Deli",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -3114,6 +3167,18 @@
         "Dessert",
         "Dessert & Deli",
         "배달앱"
+      ]
+    },
+    {
+      "id": "product-0f84c06c5a2d6219",
+      "name": "초콜릿 바스크 치즈 케이크",
+      "category": "배달앱",
+      "aliases": [
+        "초콜릿 바스크 치즈 케이크"
+      ],
+      "originalCategories": [
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -3218,6 +3283,7 @@
         "카푸치노",
         "카푸치노 (HOT ONLY)",
         "카푸치노 (Only Hot)",
+        "카푸치노 Cappuccino",
         "카푸치노 Cappuccino ",
         "카푸치노 Cappuccino (HOT ONLY)",
         "카푸치노 Cappuccino (Only Hot)",
@@ -3260,6 +3326,7 @@
       "category": "논커피",
       "aliases": [
         "캐모마일 애플 아이스티",
+        "캐모마일 애플 아이스티 Chamomile Apple",
         "캐모마일 애플 아이스티 Chamomile Apple (ICED ONLY)",
         "캐모마일 애플 아이스티 Chamomile Apple Iced Tea"
       ],
@@ -3329,7 +3396,8 @@
         "코스타리카 원두 COSTARICA "
       ],
       "originalCategories": [
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -3586,7 +3654,8 @@
       "originalCategories": [
         "Dessert & Deli",
         "Lorenzo's Pizza",
-        "배달앱"
+        "배달앱",
+        "채널 미분류"
       ]
     },
     {
@@ -3622,6 +3691,7 @@
       "category": "채널 미분류",
       "aliases": [
         "펑션원 블렌드 원두",
+        "펑션원 블렌드 원두 FUNKTION ",
         "펑션원 블렌드 원두 FUNKTION  1",
         "펑션원 블렌드 원두 FUNKTION  1 ",
         "펑션원 블렌드 원두 FUNKTION 1"
@@ -3665,6 +3735,7 @@
       "aliases": [
         "펑션투 블렌드 원두",
         "펑션투 블렌드 원두 FUNKTION 2",
+        "평션투 블렌드 원두 FUNKTION ",
         "평션투 블렌드 원두 FUNKTION  2",
         "평션투 블렌드 원두 FUNKTION 2",
         "평션투 블렌드 원두 FUNKTION 2 "

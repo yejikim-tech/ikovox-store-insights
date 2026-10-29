@@ -1,0 +1,648 @@
+{
+  "days": 301,
+  "start": "2026-01-01",
+  "end": "2026-10-28",
+  "total": 860597180,
+  "months": [
+    {
+      "month": "2026-01",
+      "payhere": 65376000,
+      "posDays": 31,
+      "posDelivery": 9647100,
+      "otter": null,
+      "otterOrders": 0,
+      "otterUnallocated": null,
+      "naver": 0,
+      "naverOrders": 0,
+      "legacy": null,
+      "legacyDays": 0,
+      "status": "배민·쿠팡이츠 직접 순매출 · 할인·부분환불 반영",
+      "excludedPosDelivery": 9647100,
+      "appliedDelivery": 9921900,
+      "reconciledTotal": 65650800
+    },
+    {
+      "month": "2026-02",
+      "payhere": 62207100,
+      "posDays": 28,
+      "posDelivery": 9187300,
+      "otter": null,
+      "otterOrders": 0,
+      "otterUnallocated": null,
+      "naver": 0,
+      "naverOrders": 0,
+      "legacy": null,
+      "legacyDays": 0,
+      "status": "배민·쿠팡이츠 직접 순매출 · 할인·부분환불 반영",
+      "excludedPosDelivery": 9187300,
+      "appliedDelivery": 9341200,
+      "reconciledTotal": 62361000
+    },
+    {
+      "month": "2026-03",
+      "payhere": 85129000,
+      "posDays": 31,
+      "posDelivery": 8637100,
+      "otter": null,
+      "otterOrders": 0,
+      "otterUnallocated": null,
+      "naver": 587200,
+      "naverOrders": 39,
+      "legacy": null,
+      "legacyDays": 0,
+      "status": "배민·쿠팡이츠 직접 순매출 · 할인·부분환불 반영",
+      "excludedPosDelivery": 8637100,
+      "appliedDelivery": 8638700,
+      "reconciledTotal": 85717800
+    },
+    {
+      "month": "2026-04",
+      "payhere": 105328880,
+      "posDays": 30,
+      "posDelivery": 8450000,
+      "otter": null,
+      "otterOrders": 0,
+      "otterUnallocated": null,
+      "naver": 4780600,
+      "naverOrders": 291,
+      "legacy": null,
+      "legacyDays": 0,
+      "status": "배민·쿠팡이츠 직접 순매출 · 할인·부분환불 반영",
+      "excludedPosDelivery": 8450000,
+      "appliedDelivery": 8615100,
+      "reconciledTotal": 110274580
+    },
+    {
+      "month": "2026-05",
+      "payhere": 105388000,
+      "posDays": 31,
+      "posDelivery": 3485400,
+      "otter": null,
+      "otterOrders": 0,
+      "otterUnallocated": null,
+      "naver": 4676400,
+      "naverOrders": 270,
+      "legacy": null,
+      "legacyDays": 0,
+      "status": "배민·쿠팡이츠 직접 순매출 · 할인·부분환불 반영",
+      "excludedPosDelivery": 3485400,
+      "appliedDelivery": 8623400,
+      "reconciledTotal": 115202400
+    },
+    {
+      "month": "2026-06",
+      "payhere": 87011800,
+      "posDays": 30,
+      "posDelivery": 10769000,
+      "otter": null,
+      "otterOrders": 0,
+      "otterUnallocated": null,
+      "naver": 1624000,
+      "naverOrders": 86,
+      "legacy": null,
+      "legacyDays": 0,
+      "status": "배민·쿠팡이츠 직접 순매출 · 할인·부분환불 반영",
+      "excludedPosDelivery": 10769000,
+      "appliedDelivery": 10996900,
+      "reconciledTotal": 88863700
+    },
+    {
+      "month": "2026-07",
+      "payhere": 76926000,
+      "posDays": 31,
+      "posDelivery": 12421600,
+      "otter": 992800,
+      "otterOrders": 57,
+      "otterUnallocated": 992800,
+      "naver": 460700,
+      "naverOrders": 25,
+      "legacy": 76957800,
+      "legacyDays": 31,
+      "status": "배민·쿠팡이츠 직접 순매출 · 할인·부분환불 반영",
+      "excludedPosDelivery": 12421600,
+      "appliedDelivery": 12634400,
+      "reconciledTotal": 77599500
+    },
+    {
+      "month": "2026-08",
+      "payhere": 68272300,
+      "posDays": 31,
+      "posDelivery": 3957500,
+      "otter": 7368900,
+      "otterOrders": 362,
+      "otterUnallocated": 3043400,
+      "naver": 165100,
+      "naverOrders": 10,
+      "legacy": 68272300,
+      "legacyDays": 31,
+      "status": "배민·쿠팡이츠 직접 순매출 · 할인·부분환불 반영",
+      "excludedPosDelivery": 3957500,
+      "appliedDelivery": 13706700,
+      "reconciledTotal": 78186600
+    },
+    {
+      "month": "2026-09",
+      "payhere": 72645100,
+      "posDays": 30,
+      "posDelivery": 0,
+      "otter": 12427100,
+      "otterOrders": 573,
+      "otterUnallocated": 100100,
+      "naver": 1030700,
+      "naverOrders": 55,
+      "legacy": 85681400,
+      "legacyDays": 30,
+      "status": "POS + 오터 + 네이버 원본 순매출",
+      "excludedPosDelivery": 0,
+      "appliedDelivery": 12427100,
+      "reconciledTotal": 86102900
+    },
+    {
+      "month": "2026-10",
+      "payhere": 77399100,
+      "posDays": 28,
+      "posDelivery": 0,
+      "otter": 11499300,
+      "otterOrders": 584,
+      "otterUnallocated": 96900,
+      "naver": 1739500,
+      "naverOrders": 97,
+      "legacy": 90555300,
+      "legacyDays": 28,
+      "status": "POS + 오터 + 네이버 원본 순매출",
+      "excludedPosDelivery": 0,
+      "appliedDelivery": 11499300,
+      "reconciledTotal": 90637900
+    }
+  ],
+  "sepOctChanges": [
+    {
+      "date": "2026-09-01",
+      "prior": 1708100,
+      "sales": 1708100,
+      "pos": 1394600,
+      "otter": 313500,
+      "naver": 0
+    },
+    {
+      "date": "2026-09-02",
+      "prior": 1862600,
+      "sales": 1862600,
+      "pos": 1579400,
+      "otter": 283200,
+      "naver": 0
+    },
+    {
+      "date": "2026-09-03",
+      "prior": 2798700,
+      "sales": 2798700,
+      "pos": 2565900,
+      "otter": 232800,
+      "naver": 0
+    },
+    {
+      "date": "2026-09-04",
+      "prior": 3064900,
+      "sales": 3064900,
+      "pos": 2423000,
+      "otter": 584400,
+      "naver": 57500
+    },
+    {
+      "date": "2026-09-05",
+      "prior": 4369700,
+      "sales": 4369700,
+      "pos": 3889300,
+      "otter": 442800,
+      "naver": 37600
+    },
+    {
+      "date": "2026-09-06",
+      "prior": 3462800,
+      "sales": 3486500,
+      "pos": 2828300,
+      "otter": 515400,
+      "naver": 142800
+    },
+    {
+      "date": "2026-09-07",
+      "prior": 2247900,
+      "sales": 2224200,
+      "pos": 1666700,
+      "otter": 557500,
+      "naver": 0
+    },
+    {
+      "date": "2026-09-08",
+      "prior": 1988100,
+      "sales": 1988100,
+      "pos": 1774600,
+      "otter": 213500,
+      "naver": 0
+    },
+    {
+      "date": "2026-09-09",
+      "prior": 2481900,
+      "sales": 2481900,
+      "pos": 2098300,
+      "otter": 383600,
+      "naver": 0
+    },
+    {
+      "date": "2026-09-10",
+      "prior": 2129000,
+      "sales": 2129000,
+      "pos": 1794400,
+      "otter": 334600,
+      "naver": 0
+    },
+    {
+      "date": "2026-09-11",
+      "prior": 2888800,
+      "sales": 2888800,
+      "pos": 2446700,
+      "otter": 424100,
+      "naver": 18000
+    },
+    {
+      "date": "2026-09-12",
+      "prior": 4842900,
+      "sales": 4842900,
+      "pos": 4165200,
+      "otter": 464600,
+      "naver": 213100
+    },
+    {
+      "date": "2026-09-13",
+      "prior": 3260100,
+      "sales": 3260100,
+      "pos": 2795300,
+      "otter": 368100,
+      "naver": 96700
+    },
+    {
+      "date": "2026-09-14",
+      "prior": 2322300,
+      "sales": 2322300,
+      "pos": 1762200,
+      "otter": 477900,
+      "naver": 82200
+    },
+    {
+      "date": "2026-09-15",
+      "prior": 2226600,
+      "sales": 2224500,
+      "pos": 1969000,
+      "otter": 255500,
+      "naver": 0
+    },
+    {
+      "date": "2026-09-16",
+      "prior": 1960600,
+      "sales": 1960600,
+      "pos": 1603100,
+      "otter": 357500,
+      "naver": 0
+    },
+    {
+      "date": "2026-09-17",
+      "prior": 2672600,
+      "sales": 2672600,
+      "pos": 2073700,
+      "otter": 598900,
+      "naver": 0
+    },
+    {
+      "date": "2026-09-18",
+      "prior": 3604200,
+      "sales": 3604200,
+      "pos": 3181800,
+      "otter": 348400,
+      "naver": 74000
+    },
+    {
+      "date": "2026-09-19",
+      "prior": 5050200,
+      "sales": 5050200,
+      "pos": 4473700,
+      "otter": 476300,
+      "naver": 100200
+    },
+    {
+      "date": "2026-09-20",
+      "prior": 3922300,
+      "sales": 3922300,
+      "pos": 3591400,
+      "otter": 294000,
+      "naver": 36900
+    },
+    {
+      "date": "2026-09-21",
+      "prior": 2036500,
+      "sales": 2036500,
+      "pos": 1742100,
+      "otter": 294400,
+      "naver": 0
+    },
+    {
+      "date": "2026-09-22",
+      "prior": 2105800,
+      "sales": 2512400,
+      "pos": 2105800,
+      "otter": 391300,
+      "naver": 15300
+    },
+    {
+      "date": "2026-09-23",
+      "prior": 2839300,
+      "sales": 2839300,
+      "pos": 2377900,
+      "otter": 437500,
+      "naver": 23900
+    },
+    {
+      "date": "2026-09-24",
+      "prior": 3131800,
+      "sales": 3131800,
+      "pos": 2570100,
+      "otter": 529000,
+      "naver": 32700
+    },
+    {
+      "date": "2026-09-25",
+      "prior": 3567100,
+      "sales": 3567100,
+      "pos": 2440200,
+      "otter": 1126900,
+      "naver": 0
+    },
+    {
+      "date": "2026-09-26",
+      "prior": 4716300,
+      "sales": 4716300,
+      "pos": 4140000,
+      "otter": 514900,
+      "naver": 61400
+    },
+    {
+      "date": "2026-09-27",
+      "prior": 2717100,
+      "sales": 2685300,
+      "pos": 2341500,
+      "otter": 305400,
+      "naver": 38400
+    },
+    {
+      "date": "2026-09-28",
+      "prior": 1969700,
+      "sales": 1969700,
+      "pos": 1681900,
+      "otter": 287800,
+      "naver": 0
+    },
+    {
+      "date": "2026-09-29",
+      "prior": 1830600,
+      "sales": 1830600,
+      "pos": 1496100,
+      "otter": 334500,
+      "naver": 0
+    },
+    {
+      "date": "2026-09-30",
+      "prior": 1902900,
+      "sales": 1951700,
+      "pos": 1672900,
+      "otter": 278800,
+      "naver": 0
+    },
+    {
+      "date": "2026-10-01",
+      "prior": 2424900,
+      "sales": 2606100,
+      "pos": 2236200,
+      "otter": 317000,
+      "naver": 52900
+    },
+    {
+      "date": "2026-10-02",
+      "prior": 3907400,
+      "sales": 3907400,
+      "pos": 3281900,
+      "otter": 566200,
+      "naver": 59300
+    },
+    {
+      "date": "2026-10-03",
+      "prior": 5790700,
+      "sales": 5790700,
+      "pos": 5172800,
+      "otter": 439900,
+      "naver": 178000
+    },
+    {
+      "date": "2026-10-04",
+      "prior": 4580300,
+      "sales": 4580300,
+      "pos": 4072300,
+      "otter": 369900,
+      "naver": 138100
+    },
+    {
+      "date": "2026-10-05",
+      "prior": 3330200,
+      "sales": 3293200,
+      "pos": 2631100,
+      "otter": 531200,
+      "naver": 130900
+    },
+    {
+      "date": "2026-10-06",
+      "prior": 2291800,
+      "sales": 2291800,
+      "pos": 1927800,
+      "otter": 364000,
+      "naver": 0
+    },
+    {
+      "date": "2026-10-07",
+      "prior": 2640900,
+      "sales": 2640900,
+      "pos": 2309000,
+      "otter": 331900,
+      "naver": 0
+    },
+    {
+      "date": "2026-10-08",
+      "prior": 2395500,
+      "sales": 2395500,
+      "pos": 2119900,
+      "otter": 275600,
+      "naver": 0
+    },
+    {
+      "date": "2026-10-09",
+      "prior": 7087500,
+      "sales": 7087500,
+      "pos": 6103100,
+      "otter": 482900,
+      "naver": 501500
+    },
+    {
+      "date": "2026-10-10",
+      "prior": 6553300,
+      "sales": 6553300,
+      "pos": 5719600,
+      "otter": 645300,
+      "naver": 188400
+    },
+    {
+      "date": "2026-10-11",
+      "prior": 4545600,
+      "sales": 4545600,
+      "pos": 4051600,
+      "otter": 401400,
+      "naver": 92600
+    },
+    {
+      "date": "2026-10-12",
+      "prior": 1991000,
+      "sales": 1991000,
+      "pos": 1605400,
+      "otter": 385600,
+      "naver": 0
+    },
+    {
+      "date": "2026-10-13",
+      "prior": 1878700,
+      "sales": 1878700,
+      "pos": 1599100,
+      "otter": 273100,
+      "naver": 6500
+    },
+    {
+      "date": "2026-10-14",
+      "prior": 2218600,
+      "sales": 2218600,
+      "pos": 1938400,
+      "otter": 269300,
+      "naver": 10900
+    },
+    {
+      "date": "2026-10-15",
+      "prior": 2353200,
+      "sales": 2319200,
+      "pos": 1875200,
+      "otter": 433400,
+      "naver": 10600
+    },
+    {
+      "date": "2026-10-16",
+      "prior": 3544900,
+      "sales": 3544900,
+      "pos": 2675400,
+      "otter": 806900,
+      "naver": 62600
+    },
+    {
+      "date": "2026-10-17",
+      "prior": 5323800,
+      "sales": 5323800,
+      "pos": 4752700,
+      "otter": 488400,
+      "naver": 82700
+    },
+    {
+      "date": "2026-10-18",
+      "prior": 2631700,
+      "sales": 2631700,
+      "pos": 1986400,
+      "otter": 627000,
+      "naver": 18300
+    },
+    {
+      "date": "2026-10-19",
+      "prior": 1805900,
+      "sales": 1805900,
+      "pos": 1415000,
+      "otter": 390900,
+      "naver": 0
+    },
+    {
+      "date": "2026-10-20",
+      "prior": 2264200,
+      "sales": 2264200,
+      "pos": 1901500,
+      "otter": 349400,
+      "naver": 13300
+    },
+    {
+      "date": "2026-10-21",
+      "prior": 1731600,
+      "sales": 1731600,
+      "pos": 1442900,
+      "otter": 288700,
+      "naver": 0
+    },
+    {
+      "date": "2026-10-22",
+      "prior": 2370700,
+      "sales": 2370700,
+      "pos": 2069300,
+      "otter": 301400,
+      "naver": 0
+    },
+    {
+      "date": "2026-10-23",
+      "prior": 2751900,
+      "sales": 2751900,
+      "pos": 2432400,
+      "otter": 319500,
+      "naver": 0
+    },
+    {
+      "date": "2026-10-24",
+      "prior": 4495000,
+      "sales": 4467400,
+      "pos": 3950400,
+      "otter": 442900,
+      "naver": 74100
+    },
+    {
+      "date": "2026-10-25",
+      "prior": 3996900,
+      "sales": 3996900,
+      "pos": 3497700,
+      "otter": 391000,
+      "naver": 108200
+    },
+    {
+      "date": "2026-10-26",
+      "prior": 1750100,
+      "sales": 1750100,
+      "pos": 1336600,
+      "otter": 402900,
+      "naver": 10600
+    },
+    {
+      "date": "2026-10-27",
+      "prior": 1757000,
+      "sales": 1757000,
+      "pos": 1470400,
+      "otter": 286600,
+      "naver": 0
+    },
+    {
+      "date": "2026-10-28",
+      "prior": 2142000,
+      "sales": 2142000,
+      "pos": 1825000,
+      "otter": 317000,
+      "naver": 0
+    }
+  ],
+  "h1MerchantDiscountCorrections": 6000,
+  "h1PartialRefunds": 30400,
+  "julAugPartialRefunds": 33800,
+  "policy": "매장 총매출 = POS 매장 실매출 + 배달 순매출 + 네이버 완료액. 1~8월은 POS 배달앱·오터를 제외하고 배민·쿠팡이츠 직접 원본을 사용합니다. 9~10월은 오터 완료 주문 순매출을 사용합니다."
+}

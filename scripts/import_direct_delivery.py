@@ -28,6 +28,9 @@ def otter_items(oid):
   amount=subtotal+sum(num(r['메뉴소계']) for r in rs if r['Parent Order Line Item IDs']==p['주문 세부 항목 ID'])
   result.append(dict(name=p['주문 완료 메뉴'].strip(),qty=qty,amount=amount))
  return result
+refundFile=PRIVATE/'baemin-jul-aug-partial-refunds.json'
+refunds={r['orderKey']:r['refund'] for r in json.loads(refundFile.read_text())}
+assert len(refunds)==6 and sum(refunds.values())==33800
 orders=[];meta=[]
 for store,filename in [('커피','baemin-coffee-jul-aug-pages.json'),('젤라또','baemin-gelato-jul-aug-completed.json')]:
  source=json.loads((PRIVATE/filename).read_text());cards=[c for p in source for c in p['cards']] if isinstance(source,list) else source['cards']
@@ -37,8 +40,9 @@ for store,filename in [('커피','baemin-coffee-jul-aug-pages.json'),('젤라또
   dt='-'.join(re.search(r'주문시각\s*(\d{4})\.\s*(\d{2})\.\s*(\d{2})',c).groups())
   assert '2026-07-01'<=dt<='2026-08-31'
   payment=num(re.search(r'결제금액\s*(?:부분취소\s*)?([\d,]+)\s*원',c.split('접기')[0]).group(1))
-  items=otter_items(oid);basis='직접 주문번호와 오터 상품 연결' if items else None
-  if not items and '주문 추가 정보 보기' in c:
+  if oid in refunds:payment-=refunds[oid]
+  items=otter_items(oid) if oid not in refunds else None;basis='직접 주문번호와 오터 상품 연결' if items else None
+  if not items and oid not in refunds and '주문 추가 정보 보기' in c:
    seg=c.split('주문 추가 정보 보기',1)[1].split('총 결제금액')[0].splitlines();found=[]
    for i,line in enumerate(seg):
     m=re.fullmatch(r'(.*?)(\d+)개',line.strip())
@@ -50,7 +54,7 @@ for store,filename in [('커피','baemin-coffee-jul-aug-pages.json'),('젤라또
  cancelMonthly=Counter('-'.join(re.search(r'주문시각\s*(\d{4})\.\s*(\d{2})\.\s*(\d{2})',c).groups())[:7] for c in cancel['cards'])
  for m in ['2026-07','2026-08']:
   rs=[o for o in orders if o['channel']=='baemin' and o['store']==store and o['date'].startswith(m)]
-  meta.append(dict(month=m,channel='baemin',store=store,completedOrders=len(rs),cancelledOrders=cancelMonthly[m],sales=sum(r['sales'] for r in rs),basis='배달완료 주문 결제금액 · 취소 별도 제외',status='확보'))
+  meta.append(dict(month=m,channel='baemin',store=store,completedOrders=len(rs),cancelledOrders=cancelMonthly[m],sales=sum(r['sales'] for r in rs),basis='배달완료 결제금액에서 확인한 부분환불 차감 · 전체 취소 제외',status='확보'))
 for store,m,file in [('커피','2026-07','coupang_eats_2026-07 (1).xlsx'),('커피','2026-08','coupang_eats_2026-08 (2).xlsx'),('젤라또','2026-08','coupang_eats_2026-08 (3).xlsx')]:
  groups=defaultdict(list);financial=defaultdict(int)
  for r in load_workbook(DL/file,read_only=True,data_only=True).active.values:
@@ -59,9 +63,11 @@ for store,m,file in [('커피','2026-07','coupang_eats_2026-07 (1).xlsx'),('커�
   groups[str(r[2])].append(r)
   for i,k in [(9,'gross'),(10,'sales'),(11,'customerPayment'),(12,'platformCoupon'),(13,'merchantCoupon')]:financial[k]+=num(r[i])
  for oid,rs in groups.items():
-  sales=sum(num(r[10]) for r in rs);dt=str(next((r[0] for r in rs if r[8]=='결제'),rs[0][0]));items=otter_items(oid) if sales>0 else None
-  if sales==0:continue
-  orders.append(dict(date=dt,channel='coupang',store=store,sales=sales,items=items,basis='직접 주문번호와 오터 상품 연결' if items else None))
+  # Preserve each payment/refund event's original financial date, including cross-day cancellations.
+  for event in rs:
+   sales=num(event[10]);dt=str(event[0]);items=otter_items(oid) if sales>0 and len(rs)==1 else None
+   if sales==0:continue
+   orders.append(dict(date=dt,channel='coupang',store=store,sales=sales,items=items,basis='직접 주문번호와 오터 상품 연결' if items else None))
  meta.append(dict(month=m,channel='coupang',store=store,completedOrders=sum(sum(num(r[10]) for r in rs)>0 for rs in groups.values()),cancelledOrders=sum(sum(num(r[10]) for r in rs)==0 for rs in groups.values()),sales=financial['sales'],gross=financial['gross'],customerPayment=financial['customerPayment'],basis='판매금액인 주문금액 · 결제/취소 원본 부호 합산',status='확보'))
 meta.append(dict(month='2026-07',channel='coupang',store='젤라또',completedOrders=0,cancelledOrders=None,sales=0,basis='7/1~7/31 매출 관리 화면에서 0원·0건 확인',status='화면 확인'))
 # Per-order direct net is authoritative. Product weights only allocate its net; no repeated order/option quantities.
@@ -78,7 +84,7 @@ for r in products:
  if k not in merged:merged[k]={**r,'sales':0,'gross':None,'qty':0}
  x=merged[k];x['sales']+=r['sales'];x['qty']+=r['qty'];x['unknownQty']|=r['unknownQty']
 products=list(merged.values())
-assert sum(r['sales'] for r in products if r['channel']=='baemin')==7801100
+assert sum(r['sales'] for r in products if r['channel']=='baemin')==7767300
 for m in ['2026-07','2026-08']:
  for ch in ['baemin','coupang']:assert sum(r['sales'] for r in products if r['date'].startswith(m) and r['channel']==ch)==sum(r['sales'] for r in meta if r['month']==m and r['channel']==ch)
 # Direct delivery overrides the POS delivery-app category and all Otter transition totals.
@@ -101,6 +107,13 @@ for row in ledger['daily']:
  row.update(sales=total,orders=None,revenueBasis='POS 상품(배달앱 제외) + 배민 커피·젤라또 + 쿠팡이츠 커피·젤라또 + 네이버',reconciliation='direct-platform-replaced',note=old[d].get('note',''))
 ledger['updated']='2026-10-28';ledgerPath.write_text(json.dumps(ledger,ensure_ascii=False,separators=(',',':')))
 output=dict(revision='2026-10-28-direct-platform',start='2026-07-01',end='2026-08-31',stores=meta,products=products,daily=changes,policy='7~8월은 POS 배달앱과 오터를 제외하고 배민·쿠팡이츠 직접 원본으로 대체. 네이버는 기존 확인 원본 합산. 주문 수는 POS 원본에 없어 전체 거래건수 미표시. 원본 할인·취소를 재차 차감하지 않음. 상품 미확인 금액 보존. 배분 상품액은 순매출이며 할인 전 총매출·상품별 할인액을 추정하지 않음.',definitions=[dict(label='쿠팡이츠 판매금액 기준',url='https://partners.coupangeats.com/start-guide/step-4/3385/'),dict(label='배민 주문내역',url='https://self.baemin.com/orders/history')])
+previousPath=ROOT/'dist/direct-delivery.json'
+if previousPath.exists():
+ priorDirect=json.loads(previousPath.read_text())
+ if priorDirect.get('start')=='2026-01-01':
+  for key,cutoff in [('daily','date'),('products','date'),('stores','month')]:output[key]=[r for r in priorDirect[key] if r[cutoff]<('2026-07-01' if cutoff=='date' else '2026-07')]+output[key]
+  output['start']='2026-01-01';output['policy']='1~8월은 POS 배달앱과 오터를 제외하고 배민·쿠팡이츠 직접 원본으로 대체. 네이버 완료액 추가. 가맹점 할인 및 확인한 부분환불 반영. 상품 미확인 금액과 수량은 별도 보존.'
+output['revision']='2026-10-29-direct-net-refunds'
 (ROOT/'dist/direct-delivery.json').write_text(json.dumps(output,ensure_ascii=False,separators=(',',':')))
 (ROOT/'reconciliations/direct-delivery-review.json').write_text(json.dumps({k:v for k,v in output.items() if k!='products'},ensure_ascii=False,indent=2))
 print(json.dumps(dict(stores=meta,months=[dict(month=m,old=sum(r['prior'] for r in changes if r['date'].startswith(m)),sales=sum(r['sales'] for r in changes if r['date'].startswith(m))) for m in ['2026-07','2026-08']],productRows=len(products),unallocated=sum(r['sales'] for r in products if r['unallocated'])),ensure_ascii=False))

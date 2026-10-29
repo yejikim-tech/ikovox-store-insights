@@ -19,6 +19,13 @@ const direct=revenueBreakdown(['2026-07-01'],{analysis:{productCoverage:['2026-0
 globalThis.location={hash:'#weekly'};
 const api={esc:String,nf:String,won:n=>'₩'+n,read:(_,d)=>d,getRows:()=>ledger,getAnalysis:()=>analysis,getChannels:()=>channels,getSalesData:()=>analysis,today:'2026-10-29'};
 const view=createWeeklyView(api);let c=view.context();assert.equal(c.selected,'2026-10-19');assert.equal(c.active.length,7);assert.equal(c.prev.length,7);assert.equal(c.comparable,true);assert.ok(view.render().includes('시간대별 POS 원본을 연결해 주세요'));
+const channelCards=()=>view.render().match(/<section class="weekly-channel-section"[\s\S]*?<\/section>/)[0];
+assert.ok(channelCards().includes('전주 0원 · 신규 관측'));
+assert.equal(c.previousBreakdown.parts.naver.value,0);
+const coverageStart=channels.coverage[0].start;
+channels.coverage[0].start='2026-10-13';
+assert.equal((channelCards().match(/비교 자료 부족/g)||[]).length,1,'Only the missing Naver channel suppresses its comparison');
+channels.coverage[0].start=coverageStart;
 analysis.hourly=[{date:dates[0],hour:12,sales:100,orders:2},{date:prior[0],hour:12,sales:150,orders:3},{date:dates[0],hour:13,sales:-10,orders:0}];analysis.hourlyCoverage=[...dates,...prior];
 const hourlyHTML=view.render();assert.ok(hourlyHTML.includes('weekly-hour-chart'));assert.ok(hourlyHTML.includes('12시 선택 주 ₩100'));assert.ok(hourlyHTML.includes('13시 전주 미수집'),'Missing hours remain unknown');assert.ok(!hourlyHTML.includes('시간대별 POS 원본을 연결해 주세요'));
 location.hash='#weekly?week=2026-W44';c=view.context();assert.equal(c.partial,true);assert.deepEqual(c.active,['2026-10-26','2026-10-27']);assert.deepEqual(c.prev,['2026-10-19','2026-10-20']);

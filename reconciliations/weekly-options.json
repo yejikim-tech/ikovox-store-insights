@@ -1,0 +1,28 @@
+[
+  {
+    "id": "xlsx-0a2243f767c76f9f",
+    "label": "상품 분석_옵션별 조회(옵션별)_이코복스 이태원점_2026-10-12~2026-10-18.xlsx",
+    "start": "2026-10-12",
+    "end": "2026-10-18",
+    "kind": "options",
+    "sha256": "0a2243f767c76f9f034a8ccb179b8e6c3ac709b14a5a494e8167adc0ff30ef30",
+    "records": 274,
+    "selections": 4291.0,
+    "optionSales": 233600.0,
+    "complete": true,
+    "scope": "weekly"
+  },
+  {
+    "id": "xlsx-1ab6fde50f660699",
+    "label": "상품 분석_옵션별 조회(옵션별)_이코복스 이태원점_2026-10-19~2026-10-25.xlsx",
+    "start": "2026-10-19",
+    "end": "2026-10-25",
+    "kind": "options",
+    "sha256": "1ab6fde50f660699f22e53b44200a68ca0d5cf2f432a10fe50f73e71aa2985e4",
+    "records": 305,
+    "selections": 4582.0,
+    "optionSales": 271900.0,
+    "complete": true,
+    "scope": "weekly"
+  }
+]

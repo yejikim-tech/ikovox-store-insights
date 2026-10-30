@@ -1,5 +1,5 @@
 export const emptyCosts=()=>({version:1,ingredients:[],recipes:[]});
-export const costUnits={g:{base:'g',factor:1},kg:{base:'g',factor:1000},ml:{base:'ml',factor:1},L:{base:'ml',factor:1000},'개':{base:'개',factor:1}};
+export const costUnits={g:{base:'g',factor:1},kg:{base:'g',factor:1000},ml:{base:'ml',factor:1},L:{base:'ml',factor:1000},'개':{base:'개',factor:1},'샷':{base:'샷',factor:1},'잔':{base:'잔',factor:1}};
 const finite=n=>typeof n==='number'&&Number.isFinite(n);
 export function validateCosts(s){
  if(!s||s.version!==1||!Array.isArray(s.ingredients)||!Array.isArray(s.recipes)||s.ingredients.length>5000||s.recipes.length>5000)throw Error('원가 자료 형식을 확인해 주세요.');

@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {emptyCosts,validateCosts,unitCost,recipeCost,mergeCostIngredients,recipeSaleStatus,matchesCostRecipe} from '../dist/cost-model.js';
+import {emptyCosts,validateCosts,unitCost,recipeCost,mergeCostIngredients,recipeSaleStatus,matchesCostRecipe,groupCostRecipes} from '../dist/cost-model.js';
 const i={id:'butter',name:'버터',unit:'kg',packQty:1,price:18000,yield:1,supplier:'',note:''};
 const r={id:'bake',name:'베이커리',category:'베이커리',output:20,salePrice:4000,target:.1,note:'',lines:[{ingredientId:'butter',qty:500}]};
 validateCosts({version:1,ingredients:[i],recipes:[r]});
@@ -38,6 +38,25 @@ for(const patch of [{subcategory:'쿠키'},{salesStatus:'판매불명'}])assert.
 const saved=JSON.parse(JSON.stringify({version:1,ingredients:[i],recipes:[coffee]}));
 assert.deepEqual(validateCosts(saved).recipes[0],coffee,'Backup keeps classification and sales status');
 assert.equal(mergeCostIngredients(saved,emptyCosts()).state.recipes[0].salesStatus,'단종');
+const groupFixtures=[
+ {...coffee,id:'retired',salePrice:100},
+ {...coffee,id:'high',name:'라떼',salesStatus:'판매중',salePrice:6000},
+ {...coffee,id:'missing',name:'가격 미입력',salesStatus:'판매중',salePrice:null},
+ {...coffee,id:'low',name:'아메리카노',salesStatus:'판매중',salePrice:4000},
+ {...coffee,id:'noncoffee',subcategory:'논커피',salesStatus:'판매중',salePrice:1000},
+ {...r,id:'bakery',subcategory:'쿠키',salePrice:2000},
+ {...r,id:'dessert',category:'디저트',subcategory:'케이크',salePrice:3000},
+ {...coffee,id:'unset',subcategory:'',salesStatus:'판매중',salePrice:500}
+];
+const untouched=JSON.stringify(groupFixtures),groups=groupCostRecipes(groupFixtures);
+assert.deepEqual(groups.map(g=>g.salesStatus),['판매중','단종']);
+assert.deepEqual(groups[0].categories.map(c=>c.name),['음료','디저트','베이커리']);
+assert.deepEqual(groups[0].categories[0].subcategories.map(s=>s.name),['커피','논커피','세분류 미지정']);
+assert.deepEqual(groups[0].categories[0].subcategories[0].recipes.map(r=>r.id),['low','high','missing']);
+assert.equal(groups.at(-1).categories[0].subcategories[0].recipes[0].id,'retired','Cheapest discontinued menu remains below active menus');
+assert.equal(JSON.stringify(groupFixtures),untouched,'Display ordering must not mutate saved records');
+assert.equal(groupCostRecipes(groupFixtures.filter(r=>matchesCostRecipe(r,{salesStatus:'단종'}))).length,1);
+assert.deepEqual(groupCostRecipes([]),[]);
 const existing={version:1,ingredients:[{...i,name:'초코베이스'}],recipes:[r]};
 const incoming={version:1,ingredients:[{...i,id:'same-name',name:'초코 베이스',price:99999},{...i,name:'새 재료'}],recipes:[]};
 const merged=mergeCostIngredients(existing,incoming,()=> 'new-id');

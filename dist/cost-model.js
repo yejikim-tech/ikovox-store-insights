@@ -5,6 +5,19 @@ export const recipeSaleStatus=r=>r.salesStatus??'판매중';
 export function matchesCostRecipe(r,{query='',category='',subcategory='',salesStatus=''}={}){
  return r.name.toLowerCase().includes(query.toLowerCase())&&(!category||r.category===category)&&(!subcategory||(subcategory==='__unset__'?!r.subcategory:r.subcategory===subcategory))&&(!salesStatus||recipeSaleStatus(r)===salesStatus);
 }
+export function groupCostRecipes(recipes){
+ const comparePrice=(a,b)=>{const ap=Number.isFinite(a.salePrice)?a.salePrice:Infinity,bp=Number.isFinite(b.salePrice)?b.salePrice:Infinity;return (ap===bp?0:ap-bp)||a.name.localeCompare(b.name,'ko')||a.id.localeCompare(b.id);};
+ return ['판매중','단종'].map(salesStatus=>{
+  const items=recipes.filter(r=>recipeSaleStatus(r)===salesStatus);
+  const categories=['음료','디저트','베이커리'].map(category=>{
+   const members=items.filter(r=>r.category===category),names=[...new Set(members.map(r=>r.subcategory||''))];
+   const priority=name=>!name?3:category==='음료'&&name==='커피'?0:category==='음료'&&name==='논커피'?1:2;
+   names.sort((a,b)=>priority(a)-priority(b)||a.localeCompare(b,'ko'));
+   return {name:category,count:members.length,subcategories:names.map(name=>({name:name||'세분류 미지정',recipes:members.filter(r=>(r.subcategory||'')===name).sort(comparePrice)}))};
+  }).filter(c=>c.count);
+  return {salesStatus,count:items.length,categories};
+ }).filter(s=>s.count);
+}
 export function validateCosts(s){
  if(!s||s.version!==1||!Array.isArray(s.ingredients)||!Array.isArray(s.recipes)||s.ingredients.length>5000||s.recipes.length>5000)throw Error('원가 자료 형식을 확인해 주세요.');
  const ids=new Set();const text=(v,max)=>typeof v==='string'&&v.length<=max;

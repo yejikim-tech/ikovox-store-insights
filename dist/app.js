@@ -1,5 +1,5 @@
-import {createCostView} from "./cost-view.js?v=20261030-cost-units-v2";
-import {validateCosts} from "./cost-model.js?v=20261030-cost-units-v2";
+import {createCostView} from "./cost-view.js?v=20261030-cost-merge-v3";
+import {validateCosts} from "./cost-model.js?v=20261030-cost-merge-v3";
 import {createWeeklyView} from './weekly-view.js?v=20261030-weather-sync-v1';
 import {createProductCatalog} from './product-catalog.js?v=20261030-weather-sync-v1';
 import {createSalesView} from './sales-view.js?v=20261030-weather-sync-v1';

@@ -12,6 +12,20 @@ export function validateCosts(s){
  }return s;
 }
 export function unitCost(i){return i.price===null?null:i.price/(i.packQty*costUnits[i.unit].factor*i.yield);}
+export function mergeCostIngredients(current,incoming,newId=()=>crypto.randomUUID()){
+ validateCosts(current);validateCosts(incoming);
+ const result={...current,ingredients:[...current.ingredients]};
+ const key=name=>name.normalize('NFKC').replace(/\s+/g,'').toLowerCase();
+ const names=new Set(current.ingredients.map(i=>key(i.name))),ids=new Set(current.ingredients.map(i=>i.id));
+ const skipped=[];let added=0;
+ for(const ingredient of incoming.ingredients){
+  if(names.has(key(ingredient.name))){skipped.push(ingredient.name);continue;}
+  let item={...ingredient};if(ids.has(item.id))item.id=newId();
+  if(ids.has(item.id))throw Error('새 재료 코드를 생성하지 못했습니다. 다시 시도해 주세요.');
+  result.ingredients.push(item);names.add(key(item.name));ids.add(item.id);added++;
+ }
+ validateCosts(result);return {state:result,added,skipped};
+}
 export function recipeCost(r,ingredients){
  const map=new Map(ingredients.map(i=>[i.id,i]));
  const lines=r.lines.map(l=>{const i=map.get(l.ingredientId);const unit=i?unitCost(i):null;return {...l,ingredient:i,unit,cost:unit===null?null:unit*l.qty};});

@@ -1,7 +1,10 @@
 """Fetch public weather only; preserve KMA dash/blank values and raw manual store weather separately."""
 from pathlib import Path
-import urllib.request,urllib.parse,json,re,html,concurrent.futures,datetime,hashlib
-ROOT=Path(__file__).resolve().parents[1];END='2026-10-27'
+import urllib.request,urllib.parse,json,re,html,concurrent.futures,datetime,hashlib,csv
+from zoneinfo import ZoneInfo
+ROOT=Path(__file__).resolve().parents[1]
+ledger=json.loads((ROOT/'dist/data.json').read_text())
+END=min(max(r['date'] for r in ledger['daily']),(datetime.datetime.now(ZoneInfo('Asia/Seoul')).date()-datetime.timedelta(days=1)).isoformat())
 BASE='https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do'
 def fetch(url):
  req=urllib.request.Request(url,headers={'User-Agent':'IKOVOX-store-weather-review/1.0'})
@@ -27,7 +30,8 @@ def parse(text,year,month,obs):
     if vals['tempMean'] is not None:out[date]=dict(date=date,**vals)
    else:out[date]=value
  return out
-jobs=[(y,m,o) for y in [2025,2026] for m in range(1,13 if y==2025 else 11) for o in [1,9]]
+last=datetime.date.fromisoformat(END)
+jobs=[(y,m,o) for y in range(2025,last.year+1) for m in range(1,(last.month if y==last.year else 12)+1) for o in [1,9]]
 def month_job(job):
  y,m,o=job;url=BASE+'?'+urllib.parse.urlencode(dict(stn=108,yy=y,mm=m,obs=o));text=fetch(url);heading=re.search(r'cmp-table-topinfo.*?</p>',text,re.S);assert heading and f'{y}년 {m}월' in heading[0],'KMA period mismatch';return job,parse(text,y,m,o),hashlib.sha256(text.encode()).hexdigest()
 rows={};phenomena={};sources=[]
@@ -55,3 +59,6 @@ out=dict(asOf=END,timezone='Asia/Seoul',period='00:00~24:00',station=dict(id='10
 (ROOT/'dist/weather-data.json').write_text(json.dumps(out,ensure_ascii=False,separators=(',',':')))
 (ROOT/'reconciliations/weather-import.json').write_text(json.dumps(dict(asOf=END,records=len(rows),sources=sources,notes=out['note']),ensure_ascii=False,indent=2))
 print(json.dumps(dict(days=len(rows),last=out['daily'][-1],windDays=sum(r['windMax'] is not None for r in rows.values()),rainDashDays=sum(r['precipitationRaw']=='-' for r in rows.values())),ensure_ascii=False))
+
+with (ROOT/'dist/weather-data.csv').open('w',encoding='utf-8-sig',newline='') as f:
+ writer=csv.writer(f);fields=['date','condition','tempMean','tempMin','tempMax','precipitation','precipitationRaw','windMax','gustMax','phenomena'];writer.writerow(fields);writer.writerows([[r.get(k,'') for k in fields] for r in out['daily']])

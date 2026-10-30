@@ -1,8 +1,8 @@
 import {renderPosComparison} from './pos-comparison.js';
 import {revenueBreakdown,renderRevenueBreakdown} from './revenue-parts.js?v=20261029-weekly-v1';
-import {createWeatherView} from './weather-view.js?v=20261028-weather-v1';
-import {CHANNELS,renderChannelAudit,channelNote,sourceProducts} from './channel-audit.js?v=20261030-closing-v1';
-import {forecastMonth,renderForecast} from './forecast-view.js?v=20261028-weather-v1';
+import {createWeatherView} from './weather-view.js?v=20261030-weather-sync-v1';
+import {CHANNELS,renderChannelAudit,channelNote,sourceProducts} from './channel-audit.js?v=20261030-weather-sync-v1';
+import {forecastMonth,renderForecast} from './forecast-view.js?v=20261030-weather-sync-v1';
 // Calendar and date-level sales analysis. Missing records remain unknown, never zero-filled.
 export function createSalesView(api) {
   const {$,$$,esc,nf,won,iso,date,add,sum,read,write,toast,getRows,getAnalysis,saveRows,openEntry,today,lineChart,parseCSV,download,csvCell}=api;

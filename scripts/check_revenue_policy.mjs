@@ -9,13 +9,13 @@ globalThis.location={hash:'#dashboard?scope=pos'};
 const view=createSalesView({getAnalysis:()=>a,getChannels:()=>channels,getRows:()=>b.daily,read:(k,d)=>d,today:'2026-10-29',
   sum:(rs,k)=>rs.reduce((n,r)=>n+(r[k]??0),0),date,iso,add:(s,n)=>iso(new Date(+date(s)+n*86400000)),esc:String,nf,won:n=>'₩'+nf(n)});
 const html=view.render();
-assert.ok(html.includes('₩90,637,900'),'Default month uses reconciled channel ledger');
+assert.ok(html.includes('₩92,795,400'),'Default month uses reconciled channel ledger');
 assert.ok(!html.includes('₩76,231,800'),'POS product total cannot replace store total');
 assert.ok(!html.includes('₩803,858,280'),'POS annual total cannot replace store annual total');
-assert.ok(html.includes('₩860,597,180')&&!html.includes('연 누계 아님'));
+assert.ok(html.includes('₩862,754,680')&&!html.includes('연 누계 아님'));
 assert.ok(html.includes('페이히어 + 오터 + 네이버'));
 assert.ok(html.includes('원본 채널 합계 = 표시 총매출'),'Reconciled originals must equal the headline');
-assert.ok(html.includes('77,399,100')&&html.includes('1,739,500')&&html.includes('11,499,300'));
+assert.ok(html.includes('79,082,300')&&html.includes('1,765,300')&&html.includes('11,947,800'));
 assert.ok(!html.includes('<select id="salesScope"'),'Store revenue cannot switch to POS-only scope');
 const audit=JSON.parse(fs.readFileSync(new URL('../reconciliations/2026-10-channel-review.json',import.meta.url)));
 assert.equal(audit.payhere.sales+audit.otter.sales+audit.naver.sales,audit.sum_before_duplicate_and_date_review);

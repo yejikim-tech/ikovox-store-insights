@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-29",
+  "pos": 1683200,
+  "delivery": 448500,
+  "naver": 25800,
+  "total": 2157500,
+  "posProducts": 56,
+  "deliveryProducts": 53,
+  "deliveryUnknown": 0,
+  "deliveryOptionSelections": 73,
+  "orders": {
+    "delivery": 23,
+    "naver": 1
+  },
+  "posRefundSeparate": 11200,
+  "netBasis": "POS original net; Otter subtotal minus merchant discount; Naver accepted date, completed status verified next day",
+  "annual": 862754680
+}

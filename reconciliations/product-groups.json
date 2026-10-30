@@ -1,6 +1,6 @@
 {
-  "originalPairs": 1102,
-  "products": 536,
+  "originalPairs": 1103,
+  "products": 537,
   "mergedGroups": [
     {
       "id": "product-faea5e120fc542ef",
@@ -3557,7 +3557,8 @@
       "category": "빵",
       "aliases": [
         "[ 마감 특가 33% 할인] 클래식 크루아상",
-        "클래식 크루아상  Classic Croissant"
+        "클래식 크루아상  Classic Croissant",
+        "클래식 크루아상 Classic Croissant"
       ],
       "originalCategories": [
         "Bakery",

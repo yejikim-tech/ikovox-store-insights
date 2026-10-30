@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {emptyCosts,validateCosts,unitCost,recipeCost,mergeCostIngredients,recipeSaleStatus,matchesCostRecipe,groupCostRecipes} from '../dist/cost-model.js';
+import {emptyCosts,validateCosts,unitCost,recipeCost,mergeCostIngredients,recipeSaleStatus,matchesCostRecipe,groupCostRecipes,summarizeRecipeRates} from '../dist/cost-model.js';
 const i={id:'butter',name:'버터',unit:'kg',packQty:1,price:18000,yield:1,supplier:'',note:''};
 const r={id:'bake',name:'베이커리',category:'베이커리',output:20,salePrice:4000,target:.1,note:'',lines:[{ingredientId:'butter',qty:500}]};
 validateCosts({version:1,ingredients:[i],recipes:[r]});
@@ -57,6 +57,13 @@ assert.equal(groups.at(-1).categories[0].subcategories[0].recipes[0].id,'retired
 assert.equal(JSON.stringify(groupFixtures),untouched,'Display ordering must not mutate saved records');
 assert.equal(groupCostRecipes(groupFixtures.filter(r=>matchesCostRecipe(r,{salesStatus:'단종'}))).length,1);
 assert.deepEqual(groupCostRecipes([]),[]);
+const rateSummary=summarizeRecipeRates([{...r,salePrice:4500},{...r,salePrice:9000},{...r,salePrice:null}],[i]);
+assert.ok(Math.abs(rateSummary.rate-.075)<1e-12);assert.equal(rateSummary.count,2);assert.equal(rateSummary.excluded,1);
+assert.deepEqual(summarizeRecipeRates([r],[{...i,price:null}]),{rate:null,count:0,excluded:1});
+assert.deepEqual(summarizeRecipeRates([r],[{...i,price:0}]),{rate:0,count:1,excluded:0});
+assert.deepEqual(summarizeRecipeRates([],[]),{rate:null,count:0,excluded:0});
+assert.equal(summarizeRecipeRates([{...r,salePrice:4500}],[i]).rate,.1,'Filtering changes the visible group average');
+assert.equal(summarizeRecipeRates([r],[{...i,price:36000}]).rate,recipeCost(r,[i]).rate*2,'Ingredient price updates affect averages');
 const existing={version:1,ingredients:[{...i,name:'초코베이스'}],recipes:[r]};
 const incoming={version:1,ingredients:[{...i,id:'same-name',name:'초코 베이스',price:99999},{...i,name:'새 재료'}],recipes:[]};
 const merged=mergeCostIngredients(existing,incoming,()=> 'new-id');

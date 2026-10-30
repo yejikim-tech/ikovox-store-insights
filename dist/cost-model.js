@@ -54,3 +54,7 @@ export function recipeCost(r,ingredients){
  const rate=perUnit===null||r.salePrice===null?null:perUnit/r.salePrice;
  return {lines,missing,total,perUnit,rate,difference:rate===null?null:r.salePrice-perUnit,overTarget:rate!==null&&r.target!==null&&rate>r.target};
 }
+export function summarizeRecipeRates(recipes,ingredients){
+ const rates=recipes.map(r=>recipeCost(r,ingredients).rate).filter(Number.isFinite);
+ return {rate:rates.length?rates.reduce((sum,rate)=>sum+rate,0)/rates.length:null,count:rates.length,excluded:recipes.length-rates.length};
+}

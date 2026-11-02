@@ -1,0 +1,46 @@
+{
+  "start": "2026-10-30",
+  "end": "2026-11-01",
+  "days": [
+    {
+      "date": "2026-10-30",
+      "pos": 2733200,
+      "otter": 495900,
+      "otterOrders": 21,
+      "otterCancelled": 0,
+      "otterUnallocated": 0,
+      "naver": 34000,
+      "naverOrders": 1,
+      "naverCancelled": 0,
+      "total": 3263100
+    },
+    {
+      "date": "2026-10-31",
+      "pos": 4085900,
+      "otter": 386400,
+      "otterOrders": 19,
+      "otterCancelled": 1,
+      "otterUnallocated": 0,
+      "naver": 59600,
+      "naverOrders": 3,
+      "naverCancelled": 0,
+      "total": 4531900
+    },
+    {
+      "date": "2026-11-01",
+      "pos": 2197400,
+      "otter": 672300,
+      "otterOrders": 32,
+      "otterCancelled": 1,
+      "otterUnallocated": 0,
+      "naver": 12400,
+      "naverOrders": 1,
+      "naverCancelled": 0,
+      "total": 2882100
+    }
+  ],
+  "annual": 873431780,
+  "posProducts": 212,
+  "deliveryProductIssues": [],
+  "policy": "완료 주문·가맹점 할인 반영. 전체 취소 제외. 네이버 접수일 기준. 원본 환불은 별도 보존."
+}

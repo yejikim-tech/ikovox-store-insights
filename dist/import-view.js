@@ -1,9 +1,10 @@
-import {CHANNELS,renderChannelAudit,channelNote,sourceProducts} from './channel-audit.js?v=20261030-closing-v1';
+import {CHANNELS,renderChannelAudit,channelNote,sourceProducts} from './channel-audit.js?v=20261102-closing-v1';
 export function createImportView(api) {
   const {$,$$,esc,nf,won,sum,getAnalysis,download,csvCell,rerender}=api;
-  let kind='products',from='2026-01-01',to='2026-10-29',period='2026-07-01',query='',category='',sort='sales',page=0,channel='all',auditExpanded=false,layout='category';
+  let kind='products',from='2026-01-01',to=null,period='2026-07-01',query='',category='',sort='sales',page=0,channel='all',auditExpanded=false,layout='category';
   const imported=()=>getAnalysis().importSources||[];
   function rows() {
+    to ||= [...(getAnalysis().productCoverage||[])].sort().at(-1);
     const original=getAnalysis(),a={...original,products:sourceProducts(original.products,api.getChannels?.()).map(r=>api.catalog?.()?.row(r)||r),options:(original.options||[]).map(r=>api.catalog?.()?.row(r)||r)};
     return kind==='options'?(a.options||[]).filter(r=>r.start===period):a.products.filter(r=>r.date>=from&&r.date<=to);
   }

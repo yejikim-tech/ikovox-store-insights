@@ -24,5 +24,18 @@
     "optionSales": 271900.0,
     "complete": true,
     "scope": "weekly"
+  },
+  {
+    "id": "payhere-options-ui-7e505e6f47b70f28",
+    "label": "페이히어 2026-10-26~2026-11-01 옵션별 관리자 원본",
+    "start": "2026-10-26",
+    "end": "2026-11-01",
+    "kind": "options",
+    "sha256": "7e505e6f47b70f2876999fa0ddd6dc74fdef00b17aa32fe8e2429b75553d97c7",
+    "records": 317,
+    "selections": 4048,
+    "optionSales": 252900,
+    "complete": true,
+    "scope": "weekly"
   }
 ]

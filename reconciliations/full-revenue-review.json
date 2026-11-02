@@ -1,8 +1,8 @@
 {
-  "days": 302,
+  "days": 305,
   "start": "2026-01-01",
-  "end": "2026-10-29",
-  "total": 862754680,
+  "end": "2026-11-01",
+  "total": 873431780,
   "months": [
     {
       "month": "2026-01",
@@ -159,20 +159,35 @@
     },
     {
       "month": "2026-10",
-      "payhere": 79082300,
-      "posDays": 29,
+      "payhere": 85901400.0,
+      "posDays": 31,
       "posDelivery": 0,
-      "otter": 11947800,
-      "otterOrders": 607,
+      "otter": 12830100,
+      "otterOrders": 647,
       "otterUnallocated": 96900,
-      "naver": 1765300,
-      "naverOrders": 98,
+      "naver": 1858900,
+      "naverOrders": 102,
       "legacy": 90555300,
-      "legacyDays": 28,
+      "legacyDays": 31,
       "status": "POS + 오터 + 네이버 원본 순매출",
       "excludedPosDelivery": 0,
-      "appliedDelivery": 11947800,
-      "reconciledTotal": 92795400
+      "appliedDelivery": 12830100,
+      "reconciledTotal": 100590400
+    },
+    {
+      "month": "2026-11",
+      "payhere": 2197400,
+      "posDays": 1,
+      "excludedPosDelivery": 0,
+      "appliedDelivery": 672300,
+      "otter": 672300,
+      "otterOrders": 32,
+      "otterUnallocated": 0,
+      "naver": 12400,
+      "naverOrders": 1,
+      "reconciledTotal": 2882100,
+      "legacyDays": 1,
+      "status": "POS + 오터 + 네이버 원본 순매출"
     }
   ],
   "sepOctChanges": [
@@ -645,5 +660,5 @@
   "h1PartialRefunds": 30400,
   "julAugPartialRefunds": 33800,
   "policy": "매장 총매출 = POS 매장 실매출 + 배달 순매출 + 네이버 완료액. 1~8월은 POS 배달앱·오터를 제외하고 배민·쿠팡이츠 직접 원본을 사용합니다. 9~10월은 오터 완료 주문 순매출을 사용합니다.",
-  "latestClosing": "20261029-closing.json"
+  "latestClosing": "20261101-closing.json"
 }

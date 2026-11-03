@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-11-01",
-  "records": 670,
+  "asOf": "2026-11-02",
+  "records": 671,
   "sources": [
     {
       "year": 2025,
@@ -314,15 +314,15 @@
       "year": 2026,
       "month": 11,
       "element": 1,
-      "sha256": "90c2bad23ad21ff7ed3d46cac89908d21a8ded93b987c82b22c6f8ac4a3206e3",
-      "records": 1
+      "sha256": "e4b71c47ecdbef824cdf6efb962f8802da33b0edd268d3aa39a1e61394a3dbe6",
+      "records": 2
     },
     {
       "year": 2026,
       "month": 11,
       "element": 9,
-      "sha256": "691ef4bb641c90c96c7ec203934bab3c35a2817a8a6c1bd8ba7283382f2c39d1",
-      "records": 1
+      "sha256": "d522179a664af79f2b923fa7dc216712e64196a12bdd1d2ecfedcf9cf246aee6",
+      "records": 2
     }
   ],
   "notes": "기온·강수·현상은 서울 관측소(108), 바람은 이태원 인근 격자 재분석자료. 루프탑 실측과 다를 수 있음. 기상청 강수 -/공백은 숫자 0으로 바꾸지 않음. 서울 일자 00~24시 기준. 기존 매장 날씨 메모는 별도 보존."

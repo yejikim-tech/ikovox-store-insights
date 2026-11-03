@@ -1,0 +1,22 @@
+{
+  "start": "2026-11-02",
+  "end": "2026-11-02",
+  "days": [
+    {
+      "date": "2026-11-02",
+      "pos": 1135000,
+      "otter": 364000,
+      "otterOrders": 21,
+      "otterCancelled": 1,
+      "otterUnallocated": 0,
+      "naver": 0,
+      "naverOrders": 0,
+      "naverCancelled": 1,
+      "total": 1499000
+    }
+  ],
+  "annual": 874930780,
+  "posProducts": 43,
+  "deliveryProductIssues": [],
+  "policy": "완료 주문·가맹점 할인 반영. 전체 취소 제외. 네이버 접수일 기준. 원본 환불은 별도 보존."
+}

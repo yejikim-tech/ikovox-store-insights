@@ -1,5 +1,5 @@
 {
-  "originalPairs": 1103,
+  "originalPairs": 1104,
   "products": 537,
   "mergedGroups": [
     {
@@ -1421,6 +1421,7 @@
       ],
       "originalCategories": [
         "Non Coffee",
+        "논커피",
         "배달앱"
       ]
     },

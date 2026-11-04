@@ -1,9 +1,9 @@
 import {createCostView} from "./cost-view.js?v=20261030-cost-average-v8";
 import {validateCosts} from "./cost-model.js?v=20261030-cost-average-v8";
-import {createWeeklyView} from './weekly-view.js?v=20261103-closing-v1';
-import {createProductCatalog} from './product-catalog.js?v=20261103-closing-v1';
-import {createSalesView} from './sales-view.js?v=20261103-closing-v1';
-import {createImportView} from './import-view.js?v=20261103-closing-v1';
+import {createWeeklyView} from './weekly-view.js?v=20261104-closing-v1';
+import {createProductCatalog} from './product-catalog.js?v=20261104-closing-v1';
+import {createSalesView} from './sales-view.js?v=20261104-closing-v1';
+import {createImportView} from './import-view.js?v=20261104-closing-v1';
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const nf=n=>Math.round(n).toLocaleString('ko-KR'), won=n=>'₩'+nf(n), man=n=>(n/10000).toLocaleString('ko-KR',{maximumFractionDigits:0})+'만';

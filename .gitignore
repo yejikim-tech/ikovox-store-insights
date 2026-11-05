@@ -10,3 +10,11 @@ audit/private/
 *.tar.gz
 *.xlsx
 *.log
+
+dist/
+.dev.vars
+.dev.vars.*
+.wrangler/
+.sites-runtime/
+.next/
+.sites.env

@@ -1,9 +1,9 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
-import {createWeatherView} from '../dist/weather-view.js';
-import {createSalesView} from '../dist/sales-view.js';
+import {createWeatherView} from '../public/weather-view.js';
+import {createSalesView} from '../public/sales-view.js';
 const read=p=>JSON.parse(fs.readFileSync(new URL('../'+p,import.meta.url)));
-const w=read('dist/weather-data.json'),b=read('dist/data.json'),a=read('dist/analysis-data.json');
+const w=read('public/weather-data.json'),b=read('public/data.json'),a=read('public/analysis-data.json');
 const expectedDays=Math.round((new Date(w.asOf)-new Date('2025-01-01'))/86400000)+1;const nextDate=new Date(new Date(w.asOf).getTime()+86400000).toISOString().slice(0,10);assert.equal(w.daily.length,expectedDays);assert.equal(w.daily[0].date,'2025-01-01');assert.equal(w.daily.at(-1).date,w.asOf);assert.equal(w.asOf,b.daily.at(-1).date);assert.equal(w.timezone,'Asia/Seoul');
 assert.equal(new Set(w.daily.map(x=>x.date)).size,expectedDays);
 for(const r of w.daily){assert.ok(r.tempMin<=r.tempMean&&r.tempMean<=r.tempMax);assert.ok(r.windMax>=0);assert.ok(r.gustMax>=0);if(r.precipitationRaw==='-')assert.equal(r.precipitation,null);}

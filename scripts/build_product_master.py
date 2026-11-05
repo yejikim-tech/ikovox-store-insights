@@ -1,7 +1,7 @@
 """Build explicit, reviewable display identities; keep every source row unchanged."""
 import collections, hashlib, json, pathlib, re, unicodedata
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-a=json.loads((ROOT/'dist/analysis-data.json').read_text())
+a=json.loads((ROOT/'public/analysis-data.json').read_text())
 def stem(name):
     n=unicodedata.normalize('NFKC',name).strip()
     n=re.sub(r'^\[\s*(?:마감\s*특가\s*)?\d+%\s*할인\s*\]\s*','',n)
@@ -44,8 +44,8 @@ categories={'SPECIALTYCOFFEE':'스페셜티 커피','SpecialtyCoffee':'스페셜
  'Gelato':'젤라또','IceCream':'아이스크림','Ice Cream':'아이스크림',
  'Cheese & Snack':'치즈 & 스낵','Grocery':'그로서리','Coffee Beans':'원두'}
 groups=collections.defaultdict(list)
-extra=json.loads((ROOT/'dist/channel-data.json').read_text()).get('products',[]) if (ROOT/'dist/channel-data.json').exists() else []
-direct=json.loads((ROOT/'dist/direct-delivery.json').read_text()).get('products',[]) if (ROOT/'dist/direct-delivery.json').exists() else []
+extra=json.loads((ROOT/'public/channel-data.json').read_text()).get('products',[]) if (ROOT/'public/channel-data.json').exists() else []
+direct=json.loads((ROOT/'public/direct-delivery.json').read_text()).get('products',[]) if (ROOT/'public/direct-delivery.json').exists() else []
 for r in a['products']+extra+direct:groups[identity(r['name'])].append(r)
 master=[]
 for key,rs in sorted(groups.items()):
@@ -61,7 +61,7 @@ for key,rs in sorted(groups.items()):
     master.append(dict(id='product-'+hashlib.sha256(key.encode()).hexdigest()[:16],name=label,
         category=categories.get(preferred['category'],preferred['category']),
         aliases=names,originalCategories=sorted({r['category'] for r in rs})))
-(ROOT/'dist/product-master.json').write_text(json.dumps(dict(revision='2026-10-28-v1',products=master),ensure_ascii=False,separators=(',',':')))
+(ROOT/'public/product-master.json').write_text(json.dumps(dict(revision='2026-10-28-v1',products=master),ensure_ascii=False,separators=(',',':')))
 merged=[p for p in master if len(p['aliases'])>1 or len(p['originalCategories'])>1]
 (ROOT/'reconciliations/product-groups.json').write_text(json.dumps(dict(originalPairs=len({(r['category'],r['name']) for r in a['products']}),products=len(master),mergedGroups=merged),ensure_ascii=False,indent=2))
 print(json.dumps(dict(originalPairs=len({(r['category'],r['name']) for r in a['products']}),products=len(master),mergedGroups=len(merged)),ensure_ascii=False))

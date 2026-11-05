@@ -1,11 +1,11 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {sourceProducts,renderChannelAudit} from '../dist/channel-audit.js';
-import {revenueBreakdown} from '../dist/revenue-parts.js';
-import {dateRange} from '../dist/weekly-view.js';
-import {posComparison} from '../dist/pos-comparison.js';
+import {sourceProducts,renderChannelAudit} from '../public/channel-audit.js';
+import {revenueBreakdown} from '../public/revenue-parts.js';
+import {dateRange} from '../public/weekly-view.js';
+import {posComparison} from '../public/pos-comparison.js';
 const read=p=>JSON.parse(fs.readFileSync(new URL('../'+p,import.meta.url)));
-const a=read('dist/analysis-data.json'),l=read('dist/data.json'),c={...read('dist/channel-data.json'),direct:read('dist/direct-delivery.json')},h=read('reconciliations/h1-direct-review.json');
+const a=read('public/analysis-data.json'),l=read('public/data.json'),c={...read('public/channel-data.json'),direct:read('public/direct-delivery.json')},h=read('reconciliations/h1-direct-review.json');
 const expected=[65650800,62361000,85717800,110274580,115202400,88863700,77599500,78186600,86102900,100590400,6411000];
 assert.equal(l.daily.length,307);assert.equal(new Set(l.daily.map(r=>r.date)).size,307);
 assert.deepEqual(l.daily.map(r=>r.date),dateRange('2026-01-01','2026-11-03'));

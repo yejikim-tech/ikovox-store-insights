@@ -1,9 +1,9 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
-import {createSalesView} from '../dist/sales-view.js';
-const a=JSON.parse(fs.readFileSync(new URL('../dist/analysis-data.json',import.meta.url)));
-const b=JSON.parse(fs.readFileSync(new URL('../dist/data.json',import.meta.url)));
-const channels={...JSON.parse(fs.readFileSync(new URL('../dist/channel-data.json',import.meta.url))),direct:JSON.parse(fs.readFileSync(new URL('../dist/direct-delivery.json',import.meta.url)))};
+import {createSalesView} from '../public/sales-view.js';
+const a=JSON.parse(fs.readFileSync(new URL('../public/analysis-data.json',import.meta.url)));
+const b=JSON.parse(fs.readFileSync(new URL('../public/data.json',import.meta.url)));
+const channels={...JSON.parse(fs.readFileSync(new URL('../public/channel-data.json',import.meta.url))),direct:JSON.parse(fs.readFileSync(new URL('../public/direct-delivery.json',import.meta.url)))};
 const nf=n=>Math.round(n).toLocaleString('ko-KR'),iso=d=>d.toISOString().slice(0,10),date=s=>new Date(s+'T00:00:00Z');
 globalThis.location={hash:'#dashboard?scope=pos'};
 const view=createSalesView({getAnalysis:()=>a,getChannels:()=>channels,getRows:()=>b.daily,read:(k,d)=>d,today:'2026-11-04',

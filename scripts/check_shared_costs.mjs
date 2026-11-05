@@ -1,0 +1,30 @@
+import assert from 'node:assert/strict';
+import {DatabaseSync} from 'node:sqlite';
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+import {handleCostRequest} from '../server/cost-api.js';
+const sql=new DatabaseSync(':memory:');
+for(const file of fs.readdirSync(new URL('../drizzle/',import.meta.url)).filter(f=>f.endsWith('.sql')))sql.exec(fs.readFileSync(new URL('../drizzle/'+file,import.meta.url),'utf8').replaceAll('--> statement-breakpoint',''));
+function prepared(query){let values=[];return {bind(...v){values=v;return this;},async first(){return sql.prepare(query).get(...values)||null;},async all(){return {results:sql.prepare(query).all(...values)};}};}
+const env={DB:{prepare:prepared,async batch(statements){sql.exec('BEGIN');try{const result=[];for(const s of statements)result.push(await s.all());sql.exec('COMMIT');return result;}catch(e){sql.exec('ROLLBACK');throw e;}}},COST_PASSWORD_HASH:createHash('sha256').update('test-only-password').digest('hex'),COST_SESSION_SECRET:'test-only-secret-with-enough-length'};
+const origin='https://test.example';let cookie='';
+async function call(path='',method='GET',body,options={}){const request=new Request(origin+'/api/costs'+path,{method,headers:{Origin:options.origin||origin,...(options.auth===false?{}:{Cookie:cookie}),'Content-Type':'application/json'},...(body===undefined?{}:{body:JSON.stringify(body)})});return handleCostRequest(request,env);}
+assert.equal((await call()).status,401);
+assert.equal((await call('/session','POST',{password:'wrong'})).status,401);
+const login=await call('/session','POST',{password:'test-only-password'});assert.equal(login.status,200);assert.match(login.headers.get('set-cookie'),/HttpOnly; Secure; SameSite=Strict/);cookie=login.headers.get('set-cookie').split(';')[0];
+assert.equal((await (await call()).json()).revision,0);
+const costs={version:1,ingredients:[{id:'test',name:'test',unit:'g',packQty:1000,price:10000,yield:1,supplier:'',note:''}],recipes:[]};
+assert.equal((await call('','PUT',{costs,revision:0},{origin:'https://evil.example'})).status,403);
+assert.equal((await (await call('','PUT',{costs,revision:0})).json()).revision,1);
+const anotherClient=await (await call()).json();assert.deepEqual(anotherClient.costs,costs);
+const changed=structuredClone(costs);changed.ingredients[0].price=20000;
+assert.equal((await (await call('','PUT',{costs:changed,revision:1})).json()).revision,2);
+assert.equal((await call('','PUT',{costs,revision:1})).status,409,'Stale editor cannot overwrite newer data');
+assert.equal((await call('','PUT',{costs:{version:1,ingredients:[],recipes:[]},revision:2})).status,422,'Empty browser cannot erase shared data');
+assert.equal((await call('','PUT',{costs:{...changed,ingredients:[{...changed.ingredients[0],price:-1}]},revision:2})).status,400);
+assert.equal((await (await call('/history')).json()).history[0].revision,1);
+assert.equal((await (await call('/history/restore','POST',{revision:1,expectedRevision:2})).json()).revision,3);
+assert.deepEqual((await (await call()).json()).costs,costs);
+assert.equal((await call('','PUT',{costs,revision:3},{auth:false})).status,401);
+cookie+='invalid';assert.equal((await call()).status,401);
+console.log('Shared storage checks passed: authenticated two-client reads, persistence, conflict rejection, empty-write protection, history and restore, cookie protection and request origin checks.');

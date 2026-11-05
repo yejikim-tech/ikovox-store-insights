@@ -1,8 +1,8 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
-import {createSalesView} from '../dist/sales-view.js';
-const a=JSON.parse(fs.readFileSync(new URL('../dist/analysis-data.json',import.meta.url)));
-const base=JSON.parse(fs.readFileSync(new URL('../dist/data.json',import.meta.url)));
+import {createSalesView} from '../public/sales-view.js';
+const a=JSON.parse(fs.readFileSync(new URL('../public/analysis-data.json',import.meta.url)));
+const base=JSON.parse(fs.readFileSync(new URL('../public/data.json',import.meta.url)));
 const iso=d=>d.toISOString().slice(0,10),date=s=>new Date(s+'T00:00:00Z');
 const view=createSalesView({getAnalysis:()=>a,getRows:()=>base.daily,read:(k,d)=>d,today:'2026-10-29',
   sum:(rs,k)=>rs.reduce((n,r)=>n+(r[k]??0),0),date,iso,add:(s,n)=>iso(new Date(+date(s)+n*86400000))});

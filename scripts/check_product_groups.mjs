@@ -1,9 +1,9 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
-import {createProductCatalog} from '../dist/product-catalog.js';
-import {createSalesView} from '../dist/sales-view.js';
-const a=JSON.parse(fs.readFileSync(new URL('../dist/analysis-data.json',import.meta.url)));
-const master=JSON.parse(fs.readFileSync(new URL('../dist/product-master.json',import.meta.url)));
+import {createProductCatalog} from '../public/product-catalog.js';
+import {createSalesView} from '../public/sales-view.js';
+const a=JSON.parse(fs.readFileSync(new URL('../public/analysis-data.json',import.meta.url)));
+const master=JSON.parse(fs.readFileSync(new URL('../public/product-master.json',import.meta.url)));
 const catalog=createProductCatalog(master),id=name=>catalog.resolve({name,category:'미분류'}).id;
 const allNames=master.products.flatMap(p=>p.aliases);
 assert.equal(new Set(allNames).size,allNames.length,'Each original name has exactly one identity');

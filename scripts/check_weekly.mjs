@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {monday,weekKey,weekDate,dateRange,createWeeklyView,aggregateWeek} from '../dist/weekly-view.js';
-import {revenueBreakdown,renderRevenueBreakdown} from '../dist/revenue-parts.js';
+import {monday,weekKey,weekDate,dateRange,createWeeklyView,aggregateWeek} from '../public/weekly-view.js';
+import {revenueBreakdown,renderRevenueBreakdown} from '../public/revenue-parts.js';
 assert.equal(monday('2026-10-25'),'2026-10-19');
 assert.equal(weekKey('2021-01-01'),'2020-W53');
 assert.equal(weekDate('2020-W53'),'2020-12-28');
@@ -30,7 +30,7 @@ analysis.hourly=[{date:dates[0],hour:12,sales:100,orders:2},{date:prior[0],hour:
 const hourlyHTML=view.render();assert.ok(hourlyHTML.includes('weekly-hour-chart'));assert.ok(hourlyHTML.includes('12시 선택 주 ₩100'));assert.ok(hourlyHTML.includes('13시 전주 미수집'),'Missing hours remain unknown');assert.ok(!hourlyHTML.includes('시간대별 POS 원본을 연결해 주세요'));
 location.hash='#weekly?week=2026-W44';c=view.context();assert.equal(c.partial,true);assert.deepEqual(c.active,['2026-10-26','2026-10-27']);assert.deepEqual(c.prev,['2026-10-19','2026-10-20']);
 location.hash='#weekly?week=2026-W01';c=view.context();assert.equal(c.comparable,false);assert.equal(c.cur.total,null);assert.ok(view.render().includes('비교 자료 부족'));
-const read=p=>JSON.parse(fs.readFileSync(new URL('../dist/'+p,import.meta.url)));
+const read=p=>JSON.parse(fs.readFileSync(new URL('../public/'+p,import.meta.url)));
 const a=read('analysis-data.json'),ch={...read('channel-data.json'),direct:read('direct-delivery.json')},l=read('data.json').daily;
 b=revenueBreakdown(dateRange('2026-07-01','2026-07-31'),{analysis:a,channels:ch,ledger:l});assert.equal(b.total,77599500);assert.equal(b.difference,0);
 b=revenueBreakdown(dateRange('2026-10-01','2026-10-27'),{analysis:a,channels:ch,ledger:l});assert.equal(b.parts.pos.value,75574100);assert.equal(b.parts.delivery.value,11182300);assert.equal(b.parts.naver.value,1739500);assert.equal(b.difference,0);

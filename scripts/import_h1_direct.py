@@ -56,7 +56,7 @@ for r in products:
  if key not in merged:merged[key]={**r,'sales':0,'qty':0}
  merged[key]['sales']+=r['sales'];merged[key]['qty']+=r['qty']
 products=list(merged.values())
-a=read(ROOT/'dist/analysis-data.json');ch=read(ROOT/'dist/channel-data.json');direct=read(ROOT/'dist/direct-delivery.json');ledger=read(ROOT/'dist/data.json')
+a=read(ROOT/'public/analysis-data.json');ch=read(ROOT/'public/channel-data.json');direct=read(ROOT/'public/direct-delivery.json');ledger=read(ROOT/'public/data.json')
 pos=defaultdict(int);excluded=defaultdict(int);nav=defaultdict(int)
 for r in a['products']:
  if '2026-01-01'<=r['date']<='2026-06-30':(excluded if r['category']=='배달앱' else pos)[r['date']]+=num(r['sales'])
@@ -82,6 +82,6 @@ direct['stores']=[r for r in direct['stores'] if r['month']>'2026-06']+meta
 direct.update(start='2026-01-01',revision='2026-10-29-h1-reconciled',policy='1~8월은 POS 배달앱과 오터를 제외하고 배민·쿠팡이츠 직접 원본으로 대체합니다. 배민은 가맹점 할인 및 확인된 부분환불을 반영하고 전체 취소를 제외합니다. 쿠팡이츠는 판매금액인 주문금액의 결제·취소 부호를 발생일 기준으로 합산합니다. 네이버 완료액을 추가합니다. 상품 상세 미확인액은 별도 보존하며 옵션 금액을 중복 합산하지 않습니다.')
 ledger['daily']=sorted([r for r in ledger['daily'] if r['date']>'2026-06-30']+newLedger,key=lambda r:r['date']);ledger['updated']='2026-10-29'
 assert len(ledger['daily'])==301 and len({r['date'] for r in ledger['daily']})==301
-write(ROOT/'dist/direct-delivery.json',direct);write(ROOT/'dist/data.json',ledger)
+write(ROOT/'public/direct-delivery.json',direct);write(ROOT/'public/data.json',ledger)
 report=dict(start='2026-01-01',end='2026-06-30',days=181,baeminHeader=12307400,baeminMerchantDiscountCorrections=6000,baeminPartialRefunds=30400,baeminNet=12271000,coupangNet=sum(cpMonth.values()),months=[dict(month=m,sales=sum(r['sales'] for r in changes if r['date'].startswith(m)),pos=sum(r['payhereStore'] for r in changes if r['date'].startswith(m)),baemin=sum(r['baemin'] for r in changes if r['date'].startswith(m)),coupang=sum(r['coupang'] for r in changes if r['date'].startswith(m)),naver=sum(r['naver'] for r in changes if r['date'].startswith(m))) for m in cpMonth],privacy='주문번호·고객정보는 공개 집계에 포함하지 않음')
 write(ROOT/'reconciliations/h1-direct-review.json',report);print(json.dumps(report,ensure_ascii=False))

@@ -16,7 +16,7 @@ def allocate(total,weights):
  values=[total*w//sum(weights) for w in weights]
  for i in sorted(range(len(weights)),key=lambda i:-(total*weights[i]%sum(weights)))[:total-sum(values)]:values[i]+=1
  return values
-pos=json.loads((ROOT/'dist/analysis-data.json').read_text());ledger=json.loads((ROOT/'dist/data.json').read_text())
+pos=json.loads((ROOT/'public/analysis-data.json').read_text());ledger=json.loads((ROOT/'public/data.json').read_text())
 nav=json.loads((ROOT.parent/'audit/private/naver-orders.json').read_text())
 if isinstance(nav,dict):
  print('Naver schema',list(nav));nav=nav.get('orders',[])
@@ -87,6 +87,6 @@ for month in [f'2026-{m:02}' for m in range(1,11)]:
  old=[r for r in ledger['daily'] if r['date'].startswith(month)]
  months.append(dict(month=month,payhere=sum(num(r['sales']) for r in pr),posDays=len(days),posDelivery=sum(num(r['sales']) for r in pr if r['category']=='배달앱'),otter=sum(v['otter'] for d,v in dr) if any(v['otterOrders'] for d,v in dr) else None,otterOrders=sum(v['otterOrders'] for d,v in dr),otterUnallocated=sum(v['otterUnallocated'] for d,v in dr) if any(v['otterOrders'] for d,v in dr) else None,naver=sum(v['naver'] for d,v in dr) if month>='2026-03' else None,naverOrders=sum(v['naverOrders'] for d,v in dr),legacy=sum(r['sales'] for r in old) if old else None,legacyDays=len(old),status='중복·기준일 대조 중' if month>='2026-07' else '총매출표 누락 · 채널 완전성 확인 필요'))
 output=dict(revision='2026-10-28-channel-audit',asOf=END,products=products,daily=[dict(date=d,**v) for d,v in sorted(daily.items())],months=months,exceptions=dict(exceptions),coverage=[dict(channel='payhere',start='2025-01-01',end='2026-10-28',note='2025년 전체·2026년 연초 POS 상품 원본 확보. 10/28 잠정. 배달앱 포함 구간 중복 대조 필요.'),dict(channel='otter',start='2026-07-21',end=END,itemStart='2026-08-20',note='연간 조회 주문 원본의 첫 관측 7/21. 이전 기간 연동·영업 여부 미확인. 8/20 이전 상세와 변경 주문은 상품 미확인으로 보존.'),dict(channel='naver',start='2026-03-20',end=END,note='2025/1/1~2026/10/27 전체 상태 조회 926건. 완료 873건 상품액=실결제액. 이전 기간 연동·영업 여부 미확인.')],policy='채널 원본 수집분입니다. POS 배달앱과 오터 중복 및 총매출표 차이 미해결. 합산은 잠정 원본 합계이며 확정 매장 총매출이 아닙니다. 오터 배송·수수료 포함 합계 대신 소계+가맹점 할인 사용. 주문 할인은 상품·유료옵션 금액 비율로 원 단위 배분. 취소 주문 제외. 상품 불일치·상세 누락 주문은 미확인으로 보존.')
-(ROOT/'dist/channel-data.json').write_text(json.dumps(output,ensure_ascii=False,separators=(',',':')))
+(ROOT/'public/channel-data.json').write_text(json.dumps(output,ensure_ascii=False,separators=(',',':')))
 (ROOT/'reconciliations/full-year-audit.json').write_text(json.dumps({k:v for k,v in output.items() if k not in ['products','daily']},ensure_ascii=False,indent=2))
 print(json.dumps(dict(rows=len(products),exceptions=dict(exceptions),months=months),ensure_ascii=False))

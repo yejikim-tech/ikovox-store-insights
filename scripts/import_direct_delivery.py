@@ -88,8 +88,8 @@ assert sum(r['sales'] for r in products if r['channel']=='baemin')==7767300
 for m in ['2026-07','2026-08']:
  for ch in ['baemin','coupang']:assert sum(r['sales'] for r in products if r['date'].startswith(m) and r['channel']==ch)==sum(r['sales'] for r in meta if r['month']==m and r['channel']==ch)
 # Direct delivery overrides the POS delivery-app category and all Otter transition totals.
-a=json.loads((ROOT/'dist/analysis-data.json').read_text());nav=json.loads((ROOT/'dist/channel-data.json').read_text())
-ledgerPath=ROOT/'dist/data.json';ledger=json.loads(ledgerPath.read_text());backup=ROOT/'reconciliations/prior-delivery-ledger-jul-aug.json'
+a=json.loads((ROOT/'public/analysis-data.json').read_text());nav=json.loads((ROOT/'public/channel-data.json').read_text())
+ledgerPath=ROOT/'public/data.json';ledger=json.loads(ledgerPath.read_text());backup=ROOT/'reconciliations/prior-delivery-ledger-jul-aug.json'
 if not backup.exists():backup.write_text(json.dumps([r for r in ledger['daily'] if '2026-07-01'<=r['date']<='2026-08-31'],ensure_ascii=False,indent=2))
 old={r['date']:r for r in json.loads(backup.read_text())};pos=defaultdict(int);posDelivery=defaultdict(int);ns=defaultdict(int)
 for r in a['products']:
@@ -107,13 +107,13 @@ for row in ledger['daily']:
  row.update(sales=total,orders=None,revenueBasis='POS 상품(배달앱 제외) + 배민 커피·젤라또 + 쿠팡이츠 커피·젤라또 + 네이버',reconciliation='direct-platform-replaced',note=old[d].get('note',''))
 ledger['updated']='2026-10-28';ledgerPath.write_text(json.dumps(ledger,ensure_ascii=False,separators=(',',':')))
 output=dict(revision='2026-10-28-direct-platform',start='2026-07-01',end='2026-08-31',stores=meta,products=products,daily=changes,policy='7~8월은 POS 배달앱과 오터를 제외하고 배민·쿠팡이츠 직접 원본으로 대체. 네이버는 기존 확인 원본 합산. 주문 수는 POS 원본에 없어 전체 거래건수 미표시. 원본 할인·취소를 재차 차감하지 않음. 상품 미확인 금액 보존. 배분 상품액은 순매출이며 할인 전 총매출·상품별 할인액을 추정하지 않음.',definitions=[dict(label='쿠팡이츠 판매금액 기준',url='https://partners.coupangeats.com/start-guide/step-4/3385/'),dict(label='배민 주문내역',url='https://self.baemin.com/orders/history')])
-previousPath=ROOT/'dist/direct-delivery.json'
+previousPath=ROOT/'public/direct-delivery.json'
 if previousPath.exists():
  priorDirect=json.loads(previousPath.read_text())
  if priorDirect.get('start')=='2026-01-01':
   for key,cutoff in [('daily','date'),('products','date'),('stores','month')]:output[key]=[r for r in priorDirect[key] if r[cutoff]<('2026-07-01' if cutoff=='date' else '2026-07')]+output[key]
   output['start']='2026-01-01';output['policy']='1~8월은 POS 배달앱과 오터를 제외하고 배민·쿠팡이츠 직접 원본으로 대체. 네이버 완료액 추가. 가맹점 할인 및 확인한 부분환불 반영. 상품 미확인 금액과 수량은 별도 보존.'
 output['revision']='2026-10-29-direct-net-refunds'
-(ROOT/'dist/direct-delivery.json').write_text(json.dumps(output,ensure_ascii=False,separators=(',',':')))
+(ROOT/'public/direct-delivery.json').write_text(json.dumps(output,ensure_ascii=False,separators=(',',':')))
 (ROOT/'reconciliations/direct-delivery-review.json').write_text(json.dumps({k:v for k,v in output.items() if k!='products'},ensure_ascii=False,indent=2))
 print(json.dumps(dict(stores=meta,months=[dict(month=m,old=sum(r['prior'] for r in changes if r['date'].startswith(m)),sales=sum(r['sales'] for r in changes if r['date'].startswith(m))) for m in ['2026-07','2026-08']],productRows=len(products),unallocated=sum(r['sales'] for r in products if r['unallocated'])),ensure_ascii=False))

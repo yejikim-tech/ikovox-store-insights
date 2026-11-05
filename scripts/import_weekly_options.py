@@ -4,7 +4,7 @@ import hashlib,json,re,unicodedata,warnings
 from openpyxl import load_workbook
 warnings.filterwarnings('ignore',category=UserWarning)
 root=Path(__file__).resolve().parents[1]
-path=root/'dist/analysis-data.json';a=json.loads(path.read_text());summaries=[]
+path=root/'public/analysis-data.json';a=json.loads(path.read_text());summaries=[]
 for p in sorted((Path.home()/'Downloads').glob('*.xlsx')):
  name=unicodedata.normalize('NFC',p.name)
  if '옵션별 조회(옵션별)' not in name:continue

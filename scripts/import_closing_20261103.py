@@ -80,7 +80,7 @@ for month in sorted(set(d[:7] for d in DAYS)):
  ch['months']=[r for r in ch['months'] if r['month']!=month]+[entry]
 ch['months'].sort(key=lambda r:r['month'])
 for f,x in [('analysis-data.json',a),('channel-data.json',ch),('data.json',b)]:save(f,x)
-with (R/'dist/channel-monthly-audit.csv').open('w',encoding='utf-8-sig',newline='') as f:
+with (R/'public/channel-monthly-audit.csv').open('w',encoding='utf-8-sig',newline='') as f:
  w=csv.writer(f);w.writerow(['월','POS 원본','제외 POS 배달앱','적용 배달 순매출','네이버 완료액','통합 총매출','기준']);w.writerows([[r[k] for k in ['month','payhere','excludedPosDelivery','appliedDelivery','naver','reconciledTotal','status']] for r in ch['months']])
 report=dict(start=DAYS[0],end=DAYS[-1],days=[dict(date=d,pos=totals[d]['sales'],**daily[d],total=totals[d]['sales']+daily[d]['otter']+daily[d]['naver']) for d in DAYS],annual=sum(r['sales'] for r in b['daily']),posProducts=len(pos),deliveryProductIssues=issues,policy='완료 주문·가맹점 할인 반영. 전체 취소 제외. 네이버 접수일 기준. 원본 환불은 별도 보존.')
 (R/'reconciliations/20261103-closing.json').write_text(json.dumps(report,ensure_ascii=False,indent=2));print(json.dumps(report,ensure_ascii=False))

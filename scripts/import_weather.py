@@ -3,7 +3,7 @@ from pathlib import Path
 import urllib.request,urllib.parse,json,re,html,concurrent.futures,datetime,hashlib,csv
 from zoneinfo import ZoneInfo
 ROOT=Path(__file__).resolve().parents[1]
-ledger=json.loads((ROOT/'dist/data.json').read_text())
+ledger=json.loads((ROOT/'public/data.json').read_text())
 END=min(max(r['date'] for r in ledger['daily']),(datetime.datetime.now(ZoneInfo('Asia/Seoul')).date()-datetime.timedelta(days=1)).isoformat())
 BASE='https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do'
 def fetch(url):
@@ -56,9 +56,9 @@ if len(rows)!=expected:print('month coverage',[(s['year'],s['month'],s['records'
 assert len(rows)==expected,(len(rows),expected)
 assert all(r['tempMin']<=r['tempMean']<=r['tempMax'] for r in rows.values())
 out=dict(asOf=END,timezone='Asia/Seoul',period='00:00~24:00',station=dict(id='108',name='서울(유)',provider='기상청 날씨누리',url=BASE+'?stn=108'),windSource=dict(provider='Open-Meteo Historical Weather',kind='인근 격자 재분석 추정',requestedLatitude=37.5345,requestedLongitude=126.9946,gridLatitude=wind['latitude'],gridLongitude=wind['longitude'],url='https://open-meteo.com/en/docs/historical-weather-api'),note='기온·강수·현상은 서울 관측소(108), 바람은 이태원 인근 격자 재분석자료. 루프탑 실측과 다를 수 있음. 기상청 강수 -/공백은 숫자 0으로 바꾸지 않음. 서울 일자 00~24시 기준. 기존 매장 날씨 메모는 별도 보존.',daily=sorted(rows.values(),key=lambda r:r['date']))
-(ROOT/'dist/weather-data.json').write_text(json.dumps(out,ensure_ascii=False,separators=(',',':')))
+(ROOT/'public/weather-data.json').write_text(json.dumps(out,ensure_ascii=False,separators=(',',':')))
 (ROOT/'reconciliations/weather-import.json').write_text(json.dumps(dict(asOf=END,records=len(rows),sources=sources,notes=out['note']),ensure_ascii=False,indent=2))
 print(json.dumps(dict(days=len(rows),last=out['daily'][-1],windDays=sum(r['windMax'] is not None for r in rows.values()),rainDashDays=sum(r['precipitationRaw']=='-' for r in rows.values())),ensure_ascii=False))
 
-with (ROOT/'dist/weather-data.csv').open('w',encoding='utf-8-sig',newline='') as f:
+with (ROOT/'public/weather-data.csv').open('w',encoding='utf-8-sig',newline='') as f:
  writer=csv.writer(f);fields=['date','condition','tempMean','tempMin','tempMax','precipitation','precipitationRaw','windMax','gustMax','phenomena'];writer.writerow(fields);writer.writerows([[r.get(k,'') for k in fields] for r in out['daily']])

@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
-import {forecastMonth,fitForecast,forecastModels,weatherType} from '../dist/forecast.js';
-const rows=JSON.parse(fs.readFileSync(new URL('../dist/data.json',import.meta.url))).daily;
+import {forecastMonth,fitForecast,forecastModels,weatherType} from '../public/forecast.js';
+const rows=JSON.parse(fs.readFileSync(new URL('../public/data.json',import.meta.url))).daily;
 const f=forecastMonth(rows,'2026-10','2026-10-29');
 assert.equal(f.status,'forecast');assert.equal(f.asof,'2026-10-28');assert.equal(f.actual,90637900);
 assert.equal(f.remaining.length,3);assert.equal(f.remaining[0].date,'2026-10-29');

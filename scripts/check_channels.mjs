@@ -1,9 +1,9 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
-import {createProductCatalog} from '../dist/product-catalog.js';
-import {createSalesView} from '../dist/sales-view.js';
+import {createProductCatalog} from '../public/product-catalog.js';
+import {createSalesView} from '../public/sales-view.js';
 const read=p=>JSON.parse(fs.readFileSync(new URL('../'+p,import.meta.url)));
-const c=read('dist/channel-data.json'),a=read('dist/analysis-data.json'),b=read('dist/data.json'),master=read('dist/product-master.json');
+const c=read('public/channel-data.json'),a=read('public/analysis-data.json'),b=read('public/data.json'),master=read('public/product-master.json');
 const sum=(rs,k)=>rs.reduce((n,r)=>n+(r[k]||0),0);
 assert.equal(c.products.length,new Set(c.products.map(r=>JSON.stringify([r.date,r.name,r.channel,r.reason]))).size);
 for(const d of c.daily)for(const channel of ['otter','naver'])assert.equal(sum(c.products.filter(r=>r.date===d.date&&r.channel===channel),'sales'),d[channel],d.date+channel);

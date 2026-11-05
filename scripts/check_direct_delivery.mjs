@@ -1,10 +1,10 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
-import {sourceProducts,renderChannelAudit} from '../dist/channel-audit.js';
-import {createProductCatalog} from '../dist/product-catalog.js';
-import {createSalesView} from '../dist/sales-view.js';
+import {sourceProducts,renderChannelAudit} from '../public/channel-audit.js';
+import {createProductCatalog} from '../public/product-catalog.js';
+import {createSalesView} from '../public/sales-view.js';
 const read=p=>JSON.parse(fs.readFileSync(new URL('../'+p,import.meta.url)));
-const d=read('dist/direct-delivery.json'),a=read('dist/analysis-data.json'),c={...read('dist/channel-data.json'),direct:d},b=read('dist/data.json'),master=read('dist/product-master.json');
+const d=read('public/direct-delivery.json'),a=read('public/analysis-data.json'),c={...read('public/channel-data.json'),direct:d},b=read('public/data.json'),master=read('public/product-master.json');
 const sum=(rs,k)=>rs.reduce((s,r)=>s+(r[k]??0),0),isTransition=s=>s>='2026-01-01'&&s<='2026-08-31';
 assert.equal(d.daily.length,243);assert.equal(new Set(d.daily.map(x=>x.date)).size,243);
 assert.equal(sum(d.daily.filter(r=>r.date.startsWith('2026-07')),'sales'),77599500);

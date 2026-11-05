@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {emptyCosts,validateCosts,unitCost,recipeCost,mergeCostIngredients,recipeSaleStatus,matchesCostRecipe,groupCostRecipes,summarizeRecipeRates} from '../dist/cost-model.js';
+import {emptyCosts,validateCosts,unitCost,recipeCost,mergeCostIngredients,recipeSaleStatus,matchesCostRecipe,groupCostRecipes,summarizeRecipeRates} from '../public/cost-model.js';
 const i={id:'butter',name:'버터',unit:'kg',packQty:1,price:18000,yield:1,supplier:'',note:''};
 const r={id:'bake',name:'베이커리',category:'베이커리',output:20,salePrice:4000,target:.1,note:'',lines:[{ingredientId:'butter',qty:500}]};
 validateCosts({version:1,ingredients:[i],recipes:[r]});

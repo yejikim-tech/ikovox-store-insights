@@ -1,10 +1,10 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {weeklyOptionSource,rankOptions,optionFamily,renderWeeklyOptions} from '../dist/weekly-options.js';
-import {createProductCatalog} from '../dist/product-catalog.js';
-import {dateRange} from '../dist/weekly-view.js';
-const a=JSON.parse(fs.readFileSync(new URL('../dist/analysis-data.json',import.meta.url)));
-const catalog=createProductCatalog(JSON.parse(fs.readFileSync(new URL('../dist/product-master.json',import.meta.url))));
+import {weeklyOptionSource,rankOptions,optionFamily,renderWeeklyOptions} from '../public/weekly-options.js';
+import {createProductCatalog} from '../public/product-catalog.js';
+import {dateRange} from '../public/weekly-view.js';
+const a=JSON.parse(fs.readFileSync(new URL('../public/analysis-data.json',import.meta.url)));
+const catalog=createProductCatalog(JSON.parse(fs.readFileSync(new URL('../public/product-master.json',import.meta.url))));
 const current=weeklyOptionSource(a,dateRange('2026-10-19','2026-10-25'),catalog);
 const previous=weeklyOptionSource(a,dateRange('2026-10-12','2026-10-18'),catalog);
 assert.equal(current.complete,true);assert.equal(current.rows.length,305);

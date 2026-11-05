@@ -18,8 +18,12 @@ export function updateRecipeSubcategories(current,selectedIds,changes){
  });
  const state={...current,recipes};validateCosts(state);return {state,changed};
 }
+export function matchesCostName(name,query=''){
+ const normalize=value=>value.normalize('NFKC').replace(/\s+/g,'').toLowerCase();
+ return normalize(name).includes(normalize(query));
+}
 export function matchesCostRecipe(r,{query='',category='',subcategory='',salesStatus=''}={}){
- return r.name.toLowerCase().includes(query.toLowerCase())&&(!category||r.category===category)&&(!subcategory||(subcategory==='__unset__'?!r.subcategory:r.subcategory===subcategory))&&(!salesStatus||recipeSaleStatus(r)===salesStatus);
+ return matchesCostName(r.name,query)&&(!category||r.category===category)&&(!subcategory||(subcategory==='__unset__'?!r.subcategory:r.subcategory===subcategory))&&(!salesStatus||recipeSaleStatus(r)===salesStatus);
 }
 export function groupCostRecipes(recipes){
  const comparePrice=(a,b)=>{const ap=Number.isFinite(a.salePrice)?a.salePrice:Infinity,bp=Number.isFinite(b.salePrice)?b.salePrice:Infinity;return (ap===bp?0:ap-bp)||a.name.localeCompare(b.name,'ko')||a.id.localeCompare(b.id);};

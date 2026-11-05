@@ -2,6 +2,22 @@ export const emptyCosts=()=>({version:1,ingredients:[],recipes:[]});
 export const costUnits={g:{base:'g',factor:1},kg:{base:'g',factor:1000},ml:{base:'ml',factor:1},L:{base:'ml',factor:1000},'개':{base:'개',factor:1},'샷':{base:'샷',factor:1},'잔':{base:'잔',factor:1}};
 const finite=n=>typeof n==='number'&&Number.isFinite(n);
 export const recipeSaleStatus=r=>r.salesStatus??'판매중';
+export function updateRecipeSubcategories(current,selectedIds,changes){
+ validateCosts(current);
+ const selected=new Set(selectedIds),categories=['음료','디저트','베이커리'];
+ if(!selected.size)throw Error('변경할 메뉴를 선택해 주세요.');
+ if([...selected].some(id=>!current.recipes.some(r=>r.id===id)))throw Error('선택한 메뉴가 변경되었습니다. 다시 선택해 주세요.');
+ for(const [category,value] of Object.entries(changes)){
+  if(!categories.includes(category)||typeof value!=='string'||value.trim().length>50||(category==='음료'&&!['','커피','논커피'].includes(value.trim())))throw Error('변경할 세분류를 확인해 주세요.');
+ }
+ let changed=0;
+ const recipes=current.recipes.map(r=>{
+  if(!selected.has(r.id)||!Object.hasOwn(changes,r.category))return r;
+  const subcategory=changes[r.category].trim();if((r.subcategory||'')===subcategory)return r;
+  changed++;return {...r,subcategory};
+ });
+ const state={...current,recipes};validateCosts(state);return {state,changed};
+}
 export function matchesCostRecipe(r,{query='',category='',subcategory='',salesStatus=''}={}){
  return r.name.toLowerCase().includes(query.toLowerCase())&&(!category||r.category===category)&&(!subcategory||(subcategory==='__unset__'?!r.subcategory:r.subcategory===subcategory))&&(!salesStatus||recipeSaleStatus(r)===salesStatus);
 }

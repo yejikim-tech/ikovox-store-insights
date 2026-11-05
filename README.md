@@ -16,6 +16,14 @@
 
 `pm-guide.md`, `weekly-report.md`는 웹에서도 내려받을 수 있습니다.
 
+## 소스와 입력 자료 보관
+
+GitHub에는 홈페이지 소스, 배포에 사용하는 매출 스냅샷, 검증·갱신 스크립트를 보관합니다. 내려받은 원가·업무 백업 파일과 인증정보는 커밋하지 않습니다.
+
+브라우저에서 입력한 재료·레시피·수정 자료는 Git 저장소에 자동 반영되지 않습니다. 현재 서버 데이터베이스는 연결되어 있지 않으며, JSON 백업 파일은 별도로 보관해야 합니다. 사이트 주소나 브라우저가 달라지면 기존 브라우저 저장 자료를 읽을 수 없습니다.
+
+원가 계산 검증: `node scripts/check_costs.mjs`
+
 ## Calendar update
 
 `dist/sales-view.js` owns the weekly/monthly calendar, date/range detail routes, comparison and coverage logic, product/category filters, weekly menu analysis, hourly CSV import, and operational insights. Deep links use `#dashboard?from=YYYY-MM-DD&to=YYYY-MM-DD&tab=trend` (tabs: trend/time/products/menus/insights). `analysis-data.json` contains 2026-08 and 2025-10 POS product records and explicit day coverage. No time-series product data is synthesized from monthly reports. Local uploads replace whole covered dates, after complete CSV validation. Missing data is never filled with zero. Browser backups include analysis uploads and menu settings.

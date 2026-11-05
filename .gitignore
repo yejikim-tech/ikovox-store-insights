@@ -1,0 +1,12 @@
+.DS_Store
+node_modules/
+.env
+.env.*
+!.env.example
+outputs/
+audit/private/
+*백업*.json
+*복구*.json
+*.tar.gz
+*.xlsx
+*.log
